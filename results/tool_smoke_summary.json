@@ -1,0 +1,170 @@
+{
+  "n_targets": 20,
+  "n_tools": 5,
+  "total_runs": 100,
+  "wall_clock_s": 562.9,
+  "by_tool": {
+    "whois": {
+      "calls": 20,
+      "ok": 20,
+      "findings": 113,
+      "success_rate": 1.0,
+      "mean_latency_s": 0.95,
+      "mean_findings": 5.65
+    },
+    "dns": {
+      "calls": 20,
+      "ok": 20,
+      "findings": 658,
+      "success_rate": 1.0,
+      "mean_latency_s": 1.14,
+      "mean_findings": 32.9
+    },
+    "shodan": {
+      "calls": 20,
+      "ok": 20,
+      "findings": 197,
+      "success_rate": 1.0,
+      "mean_latency_s": 0.98,
+      "mean_findings": 9.85
+    },
+    "github": {
+      "calls": 20,
+      "ok": 0,
+      "findings": 0,
+      "success_rate": 0.0,
+      "mean_latency_s": 3.51,
+      "mean_findings": 0.0
+    },
+    "wayback": {
+      "calls": 20,
+      "ok": 7,
+      "findings": 21,
+      "success_rate": 0.35,
+      "mean_latency_s": 21.57,
+      "mean_findings": 1.05
+    }
+  },
+  "by_target": {
+    "nist.gov": {
+      "category": "gov-research",
+      "tools_ok": 3,
+      "tools_called": 5,
+      "findings": 43
+    },
+    "nasa.gov": {
+      "category": "gov-research",
+      "tools_ok": 3,
+      "tools_called": 5,
+      "findings": 43
+    },
+    "noaa.gov": {
+      "category": "gov-research",
+      "tools_ok": 3,
+      "tools_called": 5,
+      "findings": 80
+    },
+    "cisa.gov": {
+      "category": "gov-cyber",
+      "tools_ok": 3,
+      "tools_called": 5,
+      "findings": 30
+    },
+    "fbi.gov": {
+      "category": "gov-law-enforcement",
+      "tools_ok": 3,
+      "tools_called": 5,
+      "findings": 43
+    },
+    "mit.edu": {
+      "category": "edu-tier1",
+      "tools_ok": 3,
+      "tools_called": 5,
+      "findings": 78
+    },
+    "stanford.edu": {
+      "category": "edu-tier1",
+      "tools_ok": 4,
+      "tools_called": 5,
+      "findings": 114
+    },
+    "harvard.edu": {
+      "category": "edu-tier1",
+      "tools_ok": 4,
+      "tools_called": 5,
+      "findings": 65
+    },
+    "berkeley.edu": {
+      "category": "edu-tier1",
+      "tools_ok": 3,
+      "tools_called": 5,
+      "findings": 53
+    },
+    "ox.ac.uk": {
+      "category": "edu-uk",
+      "tools_ok": 4,
+      "tools_called": 5,
+      "findings": 40
+    },
+    "github.com": {
+      "category": "tech-platform",
+      "tools_ok": 4,
+      "tools_called": 5,
+      "findings": 50
+    },
+    "gitlab.com": {
+      "category": "tech-platform",
+      "tools_ok": 4,
+      "tools_called": 5,
+      "findings": 57
+    },
+    "cloudflare.com": {
+      "category": "tech-infra",
+      "tools_ok": 3,
+      "tools_called": 5,
+      "findings": 63
+    },
+    "mozilla.org": {
+      "category": "ngo-tech",
+      "tools_ok": 3,
+      "tools_called": 5,
+      "findings": 36
+    },
+    "wikipedia.org": {
+      "category": "ngo-knowledge",
+      "tools_ok": 3,
+      "tools_called": 5,
+      "findings": 34
+    },
+    "torproject.org": {
+      "category": "ngo-privacy",
+      "tools_ok": 4,
+      "tools_called": 5,
+      "findings": 37
+    },
+    "owasp.org": {
+      "category": "ngo-security",
+      "tools_ok": 3,
+      "tools_called": 5,
+      "findings": 36
+    },
+    "ietf.org": {
+      "category": "standards",
+      "tools_ok": 3,
+      "tools_called": 5,
+      "findings": 28
+    },
+    "iana.org": {
+      "category": "standards",
+      "tools_ok": 4,
+      "tools_called": 5,
+      "findings": 35
+    },
+    "example.com": {
+      "category": "rfc-reserved",
+      "tools_ok": 3,
+      "tools_called": 5,
+      "findings": 24
+    }
+  }
+}

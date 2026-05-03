@@ -1,0 +1,25 @@
+{
+  "_comment": "20 publicly investigable domains. All are .gov, .edu, large public-interest tech, or major NGOs that publish responsible-disclosure programmes. Passive recon against these is lawful in the operator's jurisdiction; the agent never logs in or scans ports.",
+  "targets": [
+    {"target": "nist.gov",       "category": "gov-research"},
+    {"target": "nasa.gov",       "category": "gov-research"},
+    {"target": "noaa.gov",       "category": "gov-research"},
+    {"target": "cisa.gov",       "category": "gov-cyber"},
+    {"target": "fbi.gov",        "category": "gov-law-enforcement"},
+    {"target": "mit.edu",        "category": "edu-tier1"},
+    {"target": "stanford.edu",   "category": "edu-tier1"},
+    {"target": "harvard.edu",    "category": "edu-tier1"},
+    {"target": "berkeley.edu",   "category": "edu-tier1"},
+    {"target": "ox.ac.uk",       "category": "edu-uk"},
+    {"target": "github.com",     "category": "tech-platform"},
+    {"target": "gitlab.com",     "category": "tech-platform"},
+    {"target": "cloudflare.com", "category": "tech-infra"},
+    {"target": "mozilla.org",    "category": "ngo-tech"},
+    {"target": "wikipedia.org",  "category": "ngo-knowledge"},
+    {"target": "torproject.org", "category": "ngo-privacy"},
+    {"target": "owasp.org",      "category": "ngo-security"},
+    {"target": "ietf.org",       "category": "standards"},
+    {"target": "iana.org",       "category": "standards"},
+    {"target": "example.com",    "category": "rfc-reserved"}
+  ]
+}

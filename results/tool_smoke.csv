@@ -1,0 +1,101 @@
+target,category,tool,ok,error,findings,elapsed_s
+nist.gov,gov-research,whois,True,,7,1.62
+nist.gov,gov-research,dns,True,,22,0.53
+nist.gov,gov-research,shodan,True,,14,0.87
+nist.gov,gov-research,github,False,all GitHub dorks errored — check rate limit,0,3.12
+nist.gov,gov-research,wayback,False,Wayback CDX request failed: ReadTimeout,0,30.38
+nasa.gov,gov-research,whois,True,,10,1.11
+nasa.gov,gov-research,dns,True,,29,1.23
+nasa.gov,gov-research,shodan,True,,4,0.68
+nasa.gov,gov-research,github,False,all GitHub dorks errored — check rate limit,0,3.08
+nasa.gov,gov-research,wayback,False,Wayback CDX request failed: ReadTimeout,0,30.54
+noaa.gov,gov-research,whois,True,,7,1.31
+noaa.gov,gov-research,dns,True,,68,1.94
+noaa.gov,gov-research,shodan,True,,5,0.92
+noaa.gov,gov-research,github,False,all GitHub dorks errored — check rate limit,0,3.17
+noaa.gov,gov-research,wayback,False,Wayback CDX returned HTTP 503,0,0.69
+cisa.gov,gov-cyber,whois,True,,7,1.16
+cisa.gov,gov-cyber,dns,True,,21,1.03
+cisa.gov,gov-cyber,shodan,True,,2,1.32
+cisa.gov,gov-cyber,github,False,all GitHub dorks errored — check rate limit,0,3.13
+cisa.gov,gov-cyber,wayback,False,Wayback CDX request failed: ReadTimeout,0,30.58
+fbi.gov,gov-law-enforcement,whois,True,,8,1.21
+fbi.gov,gov-law-enforcement,dns,True,,23,1.52
+fbi.gov,gov-law-enforcement,shodan,True,,12,1.06
+fbi.gov,gov-law-enforcement,github,False,all GitHub dorks errored — check rate limit,0,3.16
+fbi.gov,gov-law-enforcement,wayback,False,Wayback CDX returned HTTP 503,0,0.75
+mit.edu,edu-tier1,whois,True,,0,0.69
+mit.edu,edu-tier1,dns,True,,45,0.93
+mit.edu,edu-tier1,shodan,True,,33,0.99
+mit.edu,edu-tier1,github,False,all GitHub dorks errored — check rate limit,0,3.29
+mit.edu,edu-tier1,wayback,False,Wayback CDX request failed: ReadTimeout,0,30.63
+stanford.edu,edu-tier1,whois,True,,0,1.21
+stanford.edu,edu-tier1,dns,True,,105,4.15
+stanford.edu,edu-tier1,shodan,True,,6,1.22
+stanford.edu,edu-tier1,github,False,all GitHub dorks errored — check rate limit,0,7.95
+stanford.edu,edu-tier1,wayback,True,,3,23.35
+harvard.edu,edu-tier1,whois,True,,0,0.5
+harvard.edu,edu-tier1,dns,True,,57,1.94
+harvard.edu,edu-tier1,shodan,True,,5,1.09
+harvard.edu,edu-tier1,github,False,all GitHub dorks errored — check rate limit,0,3.21
+harvard.edu,edu-tier1,wayback,True,,3,13.95
+berkeley.edu,edu-tier1,whois,True,,0,0.63
+berkeley.edu,edu-tier1,dns,True,,37,2.12
+berkeley.edu,edu-tier1,shodan,True,,16,1.25
+berkeley.edu,edu-tier1,github,False,all GitHub dorks errored — check rate limit,0,3.66
+berkeley.edu,edu-tier1,wayback,False,Wayback CDX request failed: ReadTimeout,0,30.38
+ox.ac.uk,edu-uk,whois,True,,3,0.85
+ox.ac.uk,edu-uk,dns,True,,28,1.37
+ox.ac.uk,edu-uk,shodan,True,,6,1.03
+ox.ac.uk,edu-uk,github,False,all GitHub dorks errored — check rate limit,0,3.31
+ox.ac.uk,edu-uk,wayback,True,,3,12.43
+github.com,tech-platform,whois,True,,12,1.24
+github.com,tech-platform,dns,True,,30,0.58
+github.com,tech-platform,shodan,True,,5,0.92
+github.com,tech-platform,github,False,all GitHub dorks errored — check rate limit,0,3.14
+github.com,tech-platform,wayback,True,,3,17.17
+gitlab.com,tech-platform,whois,True,,6,0.94
+gitlab.com,tech-platform,dns,True,,38,0.09
+gitlab.com,tech-platform,shodan,True,,10,0.77
+gitlab.com,tech-platform,github,False,all GitHub dorks errored — check rate limit,0,2.88
+gitlab.com,tech-platform,wayback,True,,3,18.97
+cloudflare.com,tech-infra,whois,True,,9,0.94
+cloudflare.com,tech-infra,dns,True,,39,0.11
+cloudflare.com,tech-infra,shodan,True,,15,0.93
+cloudflare.com,tech-infra,github,False,all GitHub dorks errored — check rate limit,0,2.89
+cloudflare.com,tech-infra,wayback,False,Wayback CDX request failed: ReadTimeout,0,30.39
+mozilla.org,ngo-tech,whois,True,,7,0.9
+mozilla.org,ngo-tech,dns,True,,26,0.78
+mozilla.org,ngo-tech,shodan,True,,3,1.02
+mozilla.org,ngo-tech,github,False,all GitHub dorks errored — check rate limit,0,3.1
+mozilla.org,ngo-tech,wayback,False,Wayback CDX request failed: ReadTimeout,0,30.33
+wikipedia.org,ngo-knowledge,whois,True,,6,0.6
+wikipedia.org,ngo-knowledge,dns,True,,10,0.61
+wikipedia.org,ngo-knowledge,shodan,True,,18,0.72
+wikipedia.org,ngo-knowledge,github,False,all GitHub dorks errored — check rate limit,0,3.69
+wikipedia.org,ngo-knowledge,wayback,False,Wayback CDX request failed: ReadTimeout,0,30.44
+torproject.org,ngo-privacy,whois,True,,9,0.69
+torproject.org,ngo-privacy,dns,True,,20,1.06
+torproject.org,ngo-privacy,shodan,True,,5,1.14
+torproject.org,ngo-privacy,github,False,all GitHub dorks errored — check rate limit,0,3.02
+torproject.org,ngo-privacy,wayback,True,,3,6.24
+owasp.org,ngo-security,whois,True,,5,0.82
+owasp.org,ngo-security,dns,True,,21,0.28
+owasp.org,ngo-security,shodan,True,,10,1.13
+owasp.org,ngo-security,github,False,all GitHub dorks errored — check rate limit,0,4.86
+owasp.org,ngo-security,wayback,False,Wayback CDX request failed: ReadTimeout,0,30.77
+ietf.org,standards,whois,True,,5,0.99
+ietf.org,standards,dns,True,,10,0.39
+ietf.org,standards,shodan,True,,13,0.8
+ietf.org,standards,github,False,all GitHub dorks errored — check rate limit,0,3.33
+ietf.org,standards,wayback,False,Wayback CDX returned HTTP 503,0,5.66
+iana.org,standards,whois,True,,7,0.66
+iana.org,standards,dns,True,,20,1.74
+iana.org,standards,shodan,True,,5,1.08
+iana.org,standards,github,False,all GitHub dorks errored — check rate limit,0,3.31
+iana.org,standards,wayback,True,,3,27.36
+example.com,rfc-reserved,whois,True,,5,0.92
+example.com,rfc-reserved,dns,True,,9,0.31
+example.com,rfc-reserved,shodan,True,,10,0.72
+example.com,rfc-reserved,github,False,all GitHub dorks errored — check rate limit,0,2.93
+example.com,rfc-reserved,wayback,False,Wayback CDX request failed: ReadTimeout,0,30.36
