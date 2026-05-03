@@ -1,0 +1,10 @@
+-r requirements.txt
+# --- test ---
+# pytest>=9.0.3 dodges CVE-2025-71176 (race in tmp-path cleanup).
+pytest>=9.0.3,<10
+pytest-asyncio>=0.23,<2
+respx>=0.21,<0.24
+
+# --- audit ---
+bandit>=1.7,<2
+pip-audit>=2.7,<3

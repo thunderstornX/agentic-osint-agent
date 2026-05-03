@@ -1,0 +1,34 @@
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+.env
+.env.*
+!.env.example
+
+# never commit real keys
+*.api.key
+*.api_key
+secrets.yaml
+
+# tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# paper build droppings
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.toc
+paper/*.lof
+paper/*.lot
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.synctex.gz
+
+# eval scratch
+results/scratch/

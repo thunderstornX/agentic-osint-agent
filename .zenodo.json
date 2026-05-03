@@ -1,0 +1,42 @@
+{
+  "title": "agentic-osint-agent: A LangGraph ReAct agent for autonomous public-source investigation",
+  "description": "An agentic OSINT investigator built on LangGraph that accepts a target domain or entity and autonomously executes a multi-step investigation: WHOIS lookup, Shodan InternetDB query, GitHub dorking, Wayback Machine analysis, and DNS enumeration. ReAct prompting drives tool selection; explicit state machine governs termination. Includes a real evaluation suite across 20 public domains.",
+  "creators": [
+    {
+      "name": "Bhutto, Ali Murtaza",
+      "orcid": "0009-0007-2787-943X",
+      "affiliation": "Independent Researcher"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "agentic AI",
+    "OSINT",
+    "LangChain",
+    "LangGraph",
+    "threat intelligence",
+    "ReAct",
+    "autonomous agents"
+  ],
+  "communities": [
+    {"identifier": "ai-safety"}
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.16921792",
+      "relation": "cites",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.16924934",
+      "relation": "cites",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "https://github.com/thunderstornX/agentic-osint-agent",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "upload_type": "software"
+}
