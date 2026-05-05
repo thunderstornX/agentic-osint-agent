@@ -72,6 +72,9 @@ def run(
                                       "--output-dir"),
     limit: int = typer.Option(0, "--limit",
                                 help="Stop after N targets (0 = all)"),
+    skip_existing: bool = typer.Option(False, "--skip-existing",
+                                         help="Skip targets that already have a "
+                                              "JSON report in output-dir"),
     authority: str = typer.Option(
         "Public-interest research; targets are .gov, .edu, large NGOs, "
         "or RFC-reserved domains; passive sources only.",
@@ -102,6 +105,11 @@ def run(
     for entry in targets:
         target = entry["target"]
         cat = entry["category"]
+        safe = target.replace("/", "_")
+        if skip_existing and (output_dir / f"{safe}.json").exists():
+            console.print(f"  [osint.muted]skip[/] {target} "
+                          f"(already in {output_dir.name})")
+            continue
         console.rule(f"[osint.title]{target}[/]")
         t0 = time.monotonic()
         try:
@@ -156,9 +164,15 @@ def run(
         for r in rows:
             w.writerow(r)
     console.rule("[osint.done]eval done[/]")
-    console.print(f"wrote [osint.handle]{csv_path.relative_to(_REPO)}[/]")
-    console.print(f"per-target reports in "
-                   f"[osint.handle]{output_dir.relative_to(_REPO)}/[/]")
+    # Path may be absolute or relative to cwd; render whichever is shorter
+    # so the message stays readable regardless of how the user invoked us.
+    def _short(p: Path) -> str:
+        try:
+            return str(p.resolve().relative_to(_REPO))
+        except ValueError:
+            return str(p)
+    console.print(f"wrote [osint.handle]{_short(csv_path)}[/]")
+    console.print(f"per-target reports in [osint.handle]{_short(output_dir)}/[/]")
     console.print(
         f"total wall-clock: [osint.handle]"
         f"{time.monotonic() - started_all:.1f}s[/]"
