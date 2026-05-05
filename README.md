@@ -203,6 +203,41 @@ Reproduce locally:
 python -m eval.run_tool_smoke
 ```
 
+### Real measured agent eval (the LLM in the loop)
+
+`results/eval/*.json` are the per-target outputs of running the full
+agent against the same 20 targets. Three targets ran on NVIDIA NIM
+(`meta/llama-3.3-70b-instruct`); seventeen ran on OpenRouter
+(`openai/gpt-oss-120b:free`) after NVIDIA's daily free-tier quota was
+exhausted. Both speak the same OpenAI-compatible wire format, so the
+records are uniformly shaped.
+
+| Metric                 | Mean  | Median | Min  | Max   |
+|------------------------|------:|-------:|-----:|------:|
+| Tool coverage (of 5)   | 5.00  | 5.00   | 5    | 5     |
+| Iterations consumed    | 5.00  | 5      | 5    | 5     |
+| Evidence rows / target | 49.2  | 44.5   | 26   | 114   |
+| Hallucination rate     | 0.305 | 0.250  | 0.10 | 0.625 |
+| Wall-clock (s)         | 74.9  | 73.6   | 51.8 | 93.3  |
+
+**20/20 targets reached `covered_all_tools` termination in exactly 5
+iterations.** Total agent wall-clock across all targets: **1498 s**.
+
+The hallucination rate is the fraction of sentences in the
+LLM-written briefing that mention no tool tag (`whois`, `dns`,
+`shodan`, `github`, `wayback`); lower is better. The `example.com`
+outlier (0.625) is the RFC-reserved domain whose briefing legitimately
+includes framing sentences ("intended for documentation in
+examples") that don't cite any tool.
+
+Reproduce:
+
+```bash
+export OPENROUTER_API_KEY=sk-or-...
+python -m eval.run_eval --provider openrouter --skip-existing
+python -m eval.consolidate     # rolls per-target JSONs into a single CSV
+```
+
 ---
 
 ## Why no LLM-as-judge for findings
