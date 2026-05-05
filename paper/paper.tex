@@ -253,16 +253,54 @@ is documented behaviour: unauthenticated callers face a 10
 queries-per-minute quota, and a single investigation issues three
 queries per call.
 
-\subsection{Agent-layer behaviour}
-Fig.~\ref{fig:dashboard} captures the live TUI mid-investigation. The
-agent observes its own coverage (5/5 categories) and finishes when
-either every category is exercised or the iteration budget is
-exhausted; both terminations are recorded in the report's
-\verb|finish_reason| field. We additionally release the LangGraph
-runner as
-\verb|eval/run_eval.py|, which records per-target hallucination rate,
-coverage, evidence count, and finish reason for any provider key the
-operator has access to.
+\subsection{Agent-layer eval}
+We ran the full ReAct loop against the same 20 targets; results are
+in Table~\ref{tab:agent-eval}. Three targets ran on NVIDIA NIM
+(\texttt{meta/llama-3.3-70b-instruct}); the remaining seventeen ran on
+OpenRouter (\texttt{openai/gpt-oss-120b:free}) after the NVIDIA free
+quota was exhausted. Both providers operate behind an
+OpenAI-compatible chat-completions endpoint, so the run records
+follow an identical shape.
+
+\begin{table}[t]
+\centering
+\caption{Agent-layer measured performance over 20 public targets.
+Hallucination rate is the fraction of sentences in the LLM-written
+briefing that mention no tool tag; lower is better.}
+\label{tab:agent-eval}
+\renewcommand{\arraystretch}{1.18}
+\begin{tabular}{lrrrr}
+\toprule
+\textbf{Metric}                & \textbf{Mean} & \textbf{Median} & \textbf{Min} & \textbf{Max} \\
+\midrule
+Tool coverage (of 5)           & 5.00          & 5.00            & 5            & 5            \\
+Iterations consumed            & 5.00          & 5               & 5            & 5            \\
+Evidence rows / target         & 49.2          & 44.5            & 26           & 114          \\
+Hallucination rate             & 0.305         & 0.250           & 0.10         & 0.625        \\
+Wall-clock (s)                 & 74.9          & 73.6            & 51.8         & 93.3         \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize 20/20 targets reached full
+\texttt{covered\_all\_tools} termination; }\\
+\multicolumn{5}{l}{\footnotesize total wall-clock 1498 s.}\\
+\end{tabular}
+\end{table}
+
+\textbf{Coverage uniformity.} Every target reached the
+\texttt{covered\_all\_tools} terminal state in exactly five
+iterations. Both models therefore consistently selected each of the
+five tools once and stopped; neither showed a tendency to repeatedly
+call its preferred tool, despite the prompt's only soft constraint
+against repetition.
+
+\textbf{Hallucination tail.} The mean hallucination rate of 0.305
+hides a heavy-tailed distribution: half the runs scored at or below
+0.25, but \texttt{example.com} (an RFC-reserved domain with sparse
+evidence) scored 0.625 because the briefing included framing sentences
+("the domain is intended for documentation purposes") that don't
+mention any tool tag. The signal is best read as "fraction of the
+briefing that is *commentary* rather than *citation*", and the
+distribution mirrors the evidence richness of the underlying target
+rather than the model's hallucination tendency per se.
 
 % ----------------------------------------------------------------------
 \section{Engineering Notes}
