@@ -1,0 +1,489 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-05T07:00:24+00:00",
+  "operator_authority": "Public-interest research; targets are .gov, .edu, large NGOs, or RFC-reserved domains; passive sources only.",
+  "run": {
+    "target": "nasa.gov",
+    "provider": "nvidia",
+    "model": "meta/llama-3.3-70b-instruct",
+    "budget": 8,
+    "iterations": 5,
+    "elapsed_s": 90.52
+  },
+  "summary": {
+    "coverage": 5,
+    "tools_called": [
+      "dns",
+      "github",
+      "shodan",
+      "wayback",
+      "whois"
+    ],
+    "evidence_count": 44,
+    "finish_reason": "covered_all_tools",
+    "elapsed_ms_per_tool": {
+      "whois": 1167,
+      "dns": 1386,
+      "shodan": 483,
+      "github": 3005,
+      "wayback": 15314
+    }
+  },
+  "evidence": [
+    {
+      "tool": "whois",
+      "target": "nasa.gov",
+      "kind": "registrar",
+      "value": "get.gov",
+      "source": "WHOIS",
+      "detail": "domain registrar of record",
+      "confidence": 0.95,
+      "fingerprint": "cf44253923cb"
+    },
+    {
+      "tool": "whois",
+      "target": "nasa.gov",
+      "kind": "creation_date",
+      "value": "1997-10-02",
+      "source": "WHOIS",
+      "detail": "domain creation date",
+      "confidence": 0.95,
+      "fingerprint": "9fcb8c9c8fec"
+    },
+    {
+      "tool": "whois",
+      "target": "nasa.gov",
+      "kind": "expiration_date",
+      "value": "2026-07-31",
+      "source": "WHOIS",
+      "detail": "domain expiration date",
+      "confidence": 0.95,
+      "fingerprint": "df1b79d9dc1a"
+    },
+    {
+      "tool": "whois",
+      "target": "nasa.gov",
+      "kind": "name_server",
+      "value": "a1-32.akam.net",
+      "source": "WHOIS",
+      "detail": "authoritative name server",
+      "confidence": 0.95,
+      "fingerprint": "c0c8efc069ff"
+    },
+    {
+      "tool": "whois",
+      "target": "nasa.gov",
+      "kind": "name_server",
+      "value": "a12-64.akam.net",
+      "source": "WHOIS",
+      "detail": "authoritative name server",
+      "confidence": 0.95,
+      "fingerprint": "d729b3ca2848"
+    },
+    {
+      "tool": "whois",
+      "target": "nasa.gov",
+      "kind": "name_server",
+      "value": "a14-67.akam.net",
+      "source": "WHOIS",
+      "detail": "authoritative name server",
+      "confidence": 0.95,
+      "fingerprint": "9de703f53a84"
+    },
+    {
+      "tool": "whois",
+      "target": "nasa.gov",
+      "kind": "name_server",
+      "value": "a5-66.akam.net",
+      "source": "WHOIS",
+      "detail": "authoritative name server",
+      "confidence": 0.95,
+      "fingerprint": "82258c533cf2"
+    },
+    {
+      "tool": "whois",
+      "target": "nasa.gov",
+      "kind": "name_server",
+      "value": "a8-66.akam.net",
+      "source": "WHOIS",
+      "detail": "authoritative name server",
+      "confidence": 0.95,
+      "fingerprint": "880b4895a01f"
+    },
+    {
+      "tool": "whois",
+      "target": "nasa.gov",
+      "kind": "name_server",
+      "value": "a9-64.akam.net",
+      "source": "WHOIS",
+      "detail": "authoritative name server",
+      "confidence": 0.95,
+      "fingerprint": "8422bfaffdcc"
+    },
+    {
+      "tool": "whois",
+      "target": "nasa.gov",
+      "kind": "registrant_org",
+      "value": "REDACTED FOR PRIVACY",
+      "source": "WHOIS",
+      "detail": "public registrant organisation",
+      "confidence": 0.95,
+      "fingerprint": "108ac8b39954"
+    },
+    {
+      "tool": "dns",
+      "target": "nasa.gov",
+      "kind": "dns.a",
+      "value": "192.0.66.108",
+      "source": "DNS A",
+      "detail": "A record",
+      "confidence": 0.95,
+      "fingerprint": "9fcd39fa564a"
+    },
+    {
+      "tool": "dns",
+      "target": "nasa.gov",
+      "kind": "dns.aaaa",
+      "value": "2a04:fa87:fffd::c000:426c",
+      "source": "DNS AAAA",
+      "detail": "AAAA record",
+      "confidence": 0.95,
+      "fingerprint": "2dcc3f588c69"
+    },
+    {
+      "tool": "dns",
+      "target": "nasa.gov",
+      "kind": "dns.mx",
+      "value": "0 nasa-gov.mail.protection.outlook.com.",
+      "source": "DNS MX",
+      "detail": "MX record",
+      "confidence": 0.95,
+      "fingerprint": "252b1d0fb004"
+    },
+    {
+      "tool": "dns",
+      "target": "nasa.gov",
+      "kind": "dns.ns",
+      "value": "a8-66.akam.net.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "d8a298f51dcf"
+    },
+    {
+      "tool": "dns",
+      "target": "nasa.gov",
+      "kind": "dns.ns",
+      "value": "a1-32.akam.net.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "517c4da77f15"
+    },
+    {
+      "tool": "dns",
+      "target": "nasa.gov",
+      "kind": "dns.ns",
+      "value": "a12-64.akam.net.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "e41f32938d64"
+    },
+    {
+      "tool": "dns",
+      "target": "nasa.gov",
+      "kind": "dns.ns",
+      "value": "a14-67.akam.net.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "ca5a6cd041d7"
+    },
+    {
+      "tool": "dns",
+      "target": "nasa.gov",
+      "kind": "dns.ns",
+      "value": "a5-66.akam.net.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "6482f9a3e07f"
+    },
+    {
+      "tool": "dns",
+      "target": "nasa.gov",
+      "kind": "dns.ns",
+      "value": "a9-64.akam.net.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "f14d050afbbf"
+    },
+    {
+      "tool": "dns",
+      "target": "nasa.gov",
+      "kind": "dns.txt",
+      "value": "HRlHXyx8jXo+9pIaJWFVBPOLVfeI2biAj3VT1woaTFpp05D5/q6AoD5KpUgws539/d2jl8wBJiEr58OEsRVugQ==",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "8441aba8bc19"
+    },
+    {
+      "tool": "dns",
+      "target": "nasa.gov",
+      "kind": "dns.txt",
+      "value": "MS=ms93625004",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "c60e87253626"
+    },
+    {
+      "tool": "dns",
+      "target": "nasa.gov",
+      "kind": "dns.txt",
+      "value": "uechcfoubh169akghg2214p54n",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "8e64e0a3076f"
+    },
+    {
+      "tool": "dns",
+      "target": "nasa.gov",
+      "kind": "dns.txt",
+      "value": "atlassian-domain-verification=oNzRM7G9GIAL/LLP5c7sPOQiAHsHrQ1hKcU7GGZ0ADRZJFhUB/upe935/2RYq/jO",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "6d4a481cfb7d"
+    },
+    {
+      "tool": "dns",
+      "target": "nasa.gov",
+      "kind": "dns.txt",
+      "value": "openai-domain-verification=dv-CO0ENDLO7EB9V5E4JnmE6pS8",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "18387f34e652"
+    },
+    {
+      "tool": "dns",
+      "target": "nasa.gov",
+      "kind": "dns.txt",
+      "value": "nmh1f9tgxhmfmjkshg7qh595drdfgnf1",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "7782b0ea511a"
+    },
+    {
+      "tool": "dns",
+      "target": "nasa.gov",
+      "kind": "dns.txt",
+      "value": "amazonses:PvUL7T41LO87xjr+2nfgxTu11i75NeT9HzY3xYv82Ko=",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "9f2739d139d3"
+    },
+    {
+      "tool": "dns",
+      "target": "nasa.gov",
+      "kind": "dns.txt",
+      "value": "google-site-verification=ZKpcXLqaBX3jND8Fybkvr3MaaOpC_6MRjXBYm0XNkJQ",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "fb93972aed67"
+    },
+    {
+      "tool": "dns",
+      "target": "nasa.gov",
+      "kind": "dns.txt",
+      "value": "pvv8mevb6qrmqvqi8alhmreg42",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "e225d24a3383"
+    },
+    {
+      "tool": "dns",
+      "target": "nasa.gov",
+      "kind": "dns.txt",
+      "value": "mj8729pr7k44dx62wwtx5745xr5njzkn",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "d56be8162ec7"
+    },
+    {
+      "tool": "dns",
+      "target": "nasa.gov",
+      "kind": "dns.txt",
+      "value": "google-site-verification=BUxd0xTJY4ZjGohBwKDpNms-yOATz92Y54kgme4eKHs",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "126ce9ad5165"
+    },
+    {
+      "tool": "dns",
+      "target": "nasa.gov",
+      "kind": "dns.txt",
+      "value": "v=spf1 include:_spf-4a.nasa.gov include:_spf-4b.nasa.gov include:_spf-4c.nasa.gov include:_spf-4d.nasa.gov include:_spf-4g.nasa.gov include:_spf-4m.nasa.gov include:_spf-4x.nasa.gov include:_spf-6a.nasa.gov include:spf.protection.outlook.com -all",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "8a234bd79049"
+    },
+    {
+      "tool": "dns",
+      "target": "nasa.gov",
+      "kind": "dns.txt",
+      "value": "1HqDXPHdt8JOt02qy6FB+l3+Z1zXScqcPxlE/faXjZLS9FRbVhHCUCHQE2bWofZt2TWKPchjjma3Pqli4FULFw==",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "9468463ec51a"
+    },
+    {
+      "tool": "dns",
+      "target": "nasa.gov",
+      "kind": "dns.txt",
+      "value": "amazonses:FXFVeQnEO3Wua+aY/H4aOIH3sSwteE+7YpGrwm8kF/s=",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "dbe2bdc261fa"
+    },
+    {
+      "tool": "dns",
+      "target": "nasa.gov",
+      "kind": "dns.txt",
+      "value": "atlassian-sending-domain-verification=4730ddf4-d24e-4a91-9612-cb14998d0e47",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "7d120fd6109d"
+    },
+    {
+      "tool": "dns",
+      "target": "nasa.gov",
+      "kind": "dns.txt",
+      "value": "apple-domain-verification=qw51K0kGzRHLbN9S",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "9b49e0ffe757"
+    },
+    {
+      "tool": "dns",
+      "target": "nasa.gov",
+      "kind": "dns.txt",
+      "value": "n39n7frbwnkhcmky2nps779y4ttn61wl",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "a649a7b1511d"
+    },
+    {
+      "tool": "dns",
+      "target": "nasa.gov",
+      "kind": "dns.txt",
+      "value": "webexdomainverification.1YPST=f98a61ea-b92e-41f2-87aa-5651b2af43b8",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "c729cf9cd1e2"
+    },
+    {
+      "tool": "dns",
+      "target": "nasa.gov",
+      "kind": "dns.txt",
+      "value": "openai-domain-verification=dv-Fbq5PVntP9qLelQPUBKniDjr",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "b2b7366806aa"
+    },
+    {
+      "tool": "dns",
+      "target": "nasa.gov",
+      "kind": "dns.txt",
+      "value": "docusign=4025560e-93c9-4920-bb13-849c6fc35d58",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "363af257e7eb"
+    },
+    {
+      "tool": "shodan",
+      "target": "nasa.gov",
+      "kind": "open_port",
+      "value": "80",
+      "source": "https://internetdb.shodan.io/192.0.66.108",
+      "detail": "open TCP port on 192.0.66.108",
+      "confidence": 0.95,
+      "fingerprint": "3eeccfe62b3c"
+    },
+    {
+      "tool": "shodan",
+      "target": "nasa.gov",
+      "kind": "open_port",
+      "value": "443",
+      "source": "https://internetdb.shodan.io/192.0.66.108",
+      "detail": "open TCP port on 192.0.66.108",
+      "confidence": 0.95,
+      "fingerprint": "649560f86b35"
+    },
+    {
+      "tool": "shodan",
+      "target": "nasa.gov",
+      "kind": "hostname",
+      "value": "nasa.gov",
+      "source": "https://internetdb.shodan.io/192.0.66.108",
+      "detail": "hostname seen on 192.0.66.108",
+      "confidence": 0.95,
+      "fingerprint": "f9ac978098b2"
+    },
+    {
+      "tool": "shodan",
+      "target": "nasa.gov",
+      "kind": "hostname",
+      "value": "www.nasa.gov",
+      "source": "https://internetdb.shodan.io/192.0.66.108",
+      "detail": "hostname seen on 192.0.66.108",
+      "confidence": 0.95,
+      "fingerprint": "859e90386ec1"
+    },
+    {
+      "tool": "shodan",
+      "target": "nasa.gov",
+      "kind": "cpe",
+      "value": "cpe:/a:f5:nginx",
+      "source": "https://internetdb.shodan.io/192.0.66.108",
+      "detail": "CPE software identifier on 192.0.66.108",
+      "confidence": 0.95,
+      "fingerprint": "683876ac2bc3"
+    }
+  ],
+  "trace": [
+    "plan: I will start with whois for registrar and domain info, then dns for network configuration, followed by shodan for open ports and vulnerabilities, github for potential code leaks, and finally wayback for historical snapshots and changes.",
+    "decide -> whois: Starting with whois to gather registrar and domain information as per the initial plan.",
+    "observe: whois: 10 findings (10 new), elapsed 1167 ms",
+    "decide -> dns: Next cheap tool to gather network configuration information.",
+    "observe: dns: 29 findings (29 new), elapsed 1386 ms",
+    "decide -> shodan: Next expensive tool to explore open ports and vulnerabilities after gathering registrar and network ",
+    "observe: shodan: 5 findings (5 new), elapsed 483 ms",
+    "decide -> github: To search for potential code leaks related to nasa.gov",
+    "observe: github: 0 findings (0 new), elapsed 3005 ms, error: all GitHub dorks errored \u2014 check rate limit",
+    "decide -> wayback: The only remaining tool to be called is wayback to gather historical snapshots and changes.",
+    "observe: wayback: 0 findings (0 new), elapsed 15314 ms, error: Wayback CDX request failed: ReadTimeout",
+    "decide -> stop: All five tools have been called at least once and there are findings."
+  ],
+  "final_report": "## Target\nThe target of this investigation is the domain nasa.gov.\n\n## Key facts\nThe domain nasa.gov was created on 1997-10-02 (WHOIS) and is set to expire on 2026-07-31 (WHOIS). The registrar is get.gov (WHOIS). The domain has multiple name servers, including a1-32.akam.net, a12-64.akam.net, a14-67.akam.net, a5-66.akam.net, a8-66.akam.net, and a9-64.akam.net (WHOIS and DNS NS).\n\n## Notable findings\nThe domain has a significant number of DNS TXT records, including verification records for Google, Amazon, Atlassian, and OpenAI (DNS TXT). The domain also has open ports 80 and 443, with a hostname of nasa.gov and www.nasa.gov (Shodan IDB). The web server is identified as nginx (Shodan IDB).\n\n## Open questions\nThe evidence provided is largely related to DNS and WHOIS records, with some information from Shodan. However, the investigation is limited by the lack of data from other tools, such as GitHub and Wayback. Further analysis of these tools may provide additional insights into the target domain. Additionally, the registrant organization is redacted for privacy (WHOIS), which may limit further investigation."
+}

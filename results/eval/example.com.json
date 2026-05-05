@@ -1,0 +1,309 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-05T07:37:11+00:00",
+  "operator_authority": "Public-interest research; targets are .gov, .edu, large NGOs, or RFC-reserved domains; passive sources only.",
+  "run": {
+    "target": "example.com",
+    "provider": "openrouter",
+    "model": "openai/gpt-oss-120b:free",
+    "budget": 8,
+    "iterations": 5,
+    "elapsed_s": 90.94
+  },
+  "summary": {
+    "coverage": 5,
+    "tools_called": [
+      "dns",
+      "github",
+      "shodan",
+      "wayback",
+      "whois"
+    ],
+    "evidence_count": 26,
+    "finish_reason": "covered_all_tools",
+    "elapsed_ms_per_tool": {
+      "whois": 1011,
+      "dns": 215,
+      "shodan": 925,
+      "github": 540,
+      "wayback": 15828
+    }
+  },
+  "evidence": [
+    {
+      "tool": "whois",
+      "target": "example.com",
+      "kind": "registrar",
+      "value": "RESERVED-Internet Assigned Numbers Authority",
+      "source": "WHOIS",
+      "detail": "domain registrar of record",
+      "confidence": 0.95,
+      "fingerprint": "8c8ae6d77af1"
+    },
+    {
+      "tool": "whois",
+      "target": "example.com",
+      "kind": "creation_date",
+      "value": "1995-08-14",
+      "source": "WHOIS",
+      "detail": "domain creation date",
+      "confidence": 0.95,
+      "fingerprint": "06eb5526cf21"
+    },
+    {
+      "tool": "whois",
+      "target": "example.com",
+      "kind": "expiration_date",
+      "value": "2026-08-13",
+      "source": "WHOIS",
+      "detail": "domain expiration date",
+      "confidence": 0.95,
+      "fingerprint": "cda67a14e5e9"
+    },
+    {
+      "tool": "whois",
+      "target": "example.com",
+      "kind": "name_server",
+      "value": "elliott.ns.cloudflare.com",
+      "source": "WHOIS",
+      "detail": "authoritative name server",
+      "confidence": 0.95,
+      "fingerprint": "bde7d93ec22e"
+    },
+    {
+      "tool": "whois",
+      "target": "example.com",
+      "kind": "name_server",
+      "value": "hera.ns.cloudflare.com",
+      "source": "WHOIS",
+      "detail": "authoritative name server",
+      "confidence": 0.95,
+      "fingerprint": "af49f54a6012"
+    },
+    {
+      "tool": "dns",
+      "target": "example.com",
+      "kind": "dns.a",
+      "value": "172.66.147.243",
+      "source": "DNS A",
+      "detail": "A record",
+      "confidence": 0.95,
+      "fingerprint": "c29a0b948962"
+    },
+    {
+      "tool": "dns",
+      "target": "example.com",
+      "kind": "dns.a",
+      "value": "104.20.23.154",
+      "source": "DNS A",
+      "detail": "A record",
+      "confidence": 0.95,
+      "fingerprint": "17f96fb456bb"
+    },
+    {
+      "tool": "dns",
+      "target": "example.com",
+      "kind": "dns.aaaa",
+      "value": "2606:4700:10::6814:179a",
+      "source": "DNS AAAA",
+      "detail": "AAAA record",
+      "confidence": 0.95,
+      "fingerprint": "3857b25f06ce"
+    },
+    {
+      "tool": "dns",
+      "target": "example.com",
+      "kind": "dns.aaaa",
+      "value": "2606:4700:10::ac42:93f3",
+      "source": "DNS AAAA",
+      "detail": "AAAA record",
+      "confidence": 0.95,
+      "fingerprint": "74ad50b14d07"
+    },
+    {
+      "tool": "dns",
+      "target": "example.com",
+      "kind": "dns.mx",
+      "value": "0 .",
+      "source": "DNS MX",
+      "detail": "MX record",
+      "confidence": 0.95,
+      "fingerprint": "79d8deb19bc9"
+    },
+    {
+      "tool": "dns",
+      "target": "example.com",
+      "kind": "dns.ns",
+      "value": "elliott.ns.cloudflare.com.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "6b7e8d079ffb"
+    },
+    {
+      "tool": "dns",
+      "target": "example.com",
+      "kind": "dns.ns",
+      "value": "hera.ns.cloudflare.com.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "fafb37dcbe49"
+    },
+    {
+      "tool": "dns",
+      "target": "example.com",
+      "kind": "dns.txt",
+      "value": "v=spf1 -all",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "c9025c669131"
+    },
+    {
+      "tool": "dns",
+      "target": "example.com",
+      "kind": "dns.txt",
+      "value": "_k2n1y4vw3qtb4skdx9e7dxt97qrmmq9",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "5c806fdbb9dd"
+    },
+    {
+      "tool": "shodan",
+      "target": "example.com",
+      "kind": "open_port",
+      "value": "80",
+      "source": "https://internetdb.shodan.io/172.66.147.243",
+      "detail": "open TCP port on 172.66.147.243",
+      "confidence": 0.95,
+      "fingerprint": "3eeccfe62b3c"
+    },
+    {
+      "tool": "shodan",
+      "target": "example.com",
+      "kind": "open_port",
+      "value": "443",
+      "source": "https://internetdb.shodan.io/172.66.147.243",
+      "detail": "open TCP port on 172.66.147.243",
+      "confidence": 0.95,
+      "fingerprint": "649560f86b35"
+    },
+    {
+      "tool": "shodan",
+      "target": "example.com",
+      "kind": "open_port",
+      "value": "2052",
+      "source": "https://internetdb.shodan.io/172.66.147.243",
+      "detail": "open TCP port on 172.66.147.243",
+      "confidence": 0.95,
+      "fingerprint": "03acbd8eb805"
+    },
+    {
+      "tool": "shodan",
+      "target": "example.com",
+      "kind": "open_port",
+      "value": "2053",
+      "source": "https://internetdb.shodan.io/172.66.147.243",
+      "detail": "open TCP port on 172.66.147.243",
+      "confidence": 0.95,
+      "fingerprint": "f7fa9cc33386"
+    },
+    {
+      "tool": "shodan",
+      "target": "example.com",
+      "kind": "open_port",
+      "value": "2082",
+      "source": "https://internetdb.shodan.io/172.66.147.243",
+      "detail": "open TCP port on 172.66.147.243",
+      "confidence": 0.95,
+      "fingerprint": "3343cfc7e914"
+    },
+    {
+      "tool": "shodan",
+      "target": "example.com",
+      "kind": "open_port",
+      "value": "2083",
+      "source": "https://internetdb.shodan.io/172.66.147.243",
+      "detail": "open TCP port on 172.66.147.243",
+      "confidence": 0.95,
+      "fingerprint": "26f701723944"
+    },
+    {
+      "tool": "shodan",
+      "target": "example.com",
+      "kind": "open_port",
+      "value": "2086",
+      "source": "https://internetdb.shodan.io/172.66.147.243",
+      "detail": "open TCP port on 172.66.147.243",
+      "confidence": 0.95,
+      "fingerprint": "0afaf3abd453"
+    },
+    {
+      "tool": "shodan",
+      "target": "example.com",
+      "kind": "open_port",
+      "value": "2087",
+      "source": "https://internetdb.shodan.io/172.66.147.243",
+      "detail": "open TCP port on 172.66.147.243",
+      "confidence": 0.95,
+      "fingerprint": "5392ee190903"
+    },
+    {
+      "tool": "shodan",
+      "target": "example.com",
+      "kind": "open_port",
+      "value": "8080",
+      "source": "https://internetdb.shodan.io/172.66.147.243",
+      "detail": "open TCP port on 172.66.147.243",
+      "confidence": 0.95,
+      "fingerprint": "67970eee42f8"
+    },
+    {
+      "tool": "shodan",
+      "target": "example.com",
+      "kind": "open_port",
+      "value": "8443",
+      "source": "https://internetdb.shodan.io/172.66.147.243",
+      "detail": "open TCP port on 172.66.147.243",
+      "confidence": 0.95,
+      "fingerprint": "dbaccb7aa614"
+    },
+    {
+      "tool": "shodan",
+      "target": "example.com",
+      "kind": "open_port",
+      "value": "8880",
+      "source": "https://internetdb.shodan.io/172.66.147.243",
+      "detail": "open TCP port on 172.66.147.243",
+      "confidence": 0.95,
+      "fingerprint": "b5b43503e437"
+    },
+    {
+      "tool": "shodan",
+      "target": "example.com",
+      "kind": "cpe",
+      "value": "cpe:/a:cloudflare:cloudflare",
+      "source": "https://internetdb.shodan.io/172.66.147.243",
+      "detail": "CPE software identifier on 172.66.147.243",
+      "confidence": 0.95,
+      "fingerprint": "efc26f56249f"
+    }
+  ],
+  "trace": [
+    "plan: First run\u202fwhois\u202fto capture registrar details, creation/expiry dates and name\u2011servers, establishing ownership and timeline. Next query\u202fdns\u202fto list A/AAAA, MX, NS, TXT and CNAME records, revealing current infrastructure, mail routing and possible subdomains. Then use\u202fshodan\u202fto pull InternetDB data for those IPs, exposing open ports, services, hostnames and known vulnerabilities. After that search\u202fgithub\u202ffor \u201cexample.com\u201d in code, commits and config files to find accidental disclosures. Finally check\u202fwayback\u202fto view historical snapshots of the site, tracking changes in content, subdomains and technology over time.",
+    "decide -> whois: Start with cheap whois to get registrar and domain registration details",
+    "observe: whois: 5 findings (5 new), elapsed 1011 ms",
+    "decide -> dns: Gather DNS records to map the domain's infrastructure and subdomains",
+    "observe: dns: 9 findings (9 new), elapsed 215 ms",
+    "decide -> shodan: Query Shodan for the discovered IPs to uncover open ports, services, and potential vulnerabilities",
+    "observe: shodan: 12 findings (12 new), elapsed 925 ms",
+    "decide -> github: Next tool in plan is GitHub to search for code disclosures related to example.com",
+    "observe: github: 0 findings (0 new), elapsed 540 ms, error: all GitHub dorks errored \u2014 check rate limit",
+    "decide -> wayback: Cover the remaining tool to gather historical site snapshots",
+    "observe: wayback: 0 findings (0 new), elapsed 15828 ms, error: Wayback CDX request failed: ReadTimeout",
+    "decide -> stop: All tools have been used and evidence gathered"
+  ],
+  "final_report": "## Target\n**example.com** \u2013 domain registered with IANA (reserved) and hosted on Cloudflare nameservers.\n\n## Key facts\n- Registrar: RESERVED\u2011Internet Assigned Numbers Authority (WHOIS)  \n- Creation date: 14\u202fAug\u202f1995; expiration: 13\u202fAug\u202f2026 (WHOIS)  \n- Authoritative name servers: `elliott.ns.cloudflare.com` and `hera.ns.cloudflare.com` (WHOIS, DNS NS)  \n- DNS A records: `172.66.147.243`, `104.20.23.154` (DNS A)  \n- DNS AAAA records: `2606:4700:10::6814:179a`, `2606:4700:10::ac42:93f3` (DNS AAAA)  \n- No MX records configured (`0 .`) (DNS MX)  \n- TXT records: `v=spf1 -all` and a random string `_k2n1y4vw3qtb4skdx9e7dxt97qrmmq9` (DNS TXT)  \n\n## Notable findings\n- The IP `172.66.147.243` (one of the A records) shows many open ports on Shodan: 80, 443, 2052, 2053, 2082, 2083, 2086, 2087, 8080, 8443, 8880 (Shodan).  \n- Shodan identifies the host as running Cloudflare software (`cpe:/a:cloudflare:cloudflare`) (Shodan).  \n- Presence of non\u2011standard ports (e.g., 2052\u20112087, 8080, 8443, 8880) may indicate additional services or proxy panels behind Cloudflare, but no further detail is available in the evidence.\n\n## Open questions\n- What services are bound to the non\u2011standard open ports (2052\u20112087, 8080, 8443, 8880)?  \n- Is the second A record (`104.20.23.154`) similarly exposed, and does it host the same set of ports?  \n- What is the purpose of the opaque TXT string (`_k2n1y4vw3qtb4skdx9e7dxt97qrmmq9`)?  \n- Are there any hidden subdomains or content archived in Wayback or GitHub that were not captured in the provided data?"
+}

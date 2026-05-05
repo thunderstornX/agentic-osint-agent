@@ -1,0 +1,499 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-05T06:58:53+00:00",
+  "operator_authority": "Public-interest research; targets are .gov, .edu, large NGOs, or RFC-reserved domains; passive sources only.",
+  "run": {
+    "target": "nist.gov",
+    "provider": "nvidia",
+    "model": "meta/llama-3.3-70b-instruct",
+    "budget": 8,
+    "iterations": 5,
+    "elapsed_s": 51.76
+  },
+  "summary": {
+    "coverage": 5,
+    "tools_called": [
+      "dns",
+      "github",
+      "shodan",
+      "wayback",
+      "whois"
+    ],
+    "evidence_count": 45,
+    "finish_reason": "covered_all_tools",
+    "elapsed_ms_per_tool": {
+      "whois": 1248,
+      "dns": 229,
+      "shodan": 548,
+      "github": 3061,
+      "wayback": 15337
+    }
+  },
+  "evidence": [
+    {
+      "tool": "whois",
+      "target": "nist.gov",
+      "kind": "registrar",
+      "value": "get.gov",
+      "source": "WHOIS",
+      "detail": "domain registrar of record",
+      "confidence": 0.95,
+      "fingerprint": "cf44253923cb"
+    },
+    {
+      "tool": "whois",
+      "target": "nist.gov",
+      "kind": "creation_date",
+      "value": "1997-10-02",
+      "source": "WHOIS",
+      "detail": "domain creation date",
+      "confidence": 0.95,
+      "fingerprint": "9fcb8c9c8fec"
+    },
+    {
+      "tool": "whois",
+      "target": "nist.gov",
+      "kind": "expiration_date",
+      "value": "2026-08-24",
+      "source": "WHOIS",
+      "detail": "domain expiration date",
+      "confidence": 0.95,
+      "fingerprint": "aba925262a67"
+    },
+    {
+      "tool": "whois",
+      "target": "nist.gov",
+      "kind": "name_server",
+      "value": "gold.foundationdns.com",
+      "source": "WHOIS",
+      "detail": "authoritative name server",
+      "confidence": 0.95,
+      "fingerprint": "28dd4f01edd1"
+    },
+    {
+      "tool": "whois",
+      "target": "nist.gov",
+      "kind": "name_server",
+      "value": "gold.foundationdns.net",
+      "source": "WHOIS",
+      "detail": "authoritative name server",
+      "confidence": 0.95,
+      "fingerprint": "20f2b8fd8add"
+    },
+    {
+      "tool": "whois",
+      "target": "nist.gov",
+      "kind": "name_server",
+      "value": "gold.foundationdns.org",
+      "source": "WHOIS",
+      "detail": "authoritative name server",
+      "confidence": 0.95,
+      "fingerprint": "e13e33993d09"
+    },
+    {
+      "tool": "whois",
+      "target": "nist.gov",
+      "kind": "registrant_org",
+      "value": "REDACTED FOR PRIVACY",
+      "source": "WHOIS",
+      "detail": "public registrant organisation",
+      "confidence": 0.95,
+      "fingerprint": "108ac8b39954"
+    },
+    {
+      "tool": "dns",
+      "target": "nist.gov",
+      "kind": "dns.a",
+      "value": "172.65.90.25",
+      "source": "DNS A",
+      "detail": "A record",
+      "confidence": 0.95,
+      "fingerprint": "49729ef530fa"
+    },
+    {
+      "tool": "dns",
+      "target": "nist.gov",
+      "kind": "dns.a",
+      "value": "172.65.90.27",
+      "source": "DNS A",
+      "detail": "A record",
+      "confidence": 0.95,
+      "fingerprint": "7c8cdefaadcb"
+    },
+    {
+      "tool": "dns",
+      "target": "nist.gov",
+      "kind": "dns.a",
+      "value": "172.65.90.24",
+      "source": "DNS A",
+      "detail": "A record",
+      "confidence": 0.95,
+      "fingerprint": "011ffb5c461d"
+    },
+    {
+      "tool": "dns",
+      "target": "nist.gov",
+      "kind": "dns.a",
+      "value": "172.65.90.26",
+      "source": "DNS A",
+      "detail": "A record",
+      "confidence": 0.95,
+      "fingerprint": "278ebca7b55a"
+    },
+    {
+      "tool": "dns",
+      "target": "nist.gov",
+      "kind": "dns.aaaa",
+      "value": "2606:4700:78::90:0:182",
+      "source": "DNS AAAA",
+      "detail": "AAAA record",
+      "confidence": 0.95,
+      "fingerprint": "8b3b21418baa"
+    },
+    {
+      "tool": "dns",
+      "target": "nist.gov",
+      "kind": "dns.aaaa",
+      "value": "2606:4700:78::90:0:180",
+      "source": "DNS AAAA",
+      "detail": "AAAA record",
+      "confidence": 0.95,
+      "fingerprint": "6a2674c52ad3"
+    },
+    {
+      "tool": "dns",
+      "target": "nist.gov",
+      "kind": "dns.aaaa",
+      "value": "2606:4700:78::90:0:181",
+      "source": "DNS AAAA",
+      "detail": "AAAA record",
+      "confidence": 0.95,
+      "fingerprint": "1c31b9d08a95"
+    },
+    {
+      "tool": "dns",
+      "target": "nist.gov",
+      "kind": "dns.aaaa",
+      "value": "2606:4700:78::90:0:183",
+      "source": "DNS AAAA",
+      "detail": "AAAA record",
+      "confidence": 0.95,
+      "fingerprint": "06b137b9eed1"
+    },
+    {
+      "tool": "dns",
+      "target": "nist.gov",
+      "kind": "dns.mx",
+      "value": "0 nist-gov.mail.protection.outlook.com.",
+      "source": "DNS MX",
+      "detail": "MX record",
+      "confidence": 0.95,
+      "fingerprint": "2047ec50e7b0"
+    },
+    {
+      "tool": "dns",
+      "target": "nist.gov",
+      "kind": "dns.ns",
+      "value": "gold.foundationdns.com.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "a4092c594348"
+    },
+    {
+      "tool": "dns",
+      "target": "nist.gov",
+      "kind": "dns.ns",
+      "value": "gold.foundationdns.net.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "ed12d4d9fcb1"
+    },
+    {
+      "tool": "dns",
+      "target": "nist.gov",
+      "kind": "dns.ns",
+      "value": "gold.foundationdns.org.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "d3c308d01095"
+    },
+    {
+      "tool": "dns",
+      "target": "nist.gov",
+      "kind": "dns.txt",
+      "value": "perplexity-ai-domain-verification-nhwpq4=pka4WCw0WTTo6a1V8GzEWeGyv",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "77a3e416603a"
+    },
+    {
+      "tool": "dns",
+      "target": "nist.gov",
+      "kind": "dns.txt",
+      "value": "openai-domain-verification=dv-c6PoDbyJ7cgfcpT2sCl4IrBD",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "b24ffcb6d114"
+    },
+    {
+      "tool": "dns",
+      "target": "nist.gov",
+      "kind": "dns.txt",
+      "value": "_hie8b7uqvafayfkdb47ag5t5up1nxbb",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "a8ead9e8e30a"
+    },
+    {
+      "tool": "dns",
+      "target": "nist.gov",
+      "kind": "dns.txt",
+      "value": "MS=ms22398849",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "122bb502aebc"
+    },
+    {
+      "tool": "dns",
+      "target": "nist.gov",
+      "kind": "dns.txt",
+      "value": "atlassian-domain-verification=xVa84aCbqa1pJZZdpB0gGm0ZNukDUU4TBzccNbFkyozIg3QXHaufaQaczvEDG3Jp",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "84eebc7e378a"
+    },
+    {
+      "tool": "dns",
+      "target": "nist.gov",
+      "kind": "dns.txt",
+      "value": "jamf-site-verification=Sr15KQEdTRZZXqaxbFaFQw",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "1a6a3299bd3c"
+    },
+    {
+      "tool": "dns",
+      "target": "nist.gov",
+      "kind": "dns.txt",
+      "value": "box-domain-verification=4d49553685eee3edbcf58b736eb4c42febff4e1741da8db3098f2bb3d161d90f",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "71fcd8945a99"
+    },
+    {
+      "tool": "dns",
+      "target": "nist.gov",
+      "kind": "dns.txt",
+      "value": "v=spf1 include:_spf1.nist.gov include:_spf2.nist.gov -all",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "5ab61b6b32bf"
+    },
+    {
+      "tool": "dns",
+      "target": "nist.gov",
+      "kind": "dns.txt",
+      "value": "google-site-verification=oJSFVUoM3RN44bzuiI9F3qWzWxTqmrawzMycAD_NUcY",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "4294e8ee9c6f"
+    },
+    {
+      "tool": "dns",
+      "target": "nist.gov",
+      "kind": "dns.txt",
+      "value": "cisco-ci-domain-verification=1b1e68d4cf0e84478115596723f00e17a848c659bb11f53b58f8f2cd84b7e111",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "365418d0f022"
+    },
+    {
+      "tool": "shodan",
+      "target": "nist.gov",
+      "kind": "open_port",
+      "value": "80",
+      "source": "https://internetdb.shodan.io/172.65.90.24",
+      "detail": "open TCP port on 172.65.90.24",
+      "confidence": 0.95,
+      "fingerprint": "3eeccfe62b3c"
+    },
+    {
+      "tool": "shodan",
+      "target": "nist.gov",
+      "kind": "open_port",
+      "value": "443",
+      "source": "https://internetdb.shodan.io/172.65.90.24",
+      "detail": "open TCP port on 172.65.90.24",
+      "confidence": 0.95,
+      "fingerprint": "649560f86b35"
+    },
+    {
+      "tool": "shodan",
+      "target": "nist.gov",
+      "kind": "open_port",
+      "value": "2052",
+      "source": "https://internetdb.shodan.io/172.65.90.24",
+      "detail": "open TCP port on 172.65.90.24",
+      "confidence": 0.95,
+      "fingerprint": "03acbd8eb805"
+    },
+    {
+      "tool": "shodan",
+      "target": "nist.gov",
+      "kind": "open_port",
+      "value": "2053",
+      "source": "https://internetdb.shodan.io/172.65.90.24",
+      "detail": "open TCP port on 172.65.90.24",
+      "confidence": 0.95,
+      "fingerprint": "f7fa9cc33386"
+    },
+    {
+      "tool": "shodan",
+      "target": "nist.gov",
+      "kind": "open_port",
+      "value": "2082",
+      "source": "https://internetdb.shodan.io/172.65.90.24",
+      "detail": "open TCP port on 172.65.90.24",
+      "confidence": 0.95,
+      "fingerprint": "3343cfc7e914"
+    },
+    {
+      "tool": "shodan",
+      "target": "nist.gov",
+      "kind": "open_port",
+      "value": "2083",
+      "source": "https://internetdb.shodan.io/172.65.90.24",
+      "detail": "open TCP port on 172.65.90.24",
+      "confidence": 0.95,
+      "fingerprint": "26f701723944"
+    },
+    {
+      "tool": "shodan",
+      "target": "nist.gov",
+      "kind": "open_port",
+      "value": "2086",
+      "source": "https://internetdb.shodan.io/172.65.90.24",
+      "detail": "open TCP port on 172.65.90.24",
+      "confidence": 0.95,
+      "fingerprint": "0afaf3abd453"
+    },
+    {
+      "tool": "shodan",
+      "target": "nist.gov",
+      "kind": "open_port",
+      "value": "2087",
+      "source": "https://internetdb.shodan.io/172.65.90.24",
+      "detail": "open TCP port on 172.65.90.24",
+      "confidence": 0.95,
+      "fingerprint": "5392ee190903"
+    },
+    {
+      "tool": "shodan",
+      "target": "nist.gov",
+      "kind": "open_port",
+      "value": "2095",
+      "source": "https://internetdb.shodan.io/172.65.90.24",
+      "detail": "open TCP port on 172.65.90.24",
+      "confidence": 0.95,
+      "fingerprint": "f038fe76bafe"
+    },
+    {
+      "tool": "shodan",
+      "target": "nist.gov",
+      "kind": "open_port",
+      "value": "2096",
+      "source": "https://internetdb.shodan.io/172.65.90.24",
+      "detail": "open TCP port on 172.65.90.24",
+      "confidence": 0.95,
+      "fingerprint": "0c248af3be7b"
+    },
+    {
+      "tool": "shodan",
+      "target": "nist.gov",
+      "kind": "open_port",
+      "value": "8080",
+      "source": "https://internetdb.shodan.io/172.65.90.24",
+      "detail": "open TCP port on 172.65.90.24",
+      "confidence": 0.95,
+      "fingerprint": "67970eee42f8"
+    },
+    {
+      "tool": "shodan",
+      "target": "nist.gov",
+      "kind": "open_port",
+      "value": "8443",
+      "source": "https://internetdb.shodan.io/172.65.90.24",
+      "detail": "open TCP port on 172.65.90.24",
+      "confidence": 0.95,
+      "fingerprint": "dbaccb7aa614"
+    },
+    {
+      "tool": "shodan",
+      "target": "nist.gov",
+      "kind": "open_port",
+      "value": "8880",
+      "source": "https://internetdb.shodan.io/172.65.90.24",
+      "detail": "open TCP port on 172.65.90.24",
+      "confidence": 0.95,
+      "fingerprint": "b5b43503e437"
+    },
+    {
+      "tool": "shodan",
+      "target": "nist.gov",
+      "kind": "hostname",
+      "value": "usdoj.gov",
+      "source": "https://internetdb.shodan.io/172.65.90.24",
+      "detail": "hostname seen on 172.65.90.24",
+      "confidence": 0.95,
+      "fingerprint": "03450aa6b08d"
+    },
+    {
+      "tool": "shodan",
+      "target": "nist.gov",
+      "kind": "cpe",
+      "value": "cpe:/a:cloudflare:cloudflare",
+      "source": "https://internetdb.shodan.io/172.65.90.24",
+      "detail": "CPE software identifier on 172.65.90.24",
+      "confidence": 0.95,
+      "fingerprint": "efc26f56249f"
+    },
+    {
+      "tool": "shodan",
+      "target": "nist.gov",
+      "kind": "cpe",
+      "value": "cpe:/a:microsoft:asp.net",
+      "source": "https://internetdb.shodan.io/172.65.90.24",
+      "detail": "CPE software identifier on 172.65.90.24",
+      "confidence": 0.95,
+      "fingerprint": "09b4bdc96866"
+    }
+  ],
+  "trace": [
+    "plan: I will start with whois to gather registrar and domain information, then dns for network configuration, followed by shodan to identify open ports and vulnerabilities, then github to search for accidental code commits, and finally wayback to analyze historical changes.",
+    "decide -> whois: Starting with whois to gather registrar and domain information as it is a cheap and informative init",
+    "observe: whois: 7 findings (7 new), elapsed 1248 ms",
+    "decide -> dns: Next cheap tool to gather network configuration information after whois.",
+    "observe: dns: 22 findings (22 new), elapsed 229 ms",
+    "decide -> shodan: Next expensive tool to identify open ports and vulnerabilities after gathering registrar and network",
+    "observe: shodan: 16 findings (16 new), elapsed 548 ms",
+    "decide -> github: The next logical step is to search for accidental code commits on github after gathering network and",
+    "observe: github: 0 findings (0 new), elapsed 3061 ms, error: all GitHub dorks errored \u2014 check rate limit",
+    "decide -> wayback: The only remaining tool to call is wayback to analyze historical changes.",
+    "observe: wayback: 0 findings (0 new), elapsed 15337 ms, error: Wayback CDX request failed: ReadTimeout",
+    "decide -> stop: All five tools have been called at least once and there are findings."
+  ],
+  "final_report": "## Target\nThe target of this investigation is the domain nist.gov.\n\n## Key facts\nThe domain nist.gov was created on 1997-10-02 and is set to expire on 2026-08-24 (WHOIS). The registrar is get.gov (WHOIS). The domain has multiple name servers, including gold.foundationdns.com, gold.foundationdns.net, and gold.foundationdns.org (WHOIS, DNS NS).\n\n## Notable findings\nThe domain has multiple IP addresses associated with it, including 172.65.90.25, 172.65.90.27, 172.65.90.24, and 172.65.90.26 (DNS A). The domain also has several open ports, including 80, 443, 2052, 2053, 2082, 2083, 2086, 2087, 2095, 2096, 8080, 8443, and 8880 (Shodan IDB). The domain is hosted behind Cloudflare (Shodan IDB).\n\n## Open questions\nThe evidence provided does not reveal much about the content or purpose of the domain nist.gov, beyond its technical configuration. Further investigation would be needed to determine the domain's actual use and any potential security risks. Additionally, the presence of a hostname \"usdoj.gov\" in the Shodan data (Shodan IDB) is unclear and may warrant further investigation."
+}

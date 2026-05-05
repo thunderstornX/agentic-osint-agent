@@ -1,0 +1,839 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-05T07:01:57+00:00",
+  "operator_authority": "Public-interest research; targets are .gov, .edu, large NGOs, or RFC-reserved domains; passive sources only.",
+  "run": {
+    "target": "noaa.gov",
+    "provider": "nvidia",
+    "model": "meta/llama-3.3-70b-instruct",
+    "budget": 8,
+    "iterations": 5,
+    "elapsed_s": 93.31
+  },
+  "summary": {
+    "coverage": 5,
+    "tools_called": [
+      "dns",
+      "github",
+      "shodan",
+      "wayback",
+      "whois"
+    ],
+    "evidence_count": 79,
+    "finish_reason": "covered_all_tools",
+    "elapsed_ms_per_tool": {
+      "whois": 1538,
+      "dns": 5769,
+      "shodan": 1771,
+      "github": 3468,
+      "wayback": 15704
+    }
+  },
+  "evidence": [
+    {
+      "tool": "whois",
+      "target": "noaa.gov",
+      "kind": "registrar",
+      "value": "get.gov",
+      "source": "WHOIS",
+      "detail": "domain registrar of record",
+      "confidence": 0.95,
+      "fingerprint": "cf44253923cb"
+    },
+    {
+      "tool": "whois",
+      "target": "noaa.gov",
+      "kind": "creation_date",
+      "value": "1997-10-02",
+      "source": "WHOIS",
+      "detail": "domain creation date",
+      "confidence": 0.95,
+      "fingerprint": "9fcb8c9c8fec"
+    },
+    {
+      "tool": "whois",
+      "target": "noaa.gov",
+      "kind": "expiration_date",
+      "value": "2026-08-04",
+      "source": "WHOIS",
+      "detail": "domain expiration date",
+      "confidence": 0.95,
+      "fingerprint": "532f19fd7766"
+    },
+    {
+      "tool": "whois",
+      "target": "noaa.gov",
+      "kind": "name_server",
+      "value": "ns-01.noaa.gov",
+      "source": "WHOIS",
+      "detail": "authoritative name server",
+      "confidence": 0.95,
+      "fingerprint": "8a7e934591ee"
+    },
+    {
+      "tool": "whois",
+      "target": "noaa.gov",
+      "kind": "name_server",
+      "value": "ns-02.noaa.gov",
+      "source": "WHOIS",
+      "detail": "authoritative name server",
+      "confidence": 0.95,
+      "fingerprint": "a257febf88a0"
+    },
+    {
+      "tool": "whois",
+      "target": "noaa.gov",
+      "kind": "name_server",
+      "value": "ns-03.noaa.gov",
+      "source": "WHOIS",
+      "detail": "authoritative name server",
+      "confidence": 0.95,
+      "fingerprint": "238a596ddca3"
+    },
+    {
+      "tool": "whois",
+      "target": "noaa.gov",
+      "kind": "registrant_org",
+      "value": "REDACTED FOR PRIVACY",
+      "source": "WHOIS",
+      "detail": "public registrant organisation",
+      "confidence": 0.95,
+      "fingerprint": "108ac8b39954"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.a",
+      "value": "137.75.88.52",
+      "source": "DNS A",
+      "detail": "A record",
+      "confidence": 0.95,
+      "fingerprint": "22714435f881"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.a",
+      "value": "137.75.88.7",
+      "source": "DNS A",
+      "detail": "A record",
+      "confidence": 0.95,
+      "fingerprint": "c4b6349c4cb1"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.aaaa",
+      "value": "2610:20:8000:8c04::24",
+      "source": "DNS AAAA",
+      "detail": "AAAA record",
+      "confidence": 0.95,
+      "fingerprint": "b833220bd4e9"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.aaaa",
+      "value": "2610:20:8800:8c00::24",
+      "source": "DNS AAAA",
+      "detail": "AAAA record",
+      "confidence": 0.95,
+      "fingerprint": "f51e75d619a2"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.mx",
+      "value": "20 ALT1.ASPMX.L.GOOGLE.COM.",
+      "source": "DNS MX",
+      "detail": "MX record",
+      "confidence": 0.95,
+      "fingerprint": "7baf3471262e"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.mx",
+      "value": "40 ALT4.ASPMX.L.GOOGLE.COM.",
+      "source": "DNS MX",
+      "detail": "MX record",
+      "confidence": 0.95,
+      "fingerprint": "e054afb91c34"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.mx",
+      "value": "20 ALT2.ASPMX.L.GOOGLE.COM.",
+      "source": "DNS MX",
+      "detail": "MX record",
+      "confidence": 0.95,
+      "fingerprint": "25283d5e9b7b"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.mx",
+      "value": "10 ASPMX.L.GOOGLE.COM.",
+      "source": "DNS MX",
+      "detail": "MX record",
+      "confidence": 0.95,
+      "fingerprint": "d7a7b5022953"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.mx",
+      "value": "40 ALT3.ASPMX.L.GOOGLE.COM.",
+      "source": "DNS MX",
+      "detail": "MX record",
+      "confidence": 0.95,
+      "fingerprint": "98630cef35c6"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.ns",
+      "value": "ns-02.noaa.gov.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "9a5e49654082"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.ns",
+      "value": "ns-03.noaa.gov.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "2612f20e88e8"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.ns",
+      "value": "ns-01.noaa.gov.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "36730a80ff1c"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "_globalsign-domain-verification=EkeEUzVEdHxpmz9oj4HdaKJOyr0yFaZuGM5T24zHgH",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "83bb41018271"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "bpt25c606kitfrsm1js9pa39uj",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "964a578f4eb7"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "icsspgfokcnpncvdbehbe5t5u4",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "911fc73f45b5"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "_yy3kidedxo7p355zl2ny2vkapuht0tk",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "4a74f4061b4d"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "jkrb63gop4200qdglch6mrrigt",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "d69c7a97b8fd"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "_globalsign-domain-verification=7HYSBVYWu06Bq9Lu_Mo-l0V9WrUUG4qDXf-Wre4Me0",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "31805de94d76"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "uu8rvttgkkhsqri0tmb48nnn2o",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "3024de2d5b62"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "_globalsign-domain-verification=grXkTmHxW4veQqxaTb7gMVZERHg5vqUyvziZ2d7miz",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "5916be952d45"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "jamf-site-verification=LvhI-0-55SIPODOAlXQ1Rg",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "06ad8dbac836"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "_globalsign-domain-verification=4sb-6QzBp3tzsMDDDZCZ5eRfzreasjMtAGtTC40ACz",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "bc95d4e211f8"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "agh09vo5p4okivaus2eemo0560",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "a3acf41c031b"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "nqdspdl5ae38vu0qvnb1kck31j",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "d1332472f5d3"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "google-site-verification=y6d10AgFowiDbrRahi1VTEEQ6SWq2lUGO1RaahraEaE",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "629d3ee641f2"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "kjdt969ct1rpt5qe2ui7qplqi4",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "2fe9eb4e8d43"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "v=spf1 ip4:107.20.210.250/32 ip4:52.1.14.157/32 ip4:140.172.0.0/16 ip4:140.208.0.0/16 ip4:140.90.0.0/16\" \" ip4:199.255.192.0/22 ip4:199.127.232.0/22 ip4:54.240.0.0/18 ip4:69.169.224.0/20 ip4:23.249.208.0/20 ip4:23.251.224.0/19 ip4:76.223.176.0/20 ip4:54.240.64.0/19 ip4:54.240.96.0/19 ip4:52.82.172.0/22 ip4:76.223.128.0/19\" \" include:_spf.google.com include:spf0.noaa.gov include:spf1.noaa.gov include:spf2.noaa.gov include:spf3.noaa.gov include:spf4.noaa.gov -all",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "b8cf6909b6f7"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "uf8vmf9cdji72j99k0p08s4rmn",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "0b422e1e5c2d"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "h9ihjiq6si8jvuev03aarnblik",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "f19772ee09ba"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "qr85gtkyffp8qw72sys0qt0nps1mvq5r",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "35f0aee87b40"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "atlassian-domain-verification=egzuQjgGNamI0CukY/xaGisJ5BNdWzbEwkTjZZfR2oWeQSx35LHRsBKgf5FsfdCB",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "14e1274b1e29"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "_k4s0fh6nekbudtjfqdi51giat4ukgoi",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "5eba5986fc34"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "_globalsign-domain-verification=URGXBZ8iJ52XgEn8h1s3Tmfu_8g0NEAJjBNT13BhCd",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "2949db3856c4"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "google-site-verification=aNcHfDRvqETa0O8Ov1cnUi_xRyv790pE05gLz07bb80",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "d9f93dc4b46a"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "cr487ajncv2bt7ukias1t7jrtf",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "715997ef073f"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "_globalsign-domain-verification=q4T0TQVY1vDqerKP-47vqn33rBovmcwgHssPTAAGk4",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "d6c8ab99c851"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "h9rvsjncbb4p6nskq754m4d030",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "ba4e4be0b05a"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "_globalsign-domain-verification=PvWVjlIh1OdSikC9i4pe4YgmP4lSosV-b_H9X5PJft",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "d9fac985bcd3"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "docusign=b602f0ac-0fcc-4a56-818c-4727282d3d35",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "51c0e86e7aec"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "miro-verification=d9effd8556fa2f065fb842704007c815c3c08a90",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "ee20aaaf791d"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "_globalsign-domain-verification=fMxP4j63Z_8XN8wHTyiaoAo6oBpi0ovoHs9sr6u7CR",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "d664c1e6c8ad"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "ntad38mik3v7j7pbnnbul7umli",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "52133dc0db82"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "38jln0l23i1dosei72g2118kh8",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "944393c40cca"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "65u3ikfk9aal59qqat7d4burjg",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "9109227810c8"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "_globalsign-domain-verification=L0E33WT0_ulkIQXjbcmLHym6F75aTxrFrzqbGHf86b",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "c601cfb1d528"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "rma10m3ktr6tmsnkl6qk1lq11b",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "b5ff0d413408"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "_globalsign-domain-verification=11adxk0btv8mi7GiRacRaI9Mh5yFTm0zaO661LK_-O",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "5f8fa4e60aad"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "MS=ms58948194",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "804e578a1010"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "rlsjj64ar28180t7d3gf1bge48",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "2ab0332a22ae"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "cisco-ci-domain-verification=5703259edf46bd1e97b0538de8c1afccadaf4d7acbb13e9f38abd59736568222",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "d908f8c6e41d"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "jamf-site-verification=_0HKHuolH1_RySV8D2SENw",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "ca7ee4e33d6b"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "_ndhwuukby2mizc29ku7wkozm5fol6b7",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "b22a26f99da1"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "6kmuuh8h1cnnvmo0jiha6c4put",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "fd1e1b0f893f"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "ebo09fqhu8jrjbrr2q0kp0ue38",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "3df6347fde82"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "_globalsign-domain-verification=x2RJuVuASCb8RpT2OsJPBK8gEu_dHMozQWFjGkKdx4",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "a605d6225c4d"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "xj7g6kddr0mcv45f8gy45cc71jznbx88",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "c02c6dc287ce"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "hiu69kfi6er21jh9jnm1dqslmr",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "5d90c96eed61"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "lovgmj95efm53f8dm8l33tqtkd",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "73e7982c0de8"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "8a1fs3lb5ofdh0rg4rkt4or47d",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "f01a4c0d5439"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "5t72mlvrc58omhkioejvknkdv4",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "8b3f40dade4e"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "docker-verification=887e9be6-39b9-49cb-a81d-d757f89aa5f0",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "c8ec7a7a43c8"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "jamf-site-verification=V0LR-TQGDFhUEeOryr_P4Q",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "e3a625802529"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "bq7nfpaf0ul91dk2h0aqtvs0fk",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "a71b02f76c72"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "_globalsign-domain-verification=g7lP4Z2-b7gIQ8kJv8Ro5tMV2SLcE5eboZNK6Fr0GI",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "77f105d7d252"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "_globalsign-domain-verification=z9PJsp5h6m6P025rbGgyCa378u2dv7A1c-0Lqq1bDT",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "09bf953ac102"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "5fikk85qth4glfn7gjlfhps5lg",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "a1d1943e6d59"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "4p64i97hkh56l3019mr2jt59m5",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "1c474a509467"
+    },
+    {
+      "tool": "dns",
+      "target": "noaa.gov",
+      "kind": "dns.txt",
+      "value": "apple-domain-verification=mkXNyD9G0JeTNzhD",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "4f6ab88355e0"
+    },
+    {
+      "tool": "shodan",
+      "target": "noaa.gov",
+      "kind": "open_port",
+      "value": "80",
+      "source": "https://internetdb.shodan.io/137.75.88.7",
+      "detail": "open TCP port on 137.75.88.7",
+      "confidence": 0.95,
+      "fingerprint": "3eeccfe62b3c"
+    },
+    {
+      "tool": "shodan",
+      "target": "noaa.gov",
+      "kind": "open_port",
+      "value": "443",
+      "source": "https://internetdb.shodan.io/137.75.88.7",
+      "detail": "open TCP port on 137.75.88.7",
+      "confidence": 0.95,
+      "fingerprint": "649560f86b35"
+    },
+    {
+      "tool": "shodan",
+      "target": "noaa.gov",
+      "kind": "hostname",
+      "value": "noaa.gov",
+      "source": "https://internetdb.shodan.io/137.75.88.7",
+      "detail": "hostname seen on 137.75.88.7",
+      "confidence": 0.95,
+      "fingerprint": "432fd9c850d4"
+    },
+    {
+      "tool": "shodan",
+      "target": "noaa.gov",
+      "kind": "cpe",
+      "value": "cpe:/a:apache:http_server",
+      "source": "https://internetdb.shodan.io/137.75.88.7",
+      "detail": "CPE software identifier on 137.75.88.7",
+      "confidence": 0.95,
+      "fingerprint": "e3ac2a45dfbd"
+    }
+  ],
+  "trace": [
+    "plan: I will start with whois to gather registrar and domain information, then dns for network configuration, followed by shodan for open ports and vulnerabilities, github for potential code leaks, and finally wayback for historical snapshots, to build a comprehensive profile of noaa.gov.",
+    "decide -> whois: Starting with whois to gather registrar and domain information as it is a cheap and informative init",
+    "observe: whois: 7 findings (7 new), elapsed 1538 ms",
+    "decide -> dns: The next logical step is to use dns to gather network configuration information after obtaining regi",
+    "observe: dns: 68 findings (68 new), elapsed 5769 ms",
+    "decide -> shodan: Next expensive tool to gather open ports and vulnerabilities information about noaa.gov.",
+    "observe: shodan: 4 findings (4 new), elapsed 1771 ms",
+    "decide -> github: To search for potential code leaks or exposed repositories related to noaa.gov.",
+    "observe: github: 0 findings (0 new), elapsed 3468 ms, error: all GitHub dorks errored \u2014 check rate limit",
+    "decide -> wayback: All other cheap and expensive tools except wayback have been called to gather comprehensive informat",
+    "observe: wayback: 0 findings (0 new), elapsed 15704 ms, error: Wayback CDX request failed: ReadTimeout",
+    "decide -> stop: All five tools have been called at least once and there are findings."
+  ],
+  "final_report": "## Target\nThe target of this investigation is the domain noaa.gov.\n\n## Key facts\nThe domain noaa.gov was created on 1997-10-02 and is set to expire on 2026-08-04 (WHOIS). The registrar is get.gov (WHOIS). The domain has multiple name servers, including ns-01.noaa.gov, ns-02.noaa.gov, and ns-03.noaa.gov (WHOIS, DNS NS).\n\n## Notable findings\nThe domain has multiple IP addresses associated with it, including 137.75.88.52 and 137.75.88.7 (DNS A). It also has IPv6 addresses, such as 2610:20:8000:8c04::24 (DNS AAAA). The domain uses Google mail servers, as indicated by the MX records (DNS MX). The domain has a number of open ports, including 80 and 443, which are commonly used for HTTP and HTTPS traffic (Shodan). The web server is running Apache HTTP Server (Shodan).\n\n## Open questions\nThe evidence provided is largely related to DNS and network configuration, but does not provide much information about the content or usage of the domain. Further investigation would be needed to determine the purpose and scope of the domain. Additionally, the registrant organization is redacted for privacy (WHOIS), which may limit the ability to gather more information about the domain's ownership and administration."
+}

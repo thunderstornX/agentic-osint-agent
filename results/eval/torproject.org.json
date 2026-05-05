@@ -1,0 +1,389 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-05T07:31:40+00:00",
+  "operator_authority": "Public-interest research; targets are .gov, .edu, large NGOs, or RFC-reserved domains; passive sources only.",
+  "run": {
+    "target": "torproject.org",
+    "provider": "openrouter",
+    "model": "openai/gpt-oss-120b:free",
+    "budget": 8,
+    "iterations": 5,
+    "elapsed_s": 66.86
+  },
+  "summary": {
+    "coverage": 5,
+    "tools_called": [
+      "dns",
+      "github",
+      "shodan",
+      "wayback",
+      "whois"
+    ],
+    "evidence_count": 34,
+    "finish_reason": "covered_all_tools",
+    "elapsed_ms_per_tool": {
+      "whois": 615,
+      "dns": 744,
+      "shodan": 617,
+      "github": 3155,
+      "wayback": 5715
+    }
+  },
+  "evidence": [
+    {
+      "tool": "whois",
+      "target": "torproject.org",
+      "kind": "registrar",
+      "value": "CSL Computer Service Langenbach GmbH d/b/a joker.com",
+      "source": "WHOIS",
+      "detail": "domain registrar of record",
+      "confidence": 0.95,
+      "fingerprint": "e3e9ed583f50"
+    },
+    {
+      "tool": "whois",
+      "target": "torproject.org",
+      "kind": "creation_date",
+      "value": "2006-10-17",
+      "source": "WHOIS",
+      "detail": "domain creation date",
+      "confidence": 0.95,
+      "fingerprint": "a29cff482160"
+    },
+    {
+      "tool": "whois",
+      "target": "torproject.org",
+      "kind": "expiration_date",
+      "value": "2027-10-17",
+      "source": "WHOIS",
+      "detail": "domain expiration date",
+      "confidence": 0.95,
+      "fingerprint": "065be16b59bb"
+    },
+    {
+      "tool": "whois",
+      "target": "torproject.org",
+      "kind": "name_server",
+      "value": "ns4.torproject.org",
+      "source": "WHOIS",
+      "detail": "authoritative name server",
+      "confidence": 0.95,
+      "fingerprint": "fd2b2ec814fe"
+    },
+    {
+      "tool": "whois",
+      "target": "torproject.org",
+      "kind": "name_server",
+      "value": "ns5.torproject.org",
+      "source": "WHOIS",
+      "detail": "authoritative name server",
+      "confidence": 0.95,
+      "fingerprint": "6723fab3c2b6"
+    },
+    {
+      "tool": "whois",
+      "target": "torproject.org",
+      "kind": "name_server",
+      "value": "ns1.torproject.org",
+      "source": "WHOIS",
+      "detail": "authoritative name server",
+      "confidence": 0.95,
+      "fingerprint": "9c346fe12522"
+    },
+    {
+      "tool": "whois",
+      "target": "torproject.org",
+      "kind": "name_server",
+      "value": "ns3.torproject.org",
+      "source": "WHOIS",
+      "detail": "authoritative name server",
+      "confidence": 0.95,
+      "fingerprint": "b122d2fdf9bc"
+    },
+    {
+      "tool": "whois",
+      "target": "torproject.org",
+      "kind": "name_server",
+      "value": "nsp.dnsnode.net",
+      "source": "WHOIS",
+      "detail": "authoritative name server",
+      "confidence": 0.95,
+      "fingerprint": "48471b453752"
+    },
+    {
+      "tool": "whois",
+      "target": "torproject.org",
+      "kind": "name_server",
+      "value": "ns2.torproject.org",
+      "source": "WHOIS",
+      "detail": "authoritative name server",
+      "confidence": 0.95,
+      "fingerprint": "a81bd54c8120"
+    },
+    {
+      "tool": "dns",
+      "target": "torproject.org",
+      "kind": "dns.a",
+      "value": "204.8.99.144",
+      "source": "DNS A",
+      "detail": "A record",
+      "confidence": 0.95,
+      "fingerprint": "b20df5635cac"
+    },
+    {
+      "tool": "dns",
+      "target": "torproject.org",
+      "kind": "dns.a",
+      "value": "95.216.163.36",
+      "source": "DNS A",
+      "detail": "A record",
+      "confidence": 0.95,
+      "fingerprint": "39ee8f4be230"
+    },
+    {
+      "tool": "dns",
+      "target": "torproject.org",
+      "kind": "dns.a",
+      "value": "116.202.120.165",
+      "source": "DNS A",
+      "detail": "A record",
+      "confidence": 0.95,
+      "fingerprint": "f8dd59550345"
+    },
+    {
+      "tool": "dns",
+      "target": "torproject.org",
+      "kind": "dns.a",
+      "value": "116.202.120.166",
+      "source": "DNS A",
+      "detail": "A record",
+      "confidence": 0.95,
+      "fingerprint": "3736097481d3"
+    },
+    {
+      "tool": "dns",
+      "target": "torproject.org",
+      "kind": "dns.a",
+      "value": "204.8.99.146",
+      "source": "DNS A",
+      "detail": "A record",
+      "confidence": 0.95,
+      "fingerprint": "924287a404d1"
+    },
+    {
+      "tool": "dns",
+      "target": "torproject.org",
+      "kind": "dns.aaaa",
+      "value": "2620:7:6002:0:466:39ff:fe7f:1826",
+      "source": "DNS AAAA",
+      "detail": "AAAA record",
+      "confidence": 0.95,
+      "fingerprint": "c4796dc264c5"
+    },
+    {
+      "tool": "dns",
+      "target": "torproject.org",
+      "kind": "dns.aaaa",
+      "value": "2a01:4f9:c010:19eb::1",
+      "source": "DNS AAAA",
+      "detail": "AAAA record",
+      "confidence": 0.95,
+      "fingerprint": "c237ff5b9765"
+    },
+    {
+      "tool": "dns",
+      "target": "torproject.org",
+      "kind": "dns.aaaa",
+      "value": "2620:7:6002:0:466:39ff:fe32:e3dd",
+      "source": "DNS AAAA",
+      "detail": "AAAA record",
+      "confidence": 0.95,
+      "fingerprint": "d45bc16f3886"
+    },
+    {
+      "tool": "dns",
+      "target": "torproject.org",
+      "kind": "dns.aaaa",
+      "value": "2a01:4f8:fff0:4f:266:37ff:fe2c:5d19",
+      "source": "DNS AAAA",
+      "detail": "AAAA record",
+      "confidence": 0.95,
+      "fingerprint": "edb8085d07f9"
+    },
+    {
+      "tool": "dns",
+      "target": "torproject.org",
+      "kind": "dns.aaaa",
+      "value": "2a01:4f8:fff0:4f:266:37ff:feae:3bbc",
+      "source": "DNS AAAA",
+      "detail": "AAAA record",
+      "confidence": 0.95,
+      "fingerprint": "f4129f15be15"
+    },
+    {
+      "tool": "dns",
+      "target": "torproject.org",
+      "kind": "dns.mx",
+      "value": "10 mx-dal-01.torproject.org.",
+      "source": "DNS MX",
+      "detail": "MX record",
+      "confidence": 0.95,
+      "fingerprint": "7e217ddc242a"
+    },
+    {
+      "tool": "dns",
+      "target": "torproject.org",
+      "kind": "dns.ns",
+      "value": "ns2.torproject.org.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "24908ce7e9c9"
+    },
+    {
+      "tool": "dns",
+      "target": "torproject.org",
+      "kind": "dns.ns",
+      "value": "nsp.dnsnode.net.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "a9d1bb3ef20a"
+    },
+    {
+      "tool": "dns",
+      "target": "torproject.org",
+      "kind": "dns.ns",
+      "value": "ns4.torproject.org.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "00d0f5b968a3"
+    },
+    {
+      "tool": "dns",
+      "target": "torproject.org",
+      "kind": "dns.ns",
+      "value": "ns5.torproject.org.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "5fe5520a6bde"
+    },
+    {
+      "tool": "dns",
+      "target": "torproject.org",
+      "kind": "dns.ns",
+      "value": "ns1.torproject.org.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "cd9506fe3d75"
+    },
+    {
+      "tool": "dns",
+      "target": "torproject.org",
+      "kind": "dns.ns",
+      "value": "ns3.torproject.org.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "f7073f4cf2c8"
+    },
+    {
+      "tool": "dns",
+      "target": "torproject.org",
+      "kind": "dns.txt",
+      "value": "google-site-verification=YeQsuz0lo1q00m6KE1lpJX7hHBzriDpcMHr_f9q2Ag8",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "68d152e0adbc"
+    },
+    {
+      "tool": "dns",
+      "target": "torproject.org",
+      "kind": "dns.txt",
+      "value": "v=spf1 a:crm-int-01.torproject.org a:submit-01.torproject.org a:rdsys-frontend-01.torproject.org a:rdsys-staging-01.torproject.org a:polyanthum.torproject.org a:srs-dal-01.torproject.org a:mta-dal-01.torproject.org ~all",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "afa1ce2092e8"
+    },
+    {
+      "tool": "dns",
+      "target": "torproject.org",
+      "kind": "dns.txt",
+      "value": "_dpwm8776gpzbj9ttd4teweyhomh2ove",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "2593144e2697"
+    },
+    {
+      "tool": "shodan",
+      "target": "torproject.org",
+      "kind": "open_port",
+      "value": "80",
+      "source": "https://internetdb.shodan.io/116.202.120.166",
+      "detail": "open TCP port on 116.202.120.166",
+      "confidence": 0.95,
+      "fingerprint": "3eeccfe62b3c"
+    },
+    {
+      "tool": "shodan",
+      "target": "torproject.org",
+      "kind": "open_port",
+      "value": "443",
+      "source": "https://internetdb.shodan.io/116.202.120.166",
+      "detail": "open TCP port on 116.202.120.166",
+      "confidence": 0.95,
+      "fingerprint": "649560f86b35"
+    },
+    {
+      "tool": "shodan",
+      "target": "torproject.org",
+      "kind": "hostname",
+      "value": "torproject.org",
+      "source": "https://internetdb.shodan.io/116.202.120.166",
+      "detail": "hostname seen on 116.202.120.166",
+      "confidence": 0.95,
+      "fingerprint": "d843702646ed"
+    },
+    {
+      "tool": "shodan",
+      "target": "torproject.org",
+      "kind": "hostname",
+      "value": "web-fsn-02.torproject.org",
+      "source": "https://internetdb.shodan.io/116.202.120.166",
+      "detail": "hostname seen on 116.202.120.166",
+      "confidence": 0.95,
+      "fingerprint": "fd524f960f86"
+    },
+    {
+      "tool": "shodan",
+      "target": "torproject.org",
+      "kind": "cpe",
+      "value": "cpe:/a:apache:http_server",
+      "source": "https://internetdb.shodan.io/116.202.120.166",
+      "detail": "CPE software identifier on 116.202.120.166",
+      "confidence": 0.95,
+      "fingerprint": "e3ac2a45dfbd"
+    }
+  ],
+  "trace": [
+    "plan: First run\u202fwhois\u202fto capture registrar details, creation/expiry dates and name\u2011servers, establishing ownership and timeline. Next query\u202fdns\u202ffor A/AAAA, MX, NS, TXT and CNAME records to map the current infrastructure, mail routing and any SPF/DKIM policies. Then pull\u202fshodan\u202fInternetDB data to see exposed ports, hostnames and known vulnerabilities. After that search\u202fgithub\u202ffor \u201ctorproject.org\u201d code\u2011dorks to find accidental credential or config leaks. Finally review\u202fwayback\u202fsnapshots to track historical DNS, site changes and past exposed assets.",
+    "decide -> whois: Start with cheap whois to get registrar and ownership details for torproject.org",
+    "observe: whois: 9 findings (9 new), elapsed 615 ms",
+    "decide -> dns: Gather current DNS records to map infrastructure after WHOIS info",
+    "observe: dns: 20 findings (20 new), elapsed 744 ms",
+    "decide -> shodan: Next step is to gather Internet-facing host data and open ports for torproject.org",
+    "observe: shodan: 5 findings (5 new), elapsed 617 ms",
+    "decide -> github: Search GitHub for torproject.org references to uncover potential code or credential leaks",
+    "observe: github: 0 findings (0 new), elapsed 3155 ms, error: all GitHub dorks errored \u2014 check rate limit",
+    "decide -> wayback: Cover the remaining tool to examine historical snapshots of torproject.org",
+    "observe: wayback: 0 findings (0 new), elapsed 5715 ms, error: Wayback CDX returned HTTP 503",
+    "decide -> stop: All five tools have been used and evidence gathered"
+  ],
+  "final_report": "## Target  \n**torproject.org** \u2013 the primary domain of the Tor Project.\n\n## Key facts  \n- The domain was registered on **2006\u201110\u201117** and is set to expire on **2027\u201110\u201117** (WHOIS).  \n- Registrar: **CSL Computer Service Langenbach GmbH d/b/a joker.com** (WHOIS).  \n- Authoritative name servers listed in WHOIS and DNS records include **ns1\u2011ns5.torproject.org** and **nsp.dnsnode.net** (WHOIS, DNS NS).  \n- MX record points to **mx\u2011dal\u201101.torproject.org** (DNS MX).  \n- DNS TXT records contain a Google site\u2011verification token, an SPF policy referencing several internal hosts, and an opaque token string (DNS TXT).  \n\n## Notable findings  \n- Multiple A records resolve the domain to IPv4 addresses **204.8.99.144**, **204.8.99.146**, **95.216.163.36**, **116.202.120.165**, and **116.202.120.166** (DNS A).  \n- IPv6 AAAA records include **2620:7:6002:0:466:39ff:fe7f:1826**, **2620:7:6002:0:466:39ff:fe32:e3dd**, **2a01:4f9:c010:19eb::1**, **2a01:4f8:fff0:4f:266:37ff:fe2c:5d19**, and **2a01:4f8:fff0:4f:266:37ff:feae:3bbc** (DNS AAAA).  \n- Shodan data for IP **116.202.120.166** shows open HTTP (80) and HTTPS (443) ports, hostnames **torproject.org** and **web-fsn-02.torproject.org**, and identifies the service as **Apache HTTP Server** (Shodan).  \n\n## Open questions  \n- The purpose and ownership of the additional A records (e.g., 204.8.99.144/146, 95.216.163.36) are not clarified by the available evidence.  \n- No information is provided about the content or configuration of the Apache server observed on port 80/443.  \n- The meaning of the opaque DNS TXT token (`_dpwm8776gpzbj9ttd4teweyhomh2ove`) remains unknown.  \n\n*All statements are directly derived from the supplied WHOIS, DNS, and Shodan evidence.*"
+}

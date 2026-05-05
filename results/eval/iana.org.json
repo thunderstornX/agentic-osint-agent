@@ -1,0 +1,409 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-05T07:35:40+00:00",
+  "operator_authority": "Public-interest research; targets are .gov, .edu, large NGOs, or RFC-reserved domains; passive sources only.",
+  "run": {
+    "target": "iana.org",
+    "provider": "openrouter",
+    "model": "openai/gpt-oss-120b:free",
+    "budget": 8,
+    "iterations": 5,
+    "elapsed_s": 71.3
+  },
+  "summary": {
+    "coverage": 5,
+    "tools_called": [
+      "dns",
+      "github",
+      "shodan",
+      "wayback",
+      "whois"
+    ],
+    "evidence_count": 36,
+    "finish_reason": "covered_all_tools",
+    "elapsed_ms_per_tool": {
+      "whois": 926,
+      "dns": 1536,
+      "shodan": 780,
+      "github": 413,
+      "wayback": 14539
+    }
+  },
+  "evidence": [
+    {
+      "tool": "whois",
+      "target": "iana.org",
+      "kind": "registrar",
+      "value": "CSC Corporate Domains, Inc.",
+      "source": "WHOIS",
+      "detail": "domain registrar of record",
+      "confidence": 0.95,
+      "fingerprint": "9043d7dac9e9"
+    },
+    {
+      "tool": "whois",
+      "target": "iana.org",
+      "kind": "creation_date",
+      "value": "1995-06-05",
+      "source": "WHOIS",
+      "detail": "domain creation date",
+      "confidence": 0.95,
+      "fingerprint": "64bdcfd24d03"
+    },
+    {
+      "tool": "whois",
+      "target": "iana.org",
+      "kind": "expiration_date",
+      "value": "2027-12-08",
+      "source": "WHOIS",
+      "detail": "domain expiration date",
+      "confidence": 0.95,
+      "fingerprint": "85882bdf94c3"
+    },
+    {
+      "tool": "whois",
+      "target": "iana.org",
+      "kind": "name_server",
+      "value": "ns.icann.org",
+      "source": "WHOIS",
+      "detail": "authoritative name server",
+      "confidence": 0.95,
+      "fingerprint": "87bca6292616"
+    },
+    {
+      "tool": "whois",
+      "target": "iana.org",
+      "kind": "name_server",
+      "value": "a.iana-servers.net",
+      "source": "WHOIS",
+      "detail": "authoritative name server",
+      "confidence": 0.95,
+      "fingerprint": "ee57493a0fc7"
+    },
+    {
+      "tool": "whois",
+      "target": "iana.org",
+      "kind": "name_server",
+      "value": "b.iana-servers.net",
+      "source": "WHOIS",
+      "detail": "authoritative name server",
+      "confidence": 0.95,
+      "fingerprint": "24bf32c8cc39"
+    },
+    {
+      "tool": "whois",
+      "target": "iana.org",
+      "kind": "name_server",
+      "value": "c.iana-servers.net",
+      "source": "WHOIS",
+      "detail": "authoritative name server",
+      "confidence": 0.95,
+      "fingerprint": "83483616aaa7"
+    },
+    {
+      "tool": "dns",
+      "target": "iana.org",
+      "kind": "dns.a",
+      "value": "192.0.43.8",
+      "source": "DNS A",
+      "detail": "A record",
+      "confidence": 0.95,
+      "fingerprint": "3816c489ce50"
+    },
+    {
+      "tool": "dns",
+      "target": "iana.org",
+      "kind": "dns.aaaa",
+      "value": "2001:500:88:200::8",
+      "source": "DNS AAAA",
+      "detail": "AAAA record",
+      "confidence": 0.95,
+      "fingerprint": "afc16b54aac4"
+    },
+    {
+      "tool": "dns",
+      "target": "iana.org",
+      "kind": "dns.mx",
+      "value": "10 pechora8.icann.org.",
+      "source": "DNS MX",
+      "detail": "MX record",
+      "confidence": 0.95,
+      "fingerprint": "fe4300bbe549"
+    },
+    {
+      "tool": "dns",
+      "target": "iana.org",
+      "kind": "dns.mx",
+      "value": "10 pechora6.icann.org.",
+      "source": "DNS MX",
+      "detail": "MX record",
+      "confidence": 0.95,
+      "fingerprint": "eba3e5750706"
+    },
+    {
+      "tool": "dns",
+      "target": "iana.org",
+      "kind": "dns.mx",
+      "value": "10 pechora1.icann.org.",
+      "source": "DNS MX",
+      "detail": "MX record",
+      "confidence": 0.95,
+      "fingerprint": "a2c3a6ad51be"
+    },
+    {
+      "tool": "dns",
+      "target": "iana.org",
+      "kind": "dns.mx",
+      "value": "10 pechora7.icann.org.",
+      "source": "DNS MX",
+      "detail": "MX record",
+      "confidence": 0.95,
+      "fingerprint": "92e91d5904ad"
+    },
+    {
+      "tool": "dns",
+      "target": "iana.org",
+      "kind": "dns.ns",
+      "value": "a.iana-servers.net.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "04acce4c8509"
+    },
+    {
+      "tool": "dns",
+      "target": "iana.org",
+      "kind": "dns.ns",
+      "value": "ns.icann.org.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "c36d039d8c88"
+    },
+    {
+      "tool": "dns",
+      "target": "iana.org",
+      "kind": "dns.ns",
+      "value": "c.iana-servers.net.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "cbd2ba67d5b0"
+    },
+    {
+      "tool": "dns",
+      "target": "iana.org",
+      "kind": "dns.ns",
+      "value": "b.iana-servers.net.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "3804ef15f6f2"
+    },
+    {
+      "tool": "dns",
+      "target": "iana.org",
+      "kind": "dns.txt",
+      "value": "openai-domain-verification=dv-PthFCD7xcAsc4Af2tmFj9sui",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "4baa1635bd41"
+    },
+    {
+      "tool": "dns",
+      "target": "iana.org",
+      "kind": "dns.txt",
+      "value": "smartsheet-site-validation=CcnvONgQ2ibuzf2zHZxgPaWUqTwt-Sjr",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "8c5c30978372"
+    },
+    {
+      "tool": "dns",
+      "target": "iana.org",
+      "kind": "dns.txt",
+      "value": "MS=ms22660639",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "cbd6c3c24328"
+    },
+    {
+      "tool": "dns",
+      "target": "iana.org",
+      "kind": "dns.txt",
+      "value": "google-site-verification=iIqTTcUxND4wZOeVe5Ho728rH3JOSDnssYsYJ7pUtQQ",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "c9ca1534d73e"
+    },
+    {
+      "tool": "dns",
+      "target": "iana.org",
+      "kind": "dns.txt",
+      "value": "hibp-verify=dweb_deeci9b66kmruhrzqi0rgz1m",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "58245defe59f"
+    },
+    {
+      "tool": "dns",
+      "target": "iana.org",
+      "kind": "dns.txt",
+      "value": "c9e864a6c53444038d34fe3a22513b74",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "cdb8d739a6a9"
+    },
+    {
+      "tool": "dns",
+      "target": "iana.org",
+      "kind": "dns.txt",
+      "value": "docusign=b2d7c7b0-4627-494b-a7aa-682ee87c265d",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "ca61ec767fae"
+    },
+    {
+      "tool": "dns",
+      "target": "iana.org",
+      "kind": "dns.txt",
+      "value": "v=spf1 redirect=icann.org",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "1eb952a9efb9"
+    },
+    {
+      "tool": "dns",
+      "target": "iana.org",
+      "kind": "dns.txt",
+      "value": "yahoo-verification-key=a1BzYfCAaz0f0Lu5ciZqvFkN93BwOIFipV9hvjjvqJw=",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "0ae5dc0e7f7e"
+    },
+    {
+      "tool": "dns",
+      "target": "iana.org",
+      "kind": "dns.txt",
+      "value": "google-site-verification=6UylNQOBC9EN1ZNfySQ3g8XdRBqkGG4gifrzF9zsPD0",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "155dbd5183fd"
+    },
+    {
+      "tool": "shodan",
+      "target": "iana.org",
+      "kind": "open_port",
+      "value": "21",
+      "source": "https://internetdb.shodan.io/192.0.43.8",
+      "detail": "open TCP port on 192.0.43.8",
+      "confidence": 0.95,
+      "fingerprint": "c80a27191ca8"
+    },
+    {
+      "tool": "shodan",
+      "target": "iana.org",
+      "kind": "open_port",
+      "value": "80",
+      "source": "https://internetdb.shodan.io/192.0.43.8",
+      "detail": "open TCP port on 192.0.43.8",
+      "confidence": 0.95,
+      "fingerprint": "3eeccfe62b3c"
+    },
+    {
+      "tool": "shodan",
+      "target": "iana.org",
+      "kind": "open_port",
+      "value": "443",
+      "source": "https://internetdb.shodan.io/192.0.43.8",
+      "detail": "open TCP port on 192.0.43.8",
+      "confidence": 0.95,
+      "fingerprint": "649560f86b35"
+    },
+    {
+      "tool": "shodan",
+      "target": "iana.org",
+      "kind": "hostname",
+      "value": "43-8.any.icann.org",
+      "source": "https://internetdb.shodan.io/192.0.43.8",
+      "detail": "hostname seen on 192.0.43.8",
+      "confidence": 0.95,
+      "fingerprint": "5729705ce74d"
+    },
+    {
+      "tool": "shodan",
+      "target": "iana.org",
+      "kind": "hostname",
+      "value": "iana.org",
+      "source": "https://internetdb.shodan.io/192.0.43.8",
+      "detail": "hostname seen on 192.0.43.8",
+      "confidence": 0.95,
+      "fingerprint": "415a5f705b4a"
+    },
+    {
+      "tool": "shodan",
+      "target": "iana.org",
+      "kind": "cpe",
+      "value": "cpe:/a:apache:http_server",
+      "source": "https://internetdb.shodan.io/192.0.43.8",
+      "detail": "CPE software identifier on 192.0.43.8",
+      "confidence": 0.95,
+      "fingerprint": "e3ac2a45dfbd"
+    },
+    {
+      "tool": "wayback",
+      "target": "iana.org",
+      "kind": "wayback.first_snapshot",
+      "value": "1997-12-10",
+      "source": "https://web.archive.org/web/19971210061738/http://www.iana.org:80/",
+      "detail": "earliest archived snapshot for this domain",
+      "confidence": 0.95,
+      "fingerprint": "e907b4416d0f"
+    },
+    {
+      "tool": "wayback",
+      "target": "iana.org",
+      "kind": "wayback.last_snapshot",
+      "value": "2005-02-06",
+      "source": "https://web.archive.org/web/20050206094755/http://www.iana.org:80/",
+      "detail": "most recent archived snapshot for this domain",
+      "confidence": 0.95,
+      "fingerprint": "6ad31aa4fe88"
+    },
+    {
+      "tool": "wayback",
+      "target": "iana.org",
+      "kind": "wayback.snapshot_count",
+      "value": "200",
+      "source": "http://web.archive.org/cdx/search/cdx",
+      "detail": "number of distinct daily snapshots returned (capped at 200)",
+      "confidence": 0.95,
+      "fingerprint": "d58ec6a84e7a"
+    }
+  ],
+  "trace": [
+    "plan: First run whois on iana.org to capture registrar, creation/expiry dates and name\u2011server details, establishing ownership and infrastructure baseline. Next query DNS for A/AAAA, MX, NS, TXT and CNAME records to map the live services, mail routing and any hidden subdomains. Then pull Shodan InternetDB data to see open ports, hostnames and known vulnerabilities tied to those IPs. After that search GitHub with code\u2011search dorks for \u201ciana.org\u201d to find accidental credential or config leaks. Finally review the Wayback Machine for historical snapshots, tracking changes in site structure, subdomains and exposed information over time.",
+    "decide -> whois: Start with the cheapest tool to gather registration and ownership details for iana.org",
+    "observe: whois: 7 findings (7 new), elapsed 926 ms",
+    "decide -> dns: Gather A/AAAA, MX, NS, TXT, and CNAME records to map live services and subdomains",
+    "observe: dns: 20 findings (20 new), elapsed 1536 ms",
+    "decide -> shodan: Gather open ports, hostnames and vulnerability data for iana.org's IPs",
+    "observe: shodan: 6 findings (6 new), elapsed 780 ms",
+    "decide -> github: Search GitHub for iana.org references to uncover potential code or credential leaks",
+    "observe: github: 0 findings (0 new), elapsed 413 ms, error: all GitHub dorks errored \u2014 check rate limit",
+    "decide -> wayback: Cover the remaining tool to gather historical snapshots of iana.org",
+    "observe: wayback: 3 findings (3 new), elapsed 14539 ms",
+    "decide -> stop: All tools have been used and evidence gathered"
+  ],
+  "final_report": "## Target\n**iana.org** \u2013 the Internet Assigned Numbers Authority website.\n\n## Key facts\n- Registered through **CSC Corporate Domains, Inc.** with creation date **1995\u201106\u201105** and expiration **2027\u201112\u201108** (WHOIS).  \n- Authoritative name servers: **ns.icann.org**, **a.iana-servers.net**, **b.iana-servers.net**, **c.iana-servers.net** (WHOIS/DNS NS).  \n- Resolves to **IPv4\u202f192.0.43.8** and **IPv6\u202f2001:500:88:200::8** (DNS A/AAAA).  \n- Mail exchangers are four ICANN hosts (pechora1\u20118.icann.org) all with priority 10 (DNS MX).  \n- DNS TXT records contain a variety of verification strings (OpenAI, Smartsheet, Microsoft, Google, Yahoo, Docusign, HaveIBeenPwned, SPF redirect to icann.org) (DNS TXT).  \n\n## Notable findings\n- Shodan reports the host **192.0.43.8** as running **Apache HTTP Server** and listening on ports **21 (FTP), 80 (HTTP), 443 (HTTPS)** (Shodan).  \n- Hostnames observed by Shodan: **43-8.any.icann.org** and **iana.org** (Shodan).  \n- Wayback Machine shows the earliest archived snapshot on **1997\u201112\u201110**, with the most recent listed snapshot **2005\u201102\u201106**, totaling **200** captures (Wayback).  \n\n## Open questions\n- No evidence in the provided data about current web content, services beyond the listed ports, or recent Wayback snapshots after 2005.  \n- The purpose of the numerous verification TXT records (e.g., OpenAI, Smartsheet, Google) is unclear without further context.  \n- No information on TLS certificates, CDN usage, or any recent infrastructure changes is available in the evidence set."
+}

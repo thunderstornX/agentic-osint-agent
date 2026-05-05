@@ -1,0 +1,579 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-05T07:23:34+00:00",
+  "operator_authority": "Public-interest research; targets are .gov, .edu, large NGOs, or RFC-reserved domains; passive sources only.",
+  "run": {
+    "target": "berkeley.edu",
+    "provider": "openrouter",
+    "model": "openai/gpt-oss-120b:free",
+    "budget": 8,
+    "iterations": 5,
+    "elapsed_s": 70.55
+  },
+  "summary": {
+    "coverage": 5,
+    "tools_called": [
+      "dns",
+      "github",
+      "shodan",
+      "wayback",
+      "whois"
+    ],
+    "evidence_count": 53,
+    "finish_reason": "covered_all_tools",
+    "elapsed_ms_per_tool": {
+      "whois": 423,
+      "dns": 3147,
+      "shodan": 413,
+      "github": 3055,
+      "wayback": 15351
+    }
+  },
+  "evidence": [
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.a",
+      "value": "141.193.213.20",
+      "source": "DNS A",
+      "detail": "A record",
+      "confidence": 0.95,
+      "fingerprint": "ef67a2d39170"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.a",
+      "value": "141.193.213.21",
+      "source": "DNS A",
+      "detail": "A record",
+      "confidence": 0.95,
+      "fingerprint": "bf77ebd7ad68"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.mx",
+      "value": "1 aspmx.l.google.com.",
+      "source": "DNS MX",
+      "detail": "MX record",
+      "confidence": 0.95,
+      "fingerprint": "1571b35a954a"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.mx",
+      "value": "5 alt2.aspmx.l.google.com.",
+      "source": "DNS MX",
+      "detail": "MX record",
+      "confidence": 0.95,
+      "fingerprint": "7d6d0f5aa03c"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.mx",
+      "value": "10 alt3.aspmx.l.google.com.",
+      "source": "DNS MX",
+      "detail": "MX record",
+      "confidence": 0.95,
+      "fingerprint": "05e40ab3f830"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.mx",
+      "value": "10 alt4.aspmx.l.google.com.",
+      "source": "DNS MX",
+      "detail": "MX record",
+      "confidence": 0.95,
+      "fingerprint": "37f02eda21b7"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.mx",
+      "value": "5 alt1.aspmx.l.google.com.",
+      "source": "DNS MX",
+      "detail": "MX record",
+      "confidence": 0.95,
+      "fingerprint": "deabce1478f0"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.ns",
+      "value": "adns1.berkeley.edu.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "bbe181bd7326"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.ns",
+      "value": "adns2.berkeley.edu.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "7bdbd8b10a06"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.ns",
+      "value": "adns3.berkeley.edu.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "c35a9cb099bb"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.txt",
+      "value": "v=spf1 include:_spf.berkeley.edu include:_spf2.berkeley.edu include:_spf.google.com include:_spf.qualtrics.com include:servers.mcsv.net include:spf.mailjet.com a:c.spf.service-now.com ~all",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "60e7f357cc15"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.txt",
+      "value": "iContact1462072",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "07d14841180e"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.txt",
+      "value": "brevo-code:e1e8345a4a2352cdbd9d6979093f2aec",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "da2bc4b24cc6"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.txt",
+      "value": "klaviyo-site-verification=SWYLuM",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "37769e0fb93f"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.txt",
+      "value": "MS=10BE0CF63C8BD5AFF9A6EF7B71763B098A905719",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "1bbc8c372a34"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.txt",
+      "value": "docusign=31f4475e-737f-4a3a-b6ea-60b1ac273c95",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "235734078805"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.txt",
+      "value": "google-site-verification=CDuttEoV44OF0dD7qwidnTj3wvYxIPz05W6MKEZfKYc",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "98811242fad9"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.txt",
+      "value": "brevo-code:ee0b01818d57850991280d3999efc841",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "b7b76e2c7972"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.txt",
+      "value": "brevo-code:a2b2aef0282cf9caec92be7bed7630ad",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "59ac11ddb1e6"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.txt",
+      "value": "MS=ms37758698",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "505419fe37e2"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.txt",
+      "value": "MS=ms19521665",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "3349f98a15f4"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.txt",
+      "value": "amazonses:IuakF7FVH1Y7h0Kap7krqHwRvoXFOzSET+Ri1VBHziA=",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "d27f371f10f9"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.txt",
+      "value": "google-site-verification=fL93jj-VPnl_5wdFDh26YshzKVPraWAurHaBCu-k-Xw",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "a56d3a27e3df"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.txt",
+      "value": "896263912-18360412",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "72ecac042d6a"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.txt",
+      "value": "iContact1583632",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "bca5c28a6cae"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.txt",
+      "value": "ZOOM_verify_RirbP7N1QWC3Zzm02oL4Cw",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "0afa1487398c"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.txt",
+      "value": "autodesk-domain-verification=ccDWtL-BsuXH4WkjoUiP",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "47a0dae37645"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.txt",
+      "value": "google-site-verification=loQrJWyMsMB249uINb-AsRGTWVoLdTc44Td3aMGn-NE",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "e4ed54df3224"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.txt",
+      "value": "docusign=25bb9bc1-b377-48ce-a907-61472fca6261",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "4b7a812072f6"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.txt",
+      "value": "google-site-verification=C4YkQW0t-gtD5FpVWdjxAipEUofVb2p0KmW3xFaUJeA",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "6633cb1268c2"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.txt",
+      "value": "iContact1393487",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "ac252b1e37f7"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.txt",
+      "value": "jamf-site-verification=2jicltwxCxH93ep4OhO0dA",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "c307571a5d5d"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.txt",
+      "value": "google-site-verification=R5hbazPMfJqtXtm6OHprlDpBnSThQvYDrt-i-IqZvjE",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "3393312415a1"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.txt",
+      "value": "sending_domain102272=da1fdb1bce80fcb235c498ec3ad47745fed6ea7c6dc03752d88318531e6b07b7",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "d443bce4bc37"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.txt",
+      "value": "apple-domain-verification=ZDtApcKYPmKfYxn4",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "761eea835916"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.txt",
+      "value": "atlassian-domain-verification=RIwGoMGAwFoHKm3AJg0bhFvuzEkRseqI6LStzthTqt4dWfA6Mqm5OCHFbZd1BJ9e",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "e426183d3f7c"
+    },
+    {
+      "tool": "dns",
+      "target": "berkeley.edu",
+      "kind": "dns.txt",
+      "value": "adobe-idp-site-verification=a113c870-3c49-4b4a-b3a4-31e1cf1860cb",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "861d5efc2f04"
+    },
+    {
+      "tool": "shodan",
+      "target": "berkeley.edu",
+      "kind": "open_port",
+      "value": "80",
+      "source": "https://internetdb.shodan.io/141.193.213.21",
+      "detail": "open TCP port on 141.193.213.21",
+      "confidence": 0.95,
+      "fingerprint": "3eeccfe62b3c"
+    },
+    {
+      "tool": "shodan",
+      "target": "berkeley.edu",
+      "kind": "open_port",
+      "value": "443",
+      "source": "https://internetdb.shodan.io/141.193.213.21",
+      "detail": "open TCP port on 141.193.213.21",
+      "confidence": 0.95,
+      "fingerprint": "649560f86b35"
+    },
+    {
+      "tool": "shodan",
+      "target": "berkeley.edu",
+      "kind": "open_port",
+      "value": "2052",
+      "source": "https://internetdb.shodan.io/141.193.213.21",
+      "detail": "open TCP port on 141.193.213.21",
+      "confidence": 0.95,
+      "fingerprint": "03acbd8eb805"
+    },
+    {
+      "tool": "shodan",
+      "target": "berkeley.edu",
+      "kind": "open_port",
+      "value": "2053",
+      "source": "https://internetdb.shodan.io/141.193.213.21",
+      "detail": "open TCP port on 141.193.213.21",
+      "confidence": 0.95,
+      "fingerprint": "f7fa9cc33386"
+    },
+    {
+      "tool": "shodan",
+      "target": "berkeley.edu",
+      "kind": "open_port",
+      "value": "2082",
+      "source": "https://internetdb.shodan.io/141.193.213.21",
+      "detail": "open TCP port on 141.193.213.21",
+      "confidence": 0.95,
+      "fingerprint": "3343cfc7e914"
+    },
+    {
+      "tool": "shodan",
+      "target": "berkeley.edu",
+      "kind": "open_port",
+      "value": "2083",
+      "source": "https://internetdb.shodan.io/141.193.213.21",
+      "detail": "open TCP port on 141.193.213.21",
+      "confidence": 0.95,
+      "fingerprint": "26f701723944"
+    },
+    {
+      "tool": "shodan",
+      "target": "berkeley.edu",
+      "kind": "open_port",
+      "value": "2086",
+      "source": "https://internetdb.shodan.io/141.193.213.21",
+      "detail": "open TCP port on 141.193.213.21",
+      "confidence": 0.95,
+      "fingerprint": "0afaf3abd453"
+    },
+    {
+      "tool": "shodan",
+      "target": "berkeley.edu",
+      "kind": "open_port",
+      "value": "2087",
+      "source": "https://internetdb.shodan.io/141.193.213.21",
+      "detail": "open TCP port on 141.193.213.21",
+      "confidence": 0.95,
+      "fingerprint": "5392ee190903"
+    },
+    {
+      "tool": "shodan",
+      "target": "berkeley.edu",
+      "kind": "open_port",
+      "value": "2095",
+      "source": "https://internetdb.shodan.io/141.193.213.21",
+      "detail": "open TCP port on 141.193.213.21",
+      "confidence": 0.95,
+      "fingerprint": "f038fe76bafe"
+    },
+    {
+      "tool": "shodan",
+      "target": "berkeley.edu",
+      "kind": "open_port",
+      "value": "2096",
+      "source": "https://internetdb.shodan.io/141.193.213.21",
+      "detail": "open TCP port on 141.193.213.21",
+      "confidence": 0.95,
+      "fingerprint": "0c248af3be7b"
+    },
+    {
+      "tool": "shodan",
+      "target": "berkeley.edu",
+      "kind": "open_port",
+      "value": "8080",
+      "source": "https://internetdb.shodan.io/141.193.213.21",
+      "detail": "open TCP port on 141.193.213.21",
+      "confidence": 0.95,
+      "fingerprint": "67970eee42f8"
+    },
+    {
+      "tool": "shodan",
+      "target": "berkeley.edu",
+      "kind": "open_port",
+      "value": "8443",
+      "source": "https://internetdb.shodan.io/141.193.213.21",
+      "detail": "open TCP port on 141.193.213.21",
+      "confidence": 0.95,
+      "fingerprint": "dbaccb7aa614"
+    },
+    {
+      "tool": "shodan",
+      "target": "berkeley.edu",
+      "kind": "open_port",
+      "value": "8880",
+      "source": "https://internetdb.shodan.io/141.193.213.21",
+      "detail": "open TCP port on 141.193.213.21",
+      "confidence": 0.95,
+      "fingerprint": "b5b43503e437"
+    },
+    {
+      "tool": "shodan",
+      "target": "berkeley.edu",
+      "kind": "hostname",
+      "value": "qrm.leeds.ac.uk",
+      "source": "https://internetdb.shodan.io/141.193.213.21",
+      "detail": "hostname seen on 141.193.213.21",
+      "confidence": 0.95,
+      "fingerprint": "ba832ed2d553"
+    },
+    {
+      "tool": "shodan",
+      "target": "berkeley.edu",
+      "kind": "hostname",
+      "value": "wpewaf.com",
+      "source": "https://internetdb.shodan.io/141.193.213.21",
+      "detail": "hostname seen on 141.193.213.21",
+      "confidence": 0.95,
+      "fingerprint": "f6d929e585db"
+    },
+    {
+      "tool": "shodan",
+      "target": "berkeley.edu",
+      "kind": "cpe",
+      "value": "cpe:/a:cloudflare:cloudflare",
+      "source": "https://internetdb.shodan.io/141.193.213.21",
+      "detail": "CPE software identifier on 141.193.213.21",
+      "confidence": 0.95,
+      "fingerprint": "efc26f56249f"
+    }
+  ],
+  "trace": [
+    "plan: First run\u202fwhois\u202fto capture registrar details, creation/expiry dates and name\u2011servers, establishing ownership and infrastructure baseline. Next query\u202fdns\u202fto list A/AAAA, MX, NS, TXT and CNAME records, revealing current services, mail routing and possible subdomains. Then use\u202fshodan\u202fto pull InternetDB data for those IPs, exposing open ports, hostnames and known vulnerabilities. After that search\u202fgithub\u202ffor \u201cberkeley.edu\u201d in code, hunting accidental credential leaks or internal URLs. Finally check\u202fwayback\u202fto view historic snapshots, tracking domain changes, old subdomains and deprecated services.",
+    "decide -> whois: Start with cheap WHOIS lookup to get registrar and ownership details",
+    "observe: whois: 0 findings (0 new), elapsed 423 ms",
+    "decide -> dns: Gather DNS records to map the domain's infrastructure before deeper probing",
+    "observe: dns: 37 findings (37 new), elapsed 3147 ms",
+    "decide -> shodan: Next step is to query Shodan for the IPs discovered to reveal open ports and services",
+    "observe: shodan: 16 findings (16 new), elapsed 413 ms",
+    "decide -> github: Search code repositories for references to berkeley.edu to find leaks or internal URLs",
+    "observe: github: 0 findings (0 new), elapsed 3055 ms, error: all GitHub dorks errored \u2014 check rate limit",
+    "decide -> wayback: Cover the remaining tool to gather historic domain snapshots",
+    "observe: wayback: 0 findings (0 new), elapsed 15351 ms, error: Wayback CDX request failed: ReadTimeout",
+    "decide -> stop: All five tools have been used and evidence gathered"
+  ],
+  "final_report": "## Target\n**berkeley.edu** \u2013 primary domain of the University of California, Berkeley.\n\n## Key facts\n- Authoritative A records resolve to two IPv4 addresses: **141.193.213.20** and **141.193.213.21** (dns)  \n- Nameservers are **adns1.berkeley.edu**, **adns2.berkeley.edu**, **adns3.berkeley.edu** (dns)  \n- Mail is handled by Google Workspace (MX records pointing to `aspmx.l.google.com` and its alternates) (dns)  \n- SPF TXT record includes multiple third\u2011party services (`_spf.berkeley.edu`, `_spf2.berkeley.edu`, Google, Qualtrics, Mailchimp, Mailjet, Service\u2011Now) (dns)  \n- Numerous verification TXT records are present for services such as iContact, Brevo, Klaviyo, Microsoft, Amazon SES, Zoom, Autodesk, Jamf, Atlassian, Adobe, Apple, and Docusign (dns)  \n\n## Notable findings\n- **Open ports on 141.193.213.21** (Shodan) include standard web ports **80** and **443**, plus a range of control\u2011panel ports (2052\u20112053, 2082\u20112083, 2086\u20112087, 2095\u20112096, 8080, 8443, 8880) (shodan).  \n- The Shodan fingerprint identifies the host as running **Cloudflare** (`cpe:/a:cloudflare:cloudflare`) (shodan).  \n- Shodan also reports two hostnames associated with the same IP: **qrm.leeds.ac.uk** and **wpewaf.com** (shodan).  \n\n## Open questions\n- What services are bound to the non\u2011standard ports (e.g., 2052, 2082, 8443) on 141.193.213.21?  \n- Why does the same IP host external hostnames (`qrm.leeds.ac.uk`, `wpewaf.com`) \u2013 is this a shared Cloudflare edge node or a misconfiguration?  \n- Are any of the listed verification TXT records (e.g., for Zoom, Autodesk, Jamf) actively used by the university, or are they remnants of past integrations?  \n\n*All statements are directly derived from the provided DNS, WHOIS, and Shodan evidence.*"
+}

@@ -1,0 +1,829 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-05T07:19:59+00:00",
+  "operator_authority": "Public-interest research; targets are .gov, .edu, large NGOs, or RFC-reserved domains; passive sources only.",
+  "run": {
+    "target": "mit.edu",
+    "provider": "openrouter",
+    "model": "openai/gpt-oss-120b:free",
+    "budget": 8,
+    "iterations": 5,
+    "elapsed_s": 80.69
+  },
+  "summary": {
+    "coverage": 5,
+    "tools_called": [
+      "dns",
+      "github",
+      "shodan",
+      "wayback",
+      "whois"
+    ],
+    "evidence_count": 78,
+    "finish_reason": "covered_all_tools",
+    "elapsed_ms_per_tool": {
+      "whois": 951,
+      "dns": 943,
+      "shodan": 702,
+      "github": 3275,
+      "wayback": 15425
+    }
+  },
+  "evidence": [
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.a",
+      "value": "23.15.150.186",
+      "source": "DNS A",
+      "detail": "A record",
+      "confidence": 0.95,
+      "fingerprint": "86566c5b10dd"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.aaaa",
+      "value": "2600:1413:5000:881::255e",
+      "source": "DNS AAAA",
+      "detail": "AAAA record",
+      "confidence": 0.95,
+      "fingerprint": "92a113c396e3"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.aaaa",
+      "value": "2600:1413:5000:887::255e",
+      "source": "DNS AAAA",
+      "detail": "AAAA record",
+      "confidence": 0.95,
+      "fingerprint": "bd59a077ecbf"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.mx",
+      "value": "100 mit-edu.mail.protection.outlook.com.",
+      "source": "DNS MX",
+      "detail": "MX record",
+      "confidence": 0.95,
+      "fingerprint": "c57cf1af2963"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.ns",
+      "value": "ns1-173.akam.net.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "146bbdfd01e2"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.ns",
+      "value": "asia1.akam.net.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "6e914930d688"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.ns",
+      "value": "eur5.akam.net.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "8d88d19ef521"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.ns",
+      "value": "usw2.akam.net.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "e6d19dbf4a2c"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.ns",
+      "value": "use5.akam.net.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "9091eb0c61f7"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.ns",
+      "value": "use2.akam.net.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "a26612309c5f"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.ns",
+      "value": "asia2.akam.net.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "ff71a09b9367"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.ns",
+      "value": "ns1-37.akam.net.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "d39c73a6dace"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.txt",
+      "value": "e2ma-verification=uviib",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "6cfc8f309676"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.txt",
+      "value": "E2MA-VERIFICATION=8AWBB",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "0bbaf5b46a2f"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.txt",
+      "value": "airtable-verification=46ae122907d40a1413b6a05898774435",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "dcb92e8daf9d"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.txt",
+      "value": "1VNZ334aKc8FypCKDhIMOQBsKFd8gCgTFQuPlDwQfzPNxPCKonTOnhuFQ8+kE32E2TgkBiOp9EFab5nfVc+38g==",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "87246c7cd1b2"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.txt",
+      "value": "*fastly-domain-delegation-hnb9joooe7gojgqu4eth-00494769-2025-08-23",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "50cc13538b2a"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.txt",
+      "value": "atlassian-domain-verification=3Ex0JUvwojvbDLOJvNHnYUFEZCF+kwii0OjHbhDkymB97xpCOkkIFUoET2RQy15E",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "e66482cc1a9e"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.txt",
+      "value": "stripe-verification=fe726543b783764b2ba9137f4e675faa0709416ac7a5d9f50e21248a706ad93d",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "0f9e97a58503"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.txt",
+      "value": "google-site-verification=pqf9o422iIeT7mzfZmQwkpLYH3VTlB05OC9c_OncFOg",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "abe4a18101a1"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.txt",
+      "value": "AIRTABLE-VERIFICATION=C8040E640F7DEAB69A01D68C91893E07",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "ff2922fac4a2"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.txt",
+      "value": "E2MA-VERIFICATION=C8D4",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "12063d47bfb2"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.txt",
+      "value": "atlassian-domain-verification=3eRva0Gy/EjVyKEw46uExfEXpDGJfhwocwVCy5NTxcPpf89AqdK3Lkc2Ert/Mram",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "441456e54364"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.txt",
+      "value": "v=spf1 include:_s00430413.autospf.email -all",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "d377173e9014"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.txt",
+      "value": "ecgkc7fnflsm01hh6uqjr86h02",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "caf100119b9c"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.txt",
+      "value": "openai-domain-verification=dv-pavuNIk1XG88x99BoqSFI0Zs",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "8c09c500e085"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.txt",
+      "value": "airtable-verification=4283ac2aa983e97636807d478d6bf30c",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "2c0a5d43749a"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.txt",
+      "value": "pardot_310211_*=a4e9728d1b90355b6240f4d7778cc4da11c10a20552ae99e6ed03d8e48c06583",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "e36399ccaaec"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.txt",
+      "value": "atlassian-domain-verification=maRNLIMivtdhvCr9JoVuLKHWRn7mZOY8072lyRNeyamz0NHc/s0b0m3R3yt1NKK3",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "095b7d070996"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.txt",
+      "value": "adobe-idp-site-verification=0817e32603f0dda03188b9f1f3bbaf4f754c5322926036af8890df7bf65cb90d",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "176e0d4e8be7"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.txt",
+      "value": "amazonses:asyYfDTQj+TCy9t5jFbakgwGbomDqXREEs3KdC0iMQE=",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "02615b9dabab"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.txt",
+      "value": "docusign=37fbdad0-5267-4b79-9402-ff9df7e9331f",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "279fc95556e0"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.txt",
+      "value": "e2ma-verification=piiib",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "290e248d033a"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.txt",
+      "value": "google-site-verification=6ethhhET4cfz7L1Dfve9bCOTAqMr6IU79Va6gb8HxlA",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "142236fc7a0c"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.txt",
+      "value": "docusign=78c4c36c-1180-44b1-b277-be9be4a08b73",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "bea15349eed1"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.txt",
+      "value": "E2MA-VERIFICATION=MONGB",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "9bc01db98e6e"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.txt",
+      "value": "E2MA-VERIFICATION=86JGB",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "c3cb0f02f5fe"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.txt",
+      "value": "mgverify=2a07014ab707abf9b6f984210c05ef7a1fd905296aebe173776844c14db61c1e",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "d031aafa1576"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.txt",
+      "value": "google-site-verification=qNAffaSjUkhb2JCBb1BQ2nXAkcNYLeLc7G6vjMRD1js",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "fd176b395a3e"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.txt",
+      "value": "google-site-verification=b4-1loZHD1WzNmews_hsTTKL__gLblD6iKBFbA4j97c",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "fa94d3d46ad4"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.txt",
+      "value": "e2ma-verification=xiiib",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "4e27f3a8d584"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.txt",
+      "value": "mandrill_verify.28vVgPhRZLda1o_v90CPWg",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "bf63515c5d2e"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.txt",
+      "value": "e2ma-verification=oiiib",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "53e36fecdab0"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.txt",
+      "value": "include:4920340.spf07.hubspotemail.net",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "d6f637b74c7d"
+    },
+    {
+      "tool": "dns",
+      "target": "mit.edu",
+      "kind": "dns.txt",
+      "value": "airtable-manual-domain-verification=ce83c94e-0127-4fd3-9265-3b37a46a7b8a",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "cf92fb06636c"
+    },
+    {
+      "tool": "shodan",
+      "target": "mit.edu",
+      "kind": "open_port",
+      "value": "443",
+      "source": "https://internetdb.shodan.io/23.15.150.186",
+      "detail": "open TCP port on 23.15.150.186",
+      "confidence": 0.95,
+      "fingerprint": "649560f86b35"
+    },
+    {
+      "tool": "shodan",
+      "target": "mit.edu",
+      "kind": "hostname",
+      "value": "swartz-report.mit.edu",
+      "source": "https://internetdb.shodan.io/23.15.150.186",
+      "detail": "hostname seen on 23.15.150.186",
+      "confidence": 0.95,
+      "fingerprint": "fd2aff156565"
+    },
+    {
+      "tool": "shodan",
+      "target": "mit.edu",
+      "kind": "hostname",
+      "value": "mit.mit.edu",
+      "source": "https://internetdb.shodan.io/23.15.150.186",
+      "detail": "hostname seen on 23.15.150.186",
+      "confidence": 0.95,
+      "fingerprint": "b414d6896ff6"
+    },
+    {
+      "tool": "shodan",
+      "target": "mit.edu",
+      "kind": "hostname",
+      "value": "www.web.mit.edu",
+      "source": "https://internetdb.shodan.io/23.15.150.186",
+      "detail": "hostname seen on 23.15.150.186",
+      "confidence": 0.95,
+      "fingerprint": "a1a2750a16e3"
+    },
+    {
+      "tool": "shodan",
+      "target": "mit.edu",
+      "kind": "hostname",
+      "value": "www-staging.mit.edu",
+      "source": "https://internetdb.shodan.io/23.15.150.186",
+      "detail": "hostname seen on 23.15.150.186",
+      "confidence": 0.95,
+      "fingerprint": "ed8b16413582"
+    },
+    {
+      "tool": "shodan",
+      "target": "mit.edu",
+      "kind": "hostname",
+      "value": "mitpress.mit.edu",
+      "source": "https://internetdb.shodan.io/23.15.150.186",
+      "detail": "hostname seen on 23.15.150.186",
+      "confidence": 0.95,
+      "fingerprint": "24fd7525c099"
+    },
+    {
+      "tool": "shodan",
+      "target": "mit.edu",
+      "kind": "hostname",
+      "value": "www.mit",
+      "source": "https://internetdb.shodan.io/23.15.150.186",
+      "detail": "hostname seen on 23.15.150.186",
+      "confidence": 0.95,
+      "fingerprint": "3ba42e0049aa"
+    },
+    {
+      "tool": "shodan",
+      "target": "mit.edu",
+      "kind": "hostname",
+      "value": "swartz-documents.mit.edu",
+      "source": "https://internetdb.shodan.io/23.15.150.186",
+      "detail": "hostname seen on 23.15.150.186",
+      "confidence": 0.95,
+      "fingerprint": "74f9c3562e39"
+    },
+    {
+      "tool": "shodan",
+      "target": "mit.edu",
+      "kind": "hostname",
+      "value": "web-forms.mit.edu",
+      "source": "https://internetdb.shodan.io/23.15.150.186",
+      "detail": "hostname seen on 23.15.150.186",
+      "confidence": 0.95,
+      "fingerprint": "e55ce8479950"
+    },
+    {
+      "tool": "shodan",
+      "target": "mit.edu",
+      "kind": "hostname",
+      "value": "w.mit.edu",
+      "source": "https://internetdb.shodan.io/23.15.150.186",
+      "detail": "hostname seen on 23.15.150.186",
+      "confidence": 0.95,
+      "fingerprint": "b480a94a01d2"
+    },
+    {
+      "tool": "shodan",
+      "target": "mit.edu",
+      "kind": "hostname",
+      "value": "www.mit.edu",
+      "source": "https://internetdb.shodan.io/23.15.150.186",
+      "detail": "hostname seen on 23.15.150.186",
+      "confidence": 0.95,
+      "fingerprint": "6a297a21ec92"
+    },
+    {
+      "tool": "shodan",
+      "target": "mit.edu",
+      "kind": "hostname",
+      "value": "emergency-dev.mit.edu",
+      "source": "https://internetdb.shodan.io/23.15.150.186",
+      "detail": "hostname seen on 23.15.150.186",
+      "confidence": 0.95,
+      "fingerprint": "06fc85f2a50f"
+    },
+    {
+      "tool": "shodan",
+      "target": "mit.edu",
+      "kind": "hostname",
+      "value": "mit.edu",
+      "source": "https://internetdb.shodan.io/23.15.150.186",
+      "detail": "hostname seen on 23.15.150.186",
+      "confidence": 0.95,
+      "fingerprint": "4e98044e79b7"
+    },
+    {
+      "tool": "shodan",
+      "target": "mit.edu",
+      "kind": "hostname",
+      "value": "web.mit",
+      "source": "https://internetdb.shodan.io/23.15.150.186",
+      "detail": "hostname seen on 23.15.150.186",
+      "confidence": 0.95,
+      "fingerprint": "b9c721547b83"
+    },
+    {
+      "tool": "shodan",
+      "target": "mit.edu",
+      "kind": "hostname",
+      "value": "staging-mitpress.mit.edu",
+      "source": "https://internetdb.shodan.io/23.15.150.186",
+      "detail": "hostname seen on 23.15.150.186",
+      "confidence": 0.95,
+      "fingerprint": "bdfba62b8f53"
+    },
+    {
+      "tool": "shodan",
+      "target": "mit.edu",
+      "kind": "hostname",
+      "value": "mitpressbookstore.mit.edu",
+      "source": "https://internetdb.shodan.io/23.15.150.186",
+      "detail": "hostname seen on 23.15.150.186",
+      "confidence": 0.95,
+      "fingerprint": "8ecf2cef29cb"
+    },
+    {
+      "tool": "shodan",
+      "target": "mit.edu",
+      "kind": "hostname",
+      "value": "a23-15-150-186.deploy.static.akamaitechnologies.com",
+      "source": "https://internetdb.shodan.io/23.15.150.186",
+      "detail": "hostname seen on 23.15.150.186",
+      "confidence": 0.95,
+      "fingerprint": "c35cc3d1c4f0"
+    },
+    {
+      "tool": "shodan",
+      "target": "mit.edu",
+      "kind": "hostname",
+      "value": "climate.mit.edu",
+      "source": "https://internetdb.shodan.io/23.15.150.186",
+      "detail": "hostname seen on 23.15.150.186",
+      "confidence": 0.95,
+      "fingerprint": "2e379a14332d"
+    },
+    {
+      "tool": "shodan",
+      "target": "mit.edu",
+      "kind": "hostname",
+      "value": "alum-dev.mit.edu",
+      "source": "https://internetdb.shodan.io/23.15.150.186",
+      "detail": "hostname seen on 23.15.150.186",
+      "confidence": 0.95,
+      "fingerprint": "6081399854e4"
+    },
+    {
+      "tool": "shodan",
+      "target": "mit.edu",
+      "kind": "hostname",
+      "value": "events-static.mit.edu",
+      "source": "https://internetdb.shodan.io/23.15.150.186",
+      "detail": "hostname seen on 23.15.150.186",
+      "confidence": 0.95,
+      "fingerprint": "a87c54aadf28"
+    },
+    {
+      "tool": "shodan",
+      "target": "mit.edu",
+      "kind": "hostname",
+      "value": "www-mit.mit.edu",
+      "source": "https://internetdb.shodan.io/23.15.150.186",
+      "detail": "hostname seen on 23.15.150.186",
+      "confidence": 0.95,
+      "fingerprint": "6ba3519a04d0"
+    },
+    {
+      "tool": "shodan",
+      "target": "mit.edu",
+      "kind": "hostname",
+      "value": "wwww.mit.edu",
+      "source": "https://internetdb.shodan.io/23.15.150.186",
+      "detail": "hostname seen on 23.15.150.186",
+      "confidence": 0.95,
+      "fingerprint": "8dacbfb18c01"
+    },
+    {
+      "tool": "shodan",
+      "target": "mit.edu",
+      "kind": "hostname",
+      "value": "www-cert.mit.edu",
+      "source": "https://internetdb.shodan.io/23.15.150.186",
+      "detail": "hostname seen on 23.15.150.186",
+      "confidence": 0.95,
+      "fingerprint": "9b7412f51967"
+    },
+    {
+      "tool": "shodan",
+      "target": "mit.edu",
+      "kind": "hostname",
+      "value": "giving.mit.edu",
+      "source": "https://internetdb.shodan.io/23.15.150.186",
+      "detail": "hostname seen on 23.15.150.186",
+      "confidence": 0.95,
+      "fingerprint": "1dc2f2c1ba13"
+    },
+    {
+      "tool": "shodan",
+      "target": "mit.edu",
+      "kind": "hostname",
+      "value": "web.mit.edu",
+      "source": "https://internetdb.shodan.io/23.15.150.186",
+      "detail": "hostname seen on 23.15.150.186",
+      "confidence": 0.95,
+      "fingerprint": "02a3a06b7e95"
+    },
+    {
+      "tool": "shodan",
+      "target": "mit.edu",
+      "kind": "hostname",
+      "value": "thereader-staging.mitpress.mit.edu",
+      "source": "https://internetdb.shodan.io/23.15.150.186",
+      "detail": "hostname seen on 23.15.150.186",
+      "confidence": 0.95,
+      "fingerprint": "68c5014914af"
+    },
+    {
+      "tool": "shodan",
+      "target": "mit.edu",
+      "kind": "hostname",
+      "value": "img.mit.edu",
+      "source": "https://internetdb.shodan.io/23.15.150.186",
+      "detail": "hostname seen on 23.15.150.186",
+      "confidence": 0.95,
+      "fingerprint": "09c460faf748"
+    },
+    {
+      "tool": "shodan",
+      "target": "mit.edu",
+      "kind": "hostname",
+      "value": "w3.mit.edu",
+      "source": "https://internetdb.shodan.io/23.15.150.186",
+      "detail": "hostname seen on 23.15.150.186",
+      "confidence": 0.95,
+      "fingerprint": "becbf52c60b7"
+    },
+    {
+      "tool": "shodan",
+      "target": "mit.edu",
+      "kind": "hostname",
+      "value": "web-cert.mit.edu",
+      "source": "https://internetdb.shodan.io/23.15.150.186",
+      "detail": "hostname seen on 23.15.150.186",
+      "confidence": 0.95,
+      "fingerprint": "212f042f17c5"
+    },
+    {
+      "tool": "shodan",
+      "target": "mit.edu",
+      "kind": "hostname",
+      "value": "thereader.mitpress.mit.edu",
+      "source": "https://internetdb.shodan.io/23.15.150.186",
+      "detail": "hostname seen on 23.15.150.186",
+      "confidence": 0.95,
+      "fingerprint": "dd4db9ade3ea"
+    },
+    {
+      "tool": "shodan",
+      "target": "mit.edu",
+      "kind": "hostname",
+      "value": "alum.mit.edu",
+      "source": "https://internetdb.shodan.io/23.15.150.186",
+      "detail": "hostname seen on 23.15.150.186",
+      "confidence": 0.95,
+      "fingerprint": "d797f051ca2b"
+    },
+    {
+      "tool": "shodan",
+      "target": "mit.edu",
+      "kind": "hostname",
+      "value": "giving-dev.mit.edu",
+      "source": "https://internetdb.shodan.io/23.15.150.186",
+      "detail": "hostname seen on 23.15.150.186",
+      "confidence": 0.95,
+      "fingerprint": "c22d30af8e3e"
+    },
+    {
+      "tool": "shodan",
+      "target": "mit.edu",
+      "kind": "hostname",
+      "value": "web-staging.mit.edu",
+      "source": "https://internetdb.shodan.io/23.15.150.186",
+      "detail": "hostname seen on 23.15.150.186",
+      "confidence": 0.95,
+      "fingerprint": "6a1517a812f2"
+    }
+  ],
+  "trace": [
+    "plan: First run\u202fwhois\u202fto capture the registrar, registration dates and name\u2011servers, establishing ownership and infrastructure baseline. Next query\u202fdns\u202ffor A/AAAA, MX, NS, TXT and CNAME records to map current services, mail routing and possible subdomains. Then pull Shodan InternetDB data to see open ports, hostnames and known vulnerabilities tied to those IPs. After that search GitHub code for \u201cmit.edu\u201d patterns to uncover accidental credential or config leaks. Finally review Wayback snapshots to track historical site changes, retired subdomains and legacy infrastructure.",
+    "decide -> whois: Start with cheap WHOIS lookup to get ownership and name\u2011server info for mit.edu",
+    "observe: whois: 0 findings (0 new), elapsed 951 ms",
+    "decide -> dns: Next cheap tool to map the domain's records and subdomains",
+    "observe: dns: 45 findings (45 new), elapsed 943 ms",
+    "decide -> shodan: Next gather open ports and host info for MIT's IPs after DNS and WHOIS",
+    "observe: shodan: 33 findings (33 new), elapsed 702 ms",
+    "decide -> github: Search GitHub for MIT domain references to find potential credential or config leaks",
+    "observe: github: 0 findings (0 new), elapsed 3275 ms, error: all GitHub dorks errored \u2014 check rate limit",
+    "decide -> wayback: Cover the remaining tool to gather historical snapshots of mit.edu",
+    "observe: wayback: 0 findings (0 new), elapsed 15425 ms, error: Wayback CDX request failed: ReadTimeout",
+    "decide -> stop: All five tools have been used and evidence gathered"
+  ],
+  "final_report": "## Target\n**mit.edu** \u2013 primary domain of the Massachusetts Institute of Technology.\n\n## Key facts\n- **A record:** `23.15.150.186` (DNS) \u2013 the main IPv4 address for the domain.  \n- **AAAA records:** `2600:1413:5000:881::255e` and `2600:1413:5000:887::255e` (DNS).  \n- **Mail routing:** MX points to `100 mit-edu.mail.protection.outlook.com.` (DNS).  \n- **Name servers:** Eight Akamai DNS servers (e.g., `ns1-173.akam.net.`, `asia1.akam.net.` etc.) (DNS).  \n- **TXT records:** Numerous verification strings for services such as Airtable, Atlassian, Stripe, Google, OpenAI, Adobe, Amazon SES, DocuSign, Mandrill, HubSpot, and SPF (`v=spf1 include:_s00430413.autospf.email -all`) (DNS).  \n- **Open port 443** is observed on the IPv4 address (Shodan).  \n- **Hostnames resolved to the IP** include a large set of MIT sub\u2011domains (e.g., `www.mit.edu`, `mitpress.mit.edu`, `climate.mit.edu`, `alum.mit.edu`, `giving.mit.edu`, `web.mit.edu`, `www-staging.mit.edu`, etc.) (Shodan).\n\n## Notable findings\n- The domain is **fronted by Akamai** CDN infrastructure, as indicated by the NS list and the hostname `a23-15-150-186.deploy.static.akamaitechnologies.com` (Shodan).  \n- **Extensive third\u2011party service verification** is present in TXT records, suggesting integration with many SaaS platforms (Airtable, Atlassian, Stripe, Google, OpenAI, Adobe, Amazon SES, DocuSign, Mandrill, HubSpot).  \n- The **SPF record** references an internal autospf service (`_s00430413.autospf.email`) rather than typical MIT mail servers, implying custom outbound mail handling (DNS).  \n- **Port 443** is the only open port reported, consistent with HTTPS\u2011only public services (Shodan).\n\n## Open questions\n- What specific services are hosted on the numerous sub\u2011domains listed by Shodan, and are any of them exposed beyond the CDN edge?  \n- Are the verification TXT records actively used, and do they correspond to active accounts or legacy configurations?  \n- Does the custom SPF include any external senders that could be leveraged for spoofing or phishing?  \n- No IPv6\u2011only services or additional open ports were observed; further scanning could confirm the full surface."
+}

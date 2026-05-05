@@ -1,0 +1,459 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-05T07:24:44+00:00",
+  "operator_authority": "Public-interest research; targets are .gov, .edu, large NGOs, or RFC-reserved domains; passive sources only.",
+  "run": {
+    "target": "ox.ac.uk",
+    "provider": "openrouter",
+    "model": "openai/gpt-oss-120b:free",
+    "budget": 8,
+    "iterations": 5,
+    "elapsed_s": 69.49
+  },
+  "summary": {
+    "coverage": 5,
+    "tools_called": [
+      "dns",
+      "github",
+      "shodan",
+      "wayback",
+      "whois"
+    ],
+    "evidence_count": 41,
+    "finish_reason": "covered_all_tools",
+    "elapsed_ms_per_tool": {
+      "whois": 1029,
+      "dns": 1719,
+      "shodan": 612,
+      "github": 3136,
+      "wayback": 15406
+    }
+  },
+  "evidence": [
+    {
+      "tool": "whois",
+      "target": "ox.ac.uk",
+      "kind": "registrar",
+      "value": "No registrar listed.  This domain is directly registered with Nominet.",
+      "source": "WHOIS",
+      "detail": "domain registrar of record",
+      "confidence": 0.95,
+      "fingerprint": "bfc46b0fdb45"
+    },
+    {
+      "tool": "whois",
+      "target": "ox.ac.uk",
+      "kind": "creation_date",
+      "value": "before Aug-1996",
+      "source": "WHOIS",
+      "detail": "domain creation date",
+      "confidence": 0.95,
+      "fingerprint": "245b1acc0022"
+    },
+    {
+      "tool": "whois",
+      "target": "ox.ac.uk",
+      "kind": "name_server",
+      "value": "ns0.ja.net.",
+      "source": "WHOIS",
+      "detail": "authoritative name server",
+      "confidence": 0.95,
+      "fingerprint": "adcf91487b93"
+    },
+    {
+      "tool": "dns",
+      "target": "ox.ac.uk",
+      "kind": "dns.a",
+      "value": "13.51.62.86",
+      "source": "DNS A",
+      "detail": "A record",
+      "confidence": 0.95,
+      "fingerprint": "bdb685a3fa31"
+    },
+    {
+      "tool": "dns",
+      "target": "ox.ac.uk",
+      "kind": "dns.mx",
+      "value": "4 oxforduni.in.tmes.trendmicro.eu.",
+      "source": "DNS MX",
+      "detail": "MX record",
+      "confidence": 0.95,
+      "fingerprint": "95dfabc72533"
+    },
+    {
+      "tool": "dns",
+      "target": "ox.ac.uk",
+      "kind": "dns.ns",
+      "value": "dns0.ox.ac.uk.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "520a0e401240"
+    },
+    {
+      "tool": "dns",
+      "target": "ox.ac.uk",
+      "kind": "dns.ns",
+      "value": "auth4.dns.ox.ac.uk.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "f14c9020d812"
+    },
+    {
+      "tool": "dns",
+      "target": "ox.ac.uk",
+      "kind": "dns.ns",
+      "value": "auth5.dns.ox.ac.uk.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "e65ec5e671a5"
+    },
+    {
+      "tool": "dns",
+      "target": "ox.ac.uk",
+      "kind": "dns.ns",
+      "value": "dns1.ox.ac.uk.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "8966fa0d2f4c"
+    },
+    {
+      "tool": "dns",
+      "target": "ox.ac.uk",
+      "kind": "dns.ns",
+      "value": "dns2.ox.ac.uk.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "91f4b5bd733c"
+    },
+    {
+      "tool": "dns",
+      "target": "ox.ac.uk",
+      "kind": "dns.ns",
+      "value": "auth6.dns.ox.ac.uk.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "15cd295970f3"
+    },
+    {
+      "tool": "dns",
+      "target": "ox.ac.uk",
+      "kind": "dns.txt",
+      "value": "google-gws-recovery-domain-verification=56795791",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "0f92f2c4638e"
+    },
+    {
+      "tool": "dns",
+      "target": "ox.ac.uk",
+      "kind": "dns.txt",
+      "value": "google-site-verification=qb4BUD5Usjh0Nep0wKIkZIlLSR2rrXsD5PvYGIiKJtA",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "8c57585fdea3"
+    },
+    {
+      "tool": "dns",
+      "target": "ox.ac.uk",
+      "kind": "dns.txt",
+      "value": "facebook-domain-verification=647crbrjssj5mgbuy5ptjl8c6qmh23",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "22db0e8eb3f5"
+    },
+    {
+      "tool": "dns",
+      "target": "ox.ac.uk",
+      "kind": "dns.txt",
+      "value": "_globalsign-domain-verification=wiDg8qaoolWaTbaZq8YxJLFxFT36aoIO03meY20xze",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "a14d45567a9d"
+    },
+    {
+      "tool": "dns",
+      "target": "ox.ac.uk",
+      "kind": "dns.txt",
+      "value": "google-site-verification=uHCoKrADK1i1za25F8hr2arNkmwrT3Krl7Jk5RRFCGM",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "463ea7eaa50b"
+    },
+    {
+      "tool": "dns",
+      "target": "ox.ac.uk",
+      "kind": "dns.txt",
+      "value": "v=spf1 redirect=_spf.ox.ac.uk",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "a83e18f827b4"
+    },
+    {
+      "tool": "dns",
+      "target": "ox.ac.uk",
+      "kind": "dns.txt",
+      "value": "WtnAjq8L8o3AgONKmYl7NTJrA9qe5GAxdO3xYq1hVcdXZ0THaEYNiyx74cio/8CE8E3rDApP0jojGJhH8mahDw==",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "e43354a3799d"
+    },
+    {
+      "tool": "dns",
+      "target": "ox.ac.uk",
+      "kind": "dns.txt",
+      "value": "MS=ms57844111",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "ab3bfb630d91"
+    },
+    {
+      "tool": "dns",
+      "target": "ox.ac.uk",
+      "kind": "dns.txt",
+      "value": "google-site-verification=xqPbmJpDfZK648oMnCGuFpkn5HJqLhpMRPkss5jEhHk",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "4a09ea98982b"
+    },
+    {
+      "tool": "dns",
+      "target": "ox.ac.uk",
+      "kind": "dns.txt",
+      "value": "b8zq7ht7w0jmhx3wgzn5srmjl8b0y0gp",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "24b7c80c00f2"
+    },
+    {
+      "tool": "dns",
+      "target": "ox.ac.uk",
+      "kind": "dns.txt",
+      "value": "1zl23trd62r8wgvvrv0gjg7z1gxr64gw",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "e6e70c2d79f7"
+    },
+    {
+      "tool": "dns",
+      "target": "ox.ac.uk",
+      "kind": "dns.txt",
+      "value": "ueG8e2rFCvZiPIxG4L1VRVcqLV6m3yrjJCRro8ZHPiZDX7y6xFsvBuCirQG9MAFSaqKwX55TK/G0WVh68yAoTg==",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "2952ce48b30e"
+    },
+    {
+      "tool": "dns",
+      "target": "ox.ac.uk",
+      "kind": "dns.txt",
+      "value": "jamf-site-verification=z4aTHKJhScEjBS_E-BOcdA",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "71d316a9072d"
+    },
+    {
+      "tool": "dns",
+      "target": "ox.ac.uk",
+      "kind": "dns.txt",
+      "value": "022fc977acdd42cabb4a3cd9d17138bb",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "c82fe26274f5"
+    },
+    {
+      "tool": "dns",
+      "target": "ox.ac.uk",
+      "kind": "dns.txt",
+      "value": "openai-domain-verification=dv-FrXjlS30zrnR8T3D1ktwxud7",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "ca3ebb5b8a2f"
+    },
+    {
+      "tool": "dns",
+      "target": "ox.ac.uk",
+      "kind": "dns.txt",
+      "value": "1FBF055C-7912-4406-8091-79206812E154",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "f43021baed65"
+    },
+    {
+      "tool": "dns",
+      "target": "ox.ac.uk",
+      "kind": "dns.txt",
+      "value": "google-site-verification=Axf59TQZibIC5SStWVv4XULS6AONRp5c-G2Vmzrq_Yw",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "6b8441266da4"
+    },
+    {
+      "tool": "dns",
+      "target": "ox.ac.uk",
+      "kind": "dns.txt",
+      "value": "wdc9f05rx6mmn1rgzqrxz8l7ljrn2c5x",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "f18728c5fa56"
+    },
+    {
+      "tool": "dns",
+      "target": "ox.ac.uk",
+      "kind": "dns.txt",
+      "value": "QuoVadis=fbb7711c-3934-4311-b571-fd7695107436",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "90d7dcf3aeae"
+    },
+    {
+      "tool": "dns",
+      "target": "ox.ac.uk",
+      "kind": "dns.txt",
+      "value": "hes=3c57da24c0cf354d2d270f87f9033045",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "f7d9e0057716"
+    },
+    {
+      "tool": "shodan",
+      "target": "ox.ac.uk",
+      "kind": "open_port",
+      "value": "22",
+      "source": "https://internetdb.shodan.io/13.51.62.86",
+      "detail": "open TCP port on 13.51.62.86",
+      "confidence": 0.95,
+      "fingerprint": "ff66482bfc9a"
+    },
+    {
+      "tool": "shodan",
+      "target": "ox.ac.uk",
+      "kind": "open_port",
+      "value": "80",
+      "source": "https://internetdb.shodan.io/13.51.62.86",
+      "detail": "open TCP port on 13.51.62.86",
+      "confidence": 0.95,
+      "fingerprint": "3eeccfe62b3c"
+    },
+    {
+      "tool": "shodan",
+      "target": "ox.ac.uk",
+      "kind": "open_port",
+      "value": "443",
+      "source": "https://internetdb.shodan.io/13.51.62.86",
+      "detail": "open TCP port on 13.51.62.86",
+      "confidence": 0.95,
+      "fingerprint": "649560f86b35"
+    },
+    {
+      "tool": "shodan",
+      "target": "ox.ac.uk",
+      "kind": "hostname",
+      "value": "cms.balder.se",
+      "source": "https://internetdb.shodan.io/13.51.62.86",
+      "detail": "hostname seen on 13.51.62.86",
+      "confidence": 0.95,
+      "fingerprint": "5180d465336a"
+    },
+    {
+      "tool": "shodan",
+      "target": "ox.ac.uk",
+      "kind": "hostname",
+      "value": "nyproduktion.balder.se",
+      "source": "https://internetdb.shodan.io/13.51.62.86",
+      "detail": "hostname seen on 13.51.62.86",
+      "confidence": 0.95,
+      "fingerprint": "2b4fe618d45e"
+    },
+    {
+      "tool": "shodan",
+      "target": "ox.ac.uk",
+      "kind": "hostname",
+      "value": "www.balder.se",
+      "source": "https://internetdb.shodan.io/13.51.62.86",
+      "detail": "hostname seen on 13.51.62.86",
+      "confidence": 0.95,
+      "fingerprint": "cbb8c0f781b5"
+    },
+    {
+      "tool": "shodan",
+      "target": "ox.ac.uk",
+      "kind": "hostname",
+      "value": "search.balder.se",
+      "source": "https://internetdb.shodan.io/13.51.62.86",
+      "detail": "hostname seen on 13.51.62.86",
+      "confidence": 0.95,
+      "fingerprint": "eb5a4396444c"
+    },
+    {
+      "tool": "shodan",
+      "target": "ox.ac.uk",
+      "kind": "hostname",
+      "value": "en.balder.se",
+      "source": "https://internetdb.shodan.io/13.51.62.86",
+      "detail": "hostname seen on 13.51.62.86",
+      "confidence": 0.95,
+      "fingerprint": "6bb511773297"
+    },
+    {
+      "tool": "shodan",
+      "target": "ox.ac.uk",
+      "kind": "hostname",
+      "value": "ec2-13-51-62-86.eu-north-1.compute.amazonaws.com",
+      "source": "https://internetdb.shodan.io/13.51.62.86",
+      "detail": "hostname seen on 13.51.62.86",
+      "confidence": 0.95,
+      "fingerprint": "95fcfc54331e"
+    },
+    {
+      "tool": "shodan",
+      "target": "ox.ac.uk",
+      "kind": "hostname",
+      "value": "balder.se",
+      "source": "https://internetdb.shodan.io/13.51.62.86",
+      "detail": "hostname seen on 13.51.62.86",
+      "confidence": 0.95,
+      "fingerprint": "d86ef4f1480a"
+    }
+  ],
+  "trace": [
+    "plan: First run\u202fwhois\u202fto capture the registrar, registration dates and name\u2011servers, establishing ownership and infrastructure baseline. Next query\u202fdns\u202ffor A/AAAA, MX, NS, TXT and CNAME records to map current services, mail routing and possible subdomains. Then use\u202fshodan\u202fto discover open ports, hostnames and known vulnerabilities on the resolved IPs. After that search\u202fgithub\u202ffor \u201cox.ac.uk\u201d in code, config files or accidental credential commits. Finally pull\u202fwayback\u202fsnapshots to see historic site content, subdomains and past DNS changes.",
+    "decide -> whois: Start with cheap WHOIS lookup to get registration and name\u2011server info for ox.ac.uk",
+    "observe: whois: 3 findings (3 new), elapsed 1029 ms",
+    "decide -> dns: Gather current DNS records to map services and subdomains after establishing registration info",
+    "observe: dns: 28 findings (28 new), elapsed 1719 ms",
+    "decide -> shodan: Next step is to discover open ports, hostnames, and vulnerabilities on the target's IPs",
+    "observe: shodan: 10 findings (10 new), elapsed 612 ms",
+    "decide -> github: Next tool in plan is GitHub to find code or config referencing ox.ac.uk",
+    "observe: github: 0 findings (0 new), elapsed 3136 ms, error: all GitHub dorks errored \u2014 check rate limit",
+    "decide -> wayback: Collect historic snapshots of ox.ac.uk to identify past content, subdomains, and DNS changes",
+    "observe: wayback: 0 findings (0 new), elapsed 15406 ms, error: Wayback CDX request failed: ReadTimeout",
+    "decide -> stop: All tools have been used and relevant evidence collected"
+  ],
+  "final_report": "## Target\nox.ac.uk \u2013 the primary domain of the University of Oxford.\n\n## Key facts\n- The domain is registered directly with Nominet, with no listed registrar. (WHOIS)  \n- Creation date predates August\u202f1996, indicating a long\u2011standing registration. (WHOIS)  \n- Authoritative name servers are operated by the university: `dns0.ox.ac.uk`, `dns1.ox.ac.uk`, `dns2.ox.ac.uk`, `auth4.dns.ox.ac.uk`, `auth5.dns.ox.ac.uk`, `auth6.dns.ox.ac.uk`. (DNS NS)  \n- The A record resolves to **13.51.62.86**. (DNS A)  \n- MX records point to `oxforduni.in.tmes.trendmicro.eu`. (DNS MX)  \n- Multiple TXT records show verification strings for Google, Facebook, GlobalSign, Microsoft, Jamf, OpenAI and others, as well as an SPF redirect to `_spf.ox.ac.uk`. (DNS TXT)  \n\n## Notable findings\n- The IP **13.51.62.86** hosts open ports 22 (SSH), 80 (HTTP) and 443 (HTTPS). (Shodan)  \n- Reverse\u2011DNS / hostnames associated with this IP belong to the Swedish domain **balder.se** and an AWS EC2 instance (`ec2-13-51-62-86.eu-north-1.compute.amazonaws.com`). (Shodan)  \n- No direct evidence links the university\u2019s services to the balder.se hostnames; the Shodan data only reflects the current IP\u2019s usage.  \n\n## Open questions\n- Why does the university\u2019s A record point to an IP that resolves to balder.se hostnames and an AWS instance?  \n- Are there load\u2011balancing, CDN, or cloud\u2011hosting arrangements that explain the shared IP?  \n- What services are actually running on ports 22/80/443 at this address (e.g., web site, SSH gateway)?  \n\n*The investigation is limited to the provided WHOIS, DNS, and Shodan records; no additional attribution or inference can be drawn from the current evidence.*"
+}

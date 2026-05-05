@@ -1,0 +1,669 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-05T07:22:24+00:00",
+  "operator_authority": "Public-interest research; targets are .gov, .edu, large NGOs, or RFC-reserved domains; passive sources only.",
+  "run": {
+    "target": "harvard.edu",
+    "provider": "openrouter",
+    "model": "openai/gpt-oss-120b:free",
+    "budget": 8,
+    "iterations": 5,
+    "elapsed_s": 67.44
+  },
+  "summary": {
+    "coverage": 5,
+    "tools_called": [
+      "dns",
+      "github",
+      "shodan",
+      "wayback",
+      "whois"
+    ],
+    "evidence_count": 62,
+    "finish_reason": "covered_all_tools",
+    "elapsed_ms_per_tool": {
+      "whois": 529,
+      "dns": 1158,
+      "shodan": 544,
+      "github": 3419,
+      "wayback": 15431
+    }
+  },
+  "evidence": [
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.a",
+      "value": "192.0.66.20",
+      "source": "DNS A",
+      "detail": "A record",
+      "confidence": 0.95,
+      "fingerprint": "7b40e2802ce5"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.mx",
+      "value": "100 mx0a-00171101.pphosted.com.",
+      "source": "DNS MX",
+      "detail": "MX record",
+      "confidence": 0.95,
+      "fingerprint": "d15ba75199d0"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.mx",
+      "value": "100 mx0b-00171101.pphosted.com.",
+      "source": "DNS MX",
+      "detail": "MX record",
+      "confidence": 0.95,
+      "fingerprint": "efb545259c9a"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.ns",
+      "value": "a10-66.akam.net.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "30edf7af8846"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.ns",
+      "value": "a11-67.akam.net.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "492b4c36dbed"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.ns",
+      "value": "a16-64.akam.net.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "2b8ff57fbb1b"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.ns",
+      "value": "a6-66.akam.net.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "c6fcbe106087"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.ns",
+      "value": "a1-171.akam.net.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "41c9c4498014"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.ns",
+      "value": "a7-65.akam.net.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "2cb4462f0aee"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "status-page-domain-verification=b4j4g69th3vv",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "4e5acbf4e841"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "smartsheet-site-validation=jfLh_IkQNJXuKKpTn7RydwiiaAOLy4CR",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "b2f05f4fa820"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "v=spf1 include:%{i}._ip.%{h}._ehlo.%{d}._spf.vali.email ~all",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "c98155572f16"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "airtable-verification=b25f432db3cbc5bfc481914364b6ce41",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "e8a9adc22636"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "google-site-verification=DZTZhbBaYJ6AO5j-tHFYBdkwryNywFh2gMUeg3SRDSg",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "0cbf65655f17"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "globalsign-domain-verification=87677a19ae97bfbeec25ff1510a80420",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "5acae623d2e3"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "globalsign-domain-verification=1C94E0FFAAE95796F597427644D90C03",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "77a219bd0f77"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "brevo-code:30d9f789747b4c124f72dabf24a0a97f",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "ffcdf6b70f11"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "google-site-verification=lY-T8NneGQX1RGXeaoBJjSmT_lx3dLRKDq1xY44ZI5w",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "704fbb60bd3a"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "google-site-verification=NEWpTHNZnWRWN3trkIMeFbuPVG3ExwOXUHlC9aJ2sks",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "cde4c7a4c875"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "_51a79b140kb1cu9o67nzuefyhhxthv9",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "f2595946b62f"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "globalsign-domain-verification=C44DEEAC45AB4DC2B5AD0B9B2E5D5803",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "03e75bfeaf61"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "openai-domain-verification=dv-5z82SztO32q9YBNgFooNBz5v",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "3c751a67aaf3"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "_cwe6cxmi9tji7gazwtzipl4onpu23nv",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "d306b4c20048"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "anthropic-domain-verification-gy5zhc=zmrGT2kyyc2HlnUn6f0utkQB6",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "45c25276bb62"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "atlassian-domain-verification=Z8oUd5brL6/RGUMCkxs4U0P/RyhpiNJEIVx9HXJLr3uqEQ1eDmTnj1eq1ObCgY1i",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "198f0f76ac62"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "ciscocidomainverification=41ce9827e3fbbca9ce75d5dbb5a6bc7b089dc4e239c1b56ba828216d1214480",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "e637f4d38b6d"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "airtable-verification=a92cef30671587a4f6deb7951c1c3f1a",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "7388a628bee1"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "fastly-domain-delgation-vdnblsdg768nm-21052021",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "96cbc5d8eabd"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "atlassian-domain-verification=ASRKBXyOafZgDCRWh1Ylv34hiOSMgAIoNXs8H57rR3aTkuOD5KwJfUN9G3f7Ah/H",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "d76b4327ab61"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "pardot679353=3cc5e124c5020a1e160f01981f45be33a467a1c802711e0e5654184ef56d18c9",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "1ac6b8823516"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "heroku-domain-verification=1qfmzz9vp3kexf4fr5zuliwvpieih2ffz4gexo7tlh4",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "f3fd41293f9f"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "globalsign-domain-verification=B8359DCEFBCF837B95E2F82282E4297A",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "895cf0e88369"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "jamf-site-verification=3o6gdpul8xpeqY0GpAZqxw",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "0b4930de2c3d"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "adobe-idp-site-verification=66e813947c764d98330002232f383a68df8ad609065abb9482f3805dd2a1902c",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "1586bdc4eccc"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "openai-domain-verification=dv-e8vYSnmmPbWxpNte1iIKgvOO",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "fca2e395ae91"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "globalsign-domain-verification=9ff12eafbeebb02a0f2b0383aef9d1fa",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "9f472ef08697"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "globalsign-domain-verification=5A1F4E0081852ECB9015E837384121AD",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "21b8a83c2a82"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "atlassian-domain-verification=OYfkFwspEELRW6A32BsDVWgvdz8/pLBxVcq7s/mHLBVGqRQRG58XA5LRtDAGpfA7",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "ed57447ce27e"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "xIGeuA0e5B1BOjTE4IBO806ziFX9G1m2dVJ8zO7CMkmKwZ6MEkMXC0P7n5SRCGOdS9jbceH/7gKYgD4h9FBGKA==",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "4f90899fc583"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "google-site-verification=MmfJS0BjLRgcxrlj8kAyNdToKeAmj0fKb-lPOnd5Pmo",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "1fad929090de"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "google-site-verification=pWvLuNePLYxAbafZw2a95vnBhvcj12DzM9NulT9ujSY",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "495af3cf0de8"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "airtable-verification=8b8110e9283dd87d57b3c5f2f5af2db1",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "12d36864b5bd"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "status-page-domain-verification=p83gt91wpxms",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "31646ef02e9e"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "jAykGnWytyLeBseMa8x2/MBve6/yQqana4yrAc1ROoei7uZHUkM2FU0Xx4qI/rm+kOGdImZdoq0fdodgLEw1dg==",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "fd580c081b23"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "geneious.com:domain-verification=1781B6exIEsRBzJ0KzPtKg",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "e59a8527a34b"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "globalsign-domain-verification=1DDF777ED1ADF45E5FFAFFAAD6774180",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "32fc5e956d85"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "globalsign-domain-verification=dcc2e5d0d67efc32044ae679c7cf19e6",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "bdb8ae9a8c73"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "google-site-verification=DzhZyP8pu0M1-RFghfTcSN-9poidboYRNdfn2Rf2hCQ",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "d81f1664a8af"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "pardot_378242_*=8b485d5cd9114869cff8f307da5fa9287434ebec11621d88c07ce97a7fee06e0",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "aacde19c5586"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "google-site-verification=xXWxVElKH8ek_eW45CbAqVSMTQgAqLYUNQUrWpOmkrY",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "84acb0dbccc0"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "anthropic-domain-verification-dprfjc=K9LyiFV7zLafnNLNO4lFjyaRx",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "bade5fa69985"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "pardot378242=7001579db574e062735763ba81b54da111abc31facf16bbfa653ab6b8a770988",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "1beafe387089"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "google-site-verification=xqg8LPF_v_QMEIST789q8xhRDqUEX4_8lQjAvV6YykY",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "3fafe52add06"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "MS=ms35192554",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "70bdfe6d0527"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "Peh2GHoW8uiAzwS9tTZKlGBn9cMq6Y+XUFtrqmLtqFh1WvloPkzGczPsZcSdDfin4hZ7QiL9J7SM8yr7Yyzi8w==",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "43cb46192146"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "pardot962443=9098884472c5cb29a2e20700b41411cb4aa5ebcf340360e71b2cd8464d8864b6",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "469be5775f9e"
+    },
+    {
+      "tool": "dns",
+      "target": "harvard.edu",
+      "kind": "dns.txt",
+      "value": "pardot679353=f93ea3588d69483bf48dbf587511f51d43ddadaae52b8bac6856c8428559a06d",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "72dc64ef28e9"
+    },
+    {
+      "tool": "shodan",
+      "target": "harvard.edu",
+      "kind": "open_port",
+      "value": "80",
+      "source": "https://internetdb.shodan.io/192.0.66.20",
+      "detail": "open TCP port on 192.0.66.20",
+      "confidence": 0.95,
+      "fingerprint": "3eeccfe62b3c"
+    },
+    {
+      "tool": "shodan",
+      "target": "harvard.edu",
+      "kind": "open_port",
+      "value": "443",
+      "source": "https://internetdb.shodan.io/192.0.66.20",
+      "detail": "open TCP port on 192.0.66.20",
+      "confidence": 0.95,
+      "fingerprint": "649560f86b35"
+    },
+    {
+      "tool": "shodan",
+      "target": "harvard.edu",
+      "kind": "hostname",
+      "value": "www.harvard.edu",
+      "source": "https://internetdb.shodan.io/192.0.66.20",
+      "detail": "hostname seen on 192.0.66.20",
+      "confidence": 0.95,
+      "fingerprint": "7b42ab0d0b8c"
+    },
+    {
+      "tool": "shodan",
+      "target": "harvard.edu",
+      "kind": "hostname",
+      "value": "harvard.edu",
+      "source": "https://internetdb.shodan.io/192.0.66.20",
+      "detail": "hostname seen on 192.0.66.20",
+      "confidence": 0.95,
+      "fingerprint": "a50918b5da2f"
+    },
+    {
+      "tool": "shodan",
+      "target": "harvard.edu",
+      "kind": "cpe",
+      "value": "cpe:/a:f5:nginx",
+      "source": "https://internetdb.shodan.io/192.0.66.20",
+      "detail": "CPE software identifier on 192.0.66.20",
+      "confidence": 0.95,
+      "fingerprint": "683876ac2bc3"
+    }
+  ],
+  "trace": [
+    "plan: First run\u202fwhois\u202fto capture registrar details, creation/expiry dates and name\u2011servers, establishing ownership and infrastructure age. Next query\u202fdns\u202ffor A/AAAA, MX, NS, TXT and CNAME records to map hosts, mail routing, subdomains and possible misconfigurations. Then use\u202fshodan\u202fto enumerate open ports, services, hostnames and known vulnerabilities tied to those IPs. After that search\u202fgithub\u202ffor \u201charvard.edu\u201d code\u2011dorks to find accidental credential or config leaks. Finally pull\u202fwayback\u202fsnapshots to see historic site structure, subdomains and content changes that may reveal legacy assets.",
+    "decide -> whois: Start with the cheapest tool to gather ownership and registrar information for harvard.edu",
+    "observe: whois: 0 findings (0 new), elapsed 529 ms",
+    "decide -> dns: Next cheap tool to map IPs, MX, NS, and subdomains for harvard.edu",
+    "observe: dns: 57 findings (57 new), elapsed 1158 ms",
+    "decide -> shodan: Next step is to enumerate open ports, services, and host details for harvard.edu IPs",
+    "observe: shodan: 5 findings (5 new), elapsed 544 ms",
+    "decide -> github: Next tool in plan to search for harvard.edu code leaks",
+    "observe: github: 0 findings (0 new), elapsed 3419 ms, error: all GitHub dorks errored \u2014 check rate limit",
+    "decide -> wayback: Cover the remaining tool to gather historic site data and subdomains",
+    "observe: wayback: 0 findings (0 new), elapsed 15431 ms, error: Wayback CDX request failed: ReadTimeout",
+    "decide -> stop: All tools have been used and evidence gathered"
+  ],
+  "final_report": "## Target\n**harvard.edu** \u2013 primary domain of Harvard University.\n\n## Key facts\n- The authoritative A record resolves to **192.0.66.20** (dns)\u3010dns\u3011.  \n- Shodan reports this IP hosts **HTTP (80)** and **HTTPS (443)** services, identified as **nginx** (cpe:/a:f5:nginx)\u3010shodan\u3011.  \n- Hostnames associated with the IP are **harvard.edu** and **www.harvard.edu**\u3010shodan\u3011.  \n- MX records point to **mx0a-00171101.pphosted.com** and **mx0b-00171101.pphosted.com** (both priority 100)\u3010dns\u3011.  \n- Nameservers are a set of Akamai edge servers (a1\u2011171.akam.net, a6\u201166.akam.net, a7\u201165.akam.net, a10\u201166.akam.net, a11\u201167.akam.net, a16\u201164.akam.net)\u3010dns\u3011.  \n- Numerous TXT records exist for verification with third\u2011party services (Google, Atlassian, OpenAI, Anthropic, Airtable, Fastly, Heroku, Jamf, Adobe, Cisco, etc.)\u3010dns\u3011. No single TXT record reveals additional infrastructure details.\n\n## Notable findings\n- The presence of **Akamai** nameservers indicates that Harvard\u2019s web traffic is likely CDN\u2011accelerated.  \n- The **nginx** banner on port 443 suggests a reverse\u2011proxy or load\u2011balancer front\u2011ending the site.  \n- The extensive list of verification TXT records shows active integration with many SaaS platforms (e.g., Google Workspace, Atlassian, OpenAI, Anthropic, Fastly, Heroku). This reflects a broad ecosystem of cloud services tied to the domain.\n\n## Open questions\n- Which specific services (e.g., mail, analytics, CI/CD) correspond to the numerous verification TXT entries?  \n- Are there additional IP addresses behind the CDN that host other Harvard subdomains or services?  \n- What is the exact configuration of the nginx instance (version, modules) beyond the generic CPE tag?  \n- Are any of the verification tokens still valid, indicating active contracts with the listed providers?  \n\n*No further evidence is available beyond the DNS and Shodan records listed.*"
+}

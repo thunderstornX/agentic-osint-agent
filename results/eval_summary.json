@@ -1,0 +1,32 @@
+{
+  "n_targets": 20,
+  "n_full_coverage": 20,
+  "full_coverage_rate": 1.0,
+  "evidence_per_target": {
+    "mean": 49.2,
+    "median": 44.5,
+    "min": 26,
+    "max": 114
+  },
+  "iterations_per_target": {
+    "mean": 5,
+    "median": 5.0
+  },
+  "hallucination_rate": {
+    "mean": 0.305,
+    "median": 0.25,
+    "max": 0.625
+  },
+  "elapsed_s_per_target": {
+    "mean": 74.9,
+    "median": 73.6,
+    "total": 1498.3
+  },
+  "finish_reason": {
+    "covered_all_tools": 20
+  },
+  "providers_used": [
+    "nvidia",
+    "openrouter"
+  ]
+}

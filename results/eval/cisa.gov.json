@@ -1,0 +1,349 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-05T07:17:22+00:00",
+  "operator_authority": "Public-interest research; targets are .gov, .edu, large NGOs, or RFC-reserved domains; passive sources only.",
+  "run": {
+    "target": "cisa.gov",
+    "provider": "openrouter",
+    "model": "openai/gpt-oss-120b:free",
+    "budget": 8,
+    "iterations": 5,
+    "elapsed_s": 73.65
+  },
+  "summary": {
+    "coverage": 5,
+    "tools_called": [
+      "dns",
+      "github",
+      "shodan",
+      "wayback",
+      "whois"
+    ],
+    "evidence_count": 30,
+    "finish_reason": "covered_all_tools",
+    "elapsed_ms_per_tool": {
+      "whois": 1348,
+      "dns": 417,
+      "shodan": 511,
+      "github": 3065,
+      "wayback": 15344
+    }
+  },
+  "evidence": [
+    {
+      "tool": "whois",
+      "target": "cisa.gov",
+      "kind": "registrar",
+      "value": "get.gov",
+      "source": "WHOIS",
+      "detail": "domain registrar of record",
+      "confidence": 0.95,
+      "fingerprint": "cf44253923cb"
+    },
+    {
+      "tool": "whois",
+      "target": "cisa.gov",
+      "kind": "creation_date",
+      "value": "2018-12-06",
+      "source": "WHOIS",
+      "detail": "domain creation date",
+      "confidence": 0.95,
+      "fingerprint": "0a49cd7b45cc"
+    },
+    {
+      "tool": "whois",
+      "target": "cisa.gov",
+      "kind": "expiration_date",
+      "value": "2026-11-04",
+      "source": "WHOIS",
+      "detail": "domain expiration date",
+      "confidence": 0.95,
+      "fingerprint": "9996fd6a700e"
+    },
+    {
+      "tool": "whois",
+      "target": "cisa.gov",
+      "kind": "name_server",
+      "value": "blue.foundationdns.com",
+      "source": "WHOIS",
+      "detail": "authoritative name server",
+      "confidence": 0.95,
+      "fingerprint": "df04fc57e3bf"
+    },
+    {
+      "tool": "whois",
+      "target": "cisa.gov",
+      "kind": "name_server",
+      "value": "blue.foundationdns.net",
+      "source": "WHOIS",
+      "detail": "authoritative name server",
+      "confidence": 0.95,
+      "fingerprint": "9067c9a82ff7"
+    },
+    {
+      "tool": "whois",
+      "target": "cisa.gov",
+      "kind": "name_server",
+      "value": "blue.foundationdns.org",
+      "source": "WHOIS",
+      "detail": "authoritative name server",
+      "confidence": 0.95,
+      "fingerprint": "1cc03eb2758c"
+    },
+    {
+      "tool": "whois",
+      "target": "cisa.gov",
+      "kind": "registrant_org",
+      "value": "REDACTED FOR PRIVACY",
+      "source": "WHOIS",
+      "detail": "public registrant organisation",
+      "confidence": 0.95,
+      "fingerprint": "108ac8b39954"
+    },
+    {
+      "tool": "dns",
+      "target": "cisa.gov",
+      "kind": "dns.a",
+      "value": "23.50.82.177",
+      "source": "DNS A",
+      "detail": "A record",
+      "confidence": 0.95,
+      "fingerprint": "c3bb6890dfd1"
+    },
+    {
+      "tool": "dns",
+      "target": "cisa.gov",
+      "kind": "dns.aaaa",
+      "value": "2600:1417:7a:296::3ff9",
+      "source": "DNS AAAA",
+      "detail": "AAAA record",
+      "confidence": 0.95,
+      "fingerprint": "51ffba439a38"
+    },
+    {
+      "tool": "dns",
+      "target": "cisa.gov",
+      "kind": "dns.aaaa",
+      "value": "2600:1417:7a:293::3ff9",
+      "source": "DNS AAAA",
+      "detail": "AAAA record",
+      "confidence": 0.95,
+      "fingerprint": "dfab023d0881"
+    },
+    {
+      "tool": "dns",
+      "target": "cisa.gov",
+      "kind": "dns.mx",
+      "value": "10 mxb-00376703.gslb.gpphosted.com.",
+      "source": "DNS MX",
+      "detail": "MX record",
+      "confidence": 0.95,
+      "fingerprint": "5dd914c68e2f"
+    },
+    {
+      "tool": "dns",
+      "target": "cisa.gov",
+      "kind": "dns.mx",
+      "value": "10 mxa-00376703.gslb.gpphosted.com.",
+      "source": "DNS MX",
+      "detail": "MX record",
+      "confidence": 0.95,
+      "fingerprint": "02f99d73779a"
+    },
+    {
+      "tool": "dns",
+      "target": "cisa.gov",
+      "kind": "dns.ns",
+      "value": "blue.foundationdns.net.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "f73e394e559a"
+    },
+    {
+      "tool": "dns",
+      "target": "cisa.gov",
+      "kind": "dns.ns",
+      "value": "blue.foundationdns.com.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "9d4bf80b0895"
+    },
+    {
+      "tool": "dns",
+      "target": "cisa.gov",
+      "kind": "dns.ns",
+      "value": "blue.foundationdns.org.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "5b22e05f5889"
+    },
+    {
+      "tool": "dns",
+      "target": "cisa.gov",
+      "kind": "dns.txt",
+      "value": "_e01yoinuk3n6xrtnc8q3m9bdjyihdd7",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "c3dc44b6b751"
+    },
+    {
+      "tool": "dns",
+      "target": "cisa.gov",
+      "kind": "dns.txt",
+      "value": "google-site-verification=BNRBfY90BM54Mf_pgL4Eg07IkwbGvq5nsdZCOYadDlM",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "e46dafc8cd5f"
+    },
+    {
+      "tool": "dns",
+      "target": "cisa.gov",
+      "kind": "dns.txt",
+      "value": "MS=ms36056523",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "43891a3d55f6"
+    },
+    {
+      "tool": "dns",
+      "target": "cisa.gov",
+      "kind": "dns.txt",
+      "value": "MS=ms53160703",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "e7cd1bd5e67b"
+    },
+    {
+      "tool": "dns",
+      "target": "cisa.gov",
+      "kind": "dns.txt",
+      "value": "MS=ms41452370",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "add5f3b1ef44"
+    },
+    {
+      "tool": "dns",
+      "target": "cisa.gov",
+      "kind": "dns.txt",
+      "value": "_rr8gice4wv589e4uxop5zqhh6gbqh32",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "bf019adfe1dc"
+    },
+    {
+      "tool": "dns",
+      "target": "cisa.gov",
+      "kind": "dns.txt",
+      "value": "censys-domain-verification=oCKV9OzJ1EtsMPZGDfdkccVF2WRuGqmhhozTHjaNAsvH",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "b8c68fa70df7"
+    },
+    {
+      "tool": "dns",
+      "target": "cisa.gov",
+      "kind": "dns.txt",
+      "value": "_tufdw17aa2wht723upz8w56htpvpgkw",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "6564ea85621a"
+    },
+    {
+      "tool": "dns",
+      "target": "cisa.gov",
+      "kind": "dns.txt",
+      "value": "google-site-verification=wsLVyeZYgv0NLikdmfm2m3XPP-986Ylo8XxUkrjIOvA",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "0ca3645d0f83"
+    },
+    {
+      "tool": "dns",
+      "target": "cisa.gov",
+      "kind": "dns.txt",
+      "value": "adobe-idp-site-verification=edfd88b4c2bdf65395c78b55da3580466eefa9aa874d5bcfb853692813e80515",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "a24989c79c55"
+    },
+    {
+      "tool": "dns",
+      "target": "cisa.gov",
+      "kind": "dns.txt",
+      "value": "f188eb27-a746-4aa8-b160-eb68b0aab05d",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "aa105194c63e"
+    },
+    {
+      "tool": "dns",
+      "target": "cisa.gov",
+      "kind": "dns.txt",
+      "value": "censys-domain-verification=kSZxqevdrY_nf9ogHWhuUq2O39C9Lkj-pSfnrCzSOVxO",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "e56621211adb"
+    },
+    {
+      "tool": "dns",
+      "target": "cisa.gov",
+      "kind": "dns.txt",
+      "value": "v=spf1 include:spf.dhs.gov include:spf.protection.outlook.com include:spf-00376703.gpphosted.com -all",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "e75181ccbcf0"
+    },
+    {
+      "tool": "shodan",
+      "target": "cisa.gov",
+      "kind": "open_port",
+      "value": "80",
+      "source": "https://internetdb.shodan.io/23.50.82.177",
+      "detail": "open TCP port on 23.50.82.177",
+      "confidence": 0.95,
+      "fingerprint": "3eeccfe62b3c"
+    },
+    {
+      "tool": "shodan",
+      "target": "cisa.gov",
+      "kind": "hostname",
+      "value": "a23-50-82-177.deploy.static.akamaitechnologies.com",
+      "source": "https://internetdb.shodan.io/23.50.82.177",
+      "detail": "hostname seen on 23.50.82.177",
+      "confidence": 0.95,
+      "fingerprint": "f76b7491d2cb"
+    }
+  ],
+  "trace": [
+    "plan: First run\u202fwhois\u202fto capture the registrar, registration dates and name\u2011servers, establishing ownership and age. Next query\u202fdns\u202ffor A/AAAA, MX, NS, TXT and CNAME records to map the current infrastructure, mail routing and any hidden subdomains. Then pull\u202fshodan\u202fInternetDB data to see open ports, services, hostnames and known vulnerabilities. After that search\u202fgithub\u202ffor the domain using code\u2011search dorks to find accidental credential or config leaks. Finally review\u202fwayback\u202fsnapshots to track historical site changes, subdomains and past tech stacks.",
+    "decide -> whois: Start with cheap WHOIS lookup to get registration and ownership details",
+    "observe: whois: 7 findings (7 new), elapsed 1348 ms",
+    "decide -> dns: Gather DNS records to map infrastructure after WHOIS info",
+    "observe: dns: 21 findings (21 new), elapsed 417 ms",
+    "decide -> shodan: Gather open ports, services and vulnerabilities for cisa.gov",
+    "observe: shodan: 2 findings (2 new), elapsed 511 ms",
+    "decide -> github: Next tool in plan to search code repositories for domain leaks",
+    "observe: github: 0 findings (0 new), elapsed 3065 ms, error: all GitHub dorks errored \u2014 check rate limit",
+    "decide -> wayback: Cover the remaining tool to gather historical snapshots of cisa.gov",
+    "observe: wayback: 0 findings (0 new), elapsed 15344 ms, error: Wayback CDX request failed: ReadTimeout",
+    "decide -> stop: All five tools have been used and evidence gathered"
+  ],
+  "final_report": "## Target\ncisa.gov  \n\n## Key facts\n- Domain is registered through **get.gov** with creation date **2018\u201112\u201106** and expiration **2026\u201111\u201104** (WHOIS).  \n- Registrant organization is redacted for privacy (WHOIS).  \n- Authoritative name servers are **blue.foundationdns.com**, **blue.foundationdns.net**, and **blue.foundationdns.org** (WHOIS / DNS NS).  \n\n## Notable findings\n- The domain resolves to IPv4 **23.50.82.177** and two IPv6 addresses **2600:1417:7a:296::3ff9** and **2600:1417:7a:293::3ff9** (DNS A/AAAA).  \n- Shodan reports the host on port **80** with the hostname **a23-50-82-177.deploy.static.akamaitechnologies.com** (Shodan).  \n- Mail exchangers are **mxa-00376703.gslb.gpphosted.com** and **mxb-00376703.gslb.gpphosted.com** (DNS MX).  \n- SPF record includes **spf.dhs.gov**, **spf.protection.outlook.com**, and **spf-00376703.gpphosted.com** (DNS TXT).  \n- Multiple verification TXT records are present, including Google site verification strings, Microsoft verification IDs (MS=...), Adobe IDP verification, and Censys domain verification tokens (DNS TXT).  \n- Additional opaque TXT strings (e.g., `_e01yoinuk3n6xrtnc8q3m9bdjyihdd7`, `f188eb27-a746-4aa8-b160-eb68b0aab05d`) are observed (DNS TXT).  \n\n## Open questions\n- The purpose of the numerous verification TXT records and opaque strings is unclear; they may relate to third\u2011party services or security testing.  \n- No evidence of additional open ports, services, or infrastructure beyond the observed HTTP endpoint on port 80.  \n- The relationship between the Akamai static hostname and the CISA domain is not detailed in the available data."
+}

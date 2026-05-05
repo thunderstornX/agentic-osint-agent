@@ -1,0 +1,409 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-05T07:30:33+00:00",
+  "operator_authority": "Public-interest research; targets are .gov, .edu, large NGOs, or RFC-reserved domains; passive sources only.",
+  "run": {
+    "target": "wikipedia.org",
+    "provider": "openrouter",
+    "model": "openai/gpt-oss-120b:free",
+    "budget": 8,
+    "iterations": 5,
+    "elapsed_s": 62.15
+  },
+  "summary": {
+    "coverage": 5,
+    "tools_called": [
+      "dns",
+      "github",
+      "shodan",
+      "wayback",
+      "whois"
+    ],
+    "evidence_count": 36,
+    "finish_reason": "covered_all_tools",
+    "elapsed_ms_per_tool": {
+      "whois": 592,
+      "dns": 922,
+      "shodan": 714,
+      "github": 3276,
+      "wayback": 6235
+    }
+  },
+  "evidence": [
+    {
+      "tool": "whois",
+      "target": "wikipedia.org",
+      "kind": "registrar",
+      "value": "MarkMonitor Inc.",
+      "source": "WHOIS",
+      "detail": "domain registrar of record",
+      "confidence": 0.95,
+      "fingerprint": "6967ddf1d307"
+    },
+    {
+      "tool": "whois",
+      "target": "wikipedia.org",
+      "kind": "creation_date",
+      "value": "2001-01-13",
+      "source": "WHOIS",
+      "detail": "domain creation date",
+      "confidence": 0.95,
+      "fingerprint": "82d0e8da95a3"
+    },
+    {
+      "tool": "whois",
+      "target": "wikipedia.org",
+      "kind": "expiration_date",
+      "value": "2027-01-13",
+      "source": "WHOIS",
+      "detail": "domain expiration date",
+      "confidence": 0.95,
+      "fingerprint": "0e5da98dc3ab"
+    },
+    {
+      "tool": "whois",
+      "target": "wikipedia.org",
+      "kind": "name_server",
+      "value": "ns0.wikimedia.org",
+      "source": "WHOIS",
+      "detail": "authoritative name server",
+      "confidence": 0.95,
+      "fingerprint": "43b3a3da31c5"
+    },
+    {
+      "tool": "whois",
+      "target": "wikipedia.org",
+      "kind": "name_server",
+      "value": "ns1.wikimedia.org",
+      "source": "WHOIS",
+      "detail": "authoritative name server",
+      "confidence": 0.95,
+      "fingerprint": "bd1b1934cbb9"
+    },
+    {
+      "tool": "whois",
+      "target": "wikipedia.org",
+      "kind": "name_server",
+      "value": "ns2.wikimedia.org",
+      "source": "WHOIS",
+      "detail": "authoritative name server",
+      "confidence": 0.95,
+      "fingerprint": "de7937bba019"
+    },
+    {
+      "tool": "dns",
+      "target": "wikipedia.org",
+      "kind": "dns.a",
+      "value": "103.102.166.224",
+      "source": "DNS A",
+      "detail": "A record",
+      "confidence": 0.95,
+      "fingerprint": "08e80629f92f"
+    },
+    {
+      "tool": "dns",
+      "target": "wikipedia.org",
+      "kind": "dns.aaaa",
+      "value": "2001:df2:e500:ed1a::1",
+      "source": "DNS AAAA",
+      "detail": "AAAA record",
+      "confidence": 0.95,
+      "fingerprint": "98ba06900807"
+    },
+    {
+      "tool": "dns",
+      "target": "wikipedia.org",
+      "kind": "dns.mx",
+      "value": "10 mx-in1001.wikimedia.org.",
+      "source": "DNS MX",
+      "detail": "MX record",
+      "confidence": 0.95,
+      "fingerprint": "61d9d65de792"
+    },
+    {
+      "tool": "dns",
+      "target": "wikipedia.org",
+      "kind": "dns.mx",
+      "value": "10 mx-in2001.wikimedia.org.",
+      "source": "DNS MX",
+      "detail": "MX record",
+      "confidence": 0.95,
+      "fingerprint": "bb88ab872aad"
+    },
+    {
+      "tool": "dns",
+      "target": "wikipedia.org",
+      "kind": "dns.ns",
+      "value": "ns2.wikimedia.org.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "e998bbb42da7"
+    },
+    {
+      "tool": "dns",
+      "target": "wikipedia.org",
+      "kind": "dns.ns",
+      "value": "ns0.wikimedia.org.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "436cf9a23061"
+    },
+    {
+      "tool": "dns",
+      "target": "wikipedia.org",
+      "kind": "dns.ns",
+      "value": "ns1.wikimedia.org.",
+      "source": "DNS NS",
+      "detail": "NS record",
+      "confidence": 0.95,
+      "fingerprint": "55abd7b295de"
+    },
+    {
+      "tool": "dns",
+      "target": "wikipedia.org",
+      "kind": "dns.txt",
+      "value": "v=spf1 include:_cidrs.wikimedia.org ~all",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "fcffb196e6e4"
+    },
+    {
+      "tool": "dns",
+      "target": "wikipedia.org",
+      "kind": "dns.txt",
+      "value": "google-site-verification=AMHkgs-4ViEvIJf5znZle-BSE2EPNFqM1nDJGRyn2qk",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "f95919b27c11"
+    },
+    {
+      "tool": "dns",
+      "target": "wikipedia.org",
+      "kind": "dns.txt",
+      "value": "yandex-verification: 35c08d23099dc863",
+      "source": "DNS TXT",
+      "detail": "TXT record",
+      "confidence": 0.95,
+      "fingerprint": "ec464b1ab317"
+    },
+    {
+      "tool": "shodan",
+      "target": "wikipedia.org",
+      "kind": "open_port",
+      "value": "443",
+      "source": "https://internetdb.shodan.io/103.102.166.224",
+      "detail": "open TCP port on 103.102.166.224",
+      "confidence": 0.95,
+      "fingerprint": "649560f86b35"
+    },
+    {
+      "tool": "shodan",
+      "target": "wikipedia.org",
+      "kind": "hostname",
+      "value": "wikivoyage.org",
+      "source": "https://internetdb.shodan.io/103.102.166.224",
+      "detail": "hostname seen on 103.102.166.224",
+      "confidence": 0.95,
+      "fingerprint": "98d8719de4f1"
+    },
+    {
+      "tool": "shodan",
+      "target": "wikipedia.org",
+      "kind": "hostname",
+      "value": "wikipedia.org",
+      "source": "https://internetdb.shodan.io/103.102.166.224",
+      "detail": "hostname seen on 103.102.166.224",
+      "confidence": 0.95,
+      "fingerprint": "3c2bb7a9fba8"
+    },
+    {
+      "tool": "shodan",
+      "target": "wikipedia.org",
+      "kind": "hostname",
+      "value": "wikisource.org",
+      "source": "https://internetdb.shodan.io/103.102.166.224",
+      "detail": "hostname seen on 103.102.166.224",
+      "confidence": 0.95,
+      "fingerprint": "45eb173a26f6"
+    },
+    {
+      "tool": "shodan",
+      "target": "wikipedia.org",
+      "kind": "hostname",
+      "value": "wikinews.org",
+      "source": "https://internetdb.shodan.io/103.102.166.224",
+      "detail": "hostname seen on 103.102.166.224",
+      "confidence": 0.95,
+      "fingerprint": "d19a5b3e6694"
+    },
+    {
+      "tool": "shodan",
+      "target": "wikipedia.org",
+      "kind": "hostname",
+      "value": "wiktionary.org",
+      "source": "https://internetdb.shodan.io/103.102.166.224",
+      "detail": "hostname seen on 103.102.166.224",
+      "confidence": 0.95,
+      "fingerprint": "a3f57362e459"
+    },
+    {
+      "tool": "shodan",
+      "target": "wikipedia.org",
+      "kind": "hostname",
+      "value": "wikimedia.org",
+      "source": "https://internetdb.shodan.io/103.102.166.224",
+      "detail": "hostname seen on 103.102.166.224",
+      "confidence": 0.95,
+      "fingerprint": "5d838fcfedd1"
+    },
+    {
+      "tool": "shodan",
+      "target": "wikipedia.org",
+      "kind": "hostname",
+      "value": "wikiversity.org",
+      "source": "https://internetdb.shodan.io/103.102.166.224",
+      "detail": "hostname seen on 103.102.166.224",
+      "confidence": 0.95,
+      "fingerprint": "224db5fe0321"
+    },
+    {
+      "tool": "shodan",
+      "target": "wikipedia.org",
+      "kind": "hostname",
+      "value": "w.wiki",
+      "source": "https://internetdb.shodan.io/103.102.166.224",
+      "detail": "hostname seen on 103.102.166.224",
+      "confidence": 0.95,
+      "fingerprint": "29c473c5d96d"
+    },
+    {
+      "tool": "shodan",
+      "target": "wikipedia.org",
+      "kind": "hostname",
+      "value": "text-lb.eqsin.wikimedia.org",
+      "source": "https://internetdb.shodan.io/103.102.166.224",
+      "detail": "hostname seen on 103.102.166.224",
+      "confidence": 0.95,
+      "fingerprint": "522d18d43337"
+    },
+    {
+      "tool": "shodan",
+      "target": "wikipedia.org",
+      "kind": "hostname",
+      "value": "wmfusercontent.org",
+      "source": "https://internetdb.shodan.io/103.102.166.224",
+      "detail": "hostname seen on 103.102.166.224",
+      "confidence": 0.95,
+      "fingerprint": "622076ffda90"
+    },
+    {
+      "tool": "shodan",
+      "target": "wikipedia.org",
+      "kind": "hostname",
+      "value": "mediawiki.org",
+      "source": "https://internetdb.shodan.io/103.102.166.224",
+      "detail": "hostname seen on 103.102.166.224",
+      "confidence": 0.95,
+      "fingerprint": "d5ac8d970449"
+    },
+    {
+      "tool": "shodan",
+      "target": "wikipedia.org",
+      "kind": "hostname",
+      "value": "wikidata.org",
+      "source": "https://internetdb.shodan.io/103.102.166.224",
+      "detail": "hostname seen on 103.102.166.224",
+      "confidence": 0.95,
+      "fingerprint": "dc46cdbbc52d"
+    },
+    {
+      "tool": "shodan",
+      "target": "wikipedia.org",
+      "kind": "hostname",
+      "value": "wikibooks.org",
+      "source": "https://internetdb.shodan.io/103.102.166.224",
+      "detail": "hostname seen on 103.102.166.224",
+      "confidence": 0.95,
+      "fingerprint": "b18ad3956157"
+    },
+    {
+      "tool": "shodan",
+      "target": "wikipedia.org",
+      "kind": "hostname",
+      "value": "wikimediafoundation.org",
+      "source": "https://internetdb.shodan.io/103.102.166.224",
+      "detail": "hostname seen on 103.102.166.224",
+      "confidence": 0.95,
+      "fingerprint": "cacea87ecd77"
+    },
+    {
+      "tool": "shodan",
+      "target": "wikipedia.org",
+      "kind": "hostname",
+      "value": "wikifunctions.org",
+      "source": "https://internetdb.shodan.io/103.102.166.224",
+      "detail": "hostname seen on 103.102.166.224",
+      "confidence": 0.95,
+      "fingerprint": "6b2a55eaebbb"
+    },
+    {
+      "tool": "shodan",
+      "target": "wikipedia.org",
+      "kind": "hostname",
+      "value": "wikiquote.org",
+      "source": "https://internetdb.shodan.io/103.102.166.224",
+      "detail": "hostname seen on 103.102.166.224",
+      "confidence": 0.95,
+      "fingerprint": "0b4a6dcc46f8"
+    },
+    {
+      "tool": "wayback",
+      "target": "wikipedia.org",
+      "kind": "wayback.first_snapshot",
+      "value": "2001-07-27",
+      "source": "https://web.archive.org/web/20010727112808/http://www.wikipedia.org:80/",
+      "detail": "earliest archived snapshot for this domain",
+      "confidence": 0.95,
+      "fingerprint": "6811fee00ada"
+    },
+    {
+      "tool": "wayback",
+      "target": "wikipedia.org",
+      "kind": "wayback.last_snapshot",
+      "value": "2005-07-30",
+      "source": "https://web.archive.org/web/20050730083423/http://www.wikipedia.org:80/",
+      "detail": "most recent archived snapshot for this domain",
+      "confidence": 0.95,
+      "fingerprint": "356fb02308b1"
+    },
+    {
+      "tool": "wayback",
+      "target": "wikipedia.org",
+      "kind": "wayback.snapshot_count",
+      "value": "200",
+      "source": "http://web.archive.org/cdx/search/cdx",
+      "detail": "number of distinct daily snapshots returned (capped at 200)",
+      "confidence": 0.95,
+      "fingerprint": "d58ec6a84e7a"
+    }
+  ],
+  "trace": [
+    "plan: First run\u202fwhois\u202fto capture the registrar, registration dates and name\u2011servers, establishing ownership and infrastructure baseline. Next query\u202fdns\u202ffor A/AAAA, MX, NS, TXT and CNAME records to map current services, mail routing and any hidden subdomains. Then use\u202fshodan\u202fto enumerate open ports, hostnames and known vulnerabilities on the resolved IPs. After that search\u202fgithub\u202ffor \u201cwikipedia.org\u201d code\u2011dorks to find accidental credential or config leaks. Finally pull\u202fwayback\u202fsnapshots to see historical DNS, site structure and past subdomains.",
+    "decide -> whois: Start with cheap WHOIS lookup to get registrar and registration details for wikipedia.org",
+    "observe: whois: 6 findings (6 new), elapsed 592 ms",
+    "decide -> dns: Gather DNS records to map services and subdomains after establishing WHOIS info",
+    "observe: dns: 10 findings (10 new), elapsed 922 ms",
+    "decide -> shodan: Next step is to enumerate open ports, hostnames and vulnerabilities on Wikipedia's IPs",
+    "observe: shodan: 17 findings (17 new), elapsed 714 ms",
+    "decide -> github: Next tool in plan to search code for wikipedia.org references",
+    "observe: github: 0 findings (0 new), elapsed 3276 ms, error: all GitHub dorks errored \u2014 check rate limit",
+    "decide -> wayback: Cover the remaining tool to gather historical snapshots and past subdomains",
+    "observe: wayback: 3 findings (3 new), elapsed 6235 ms",
+    "decide -> stop: All tools have been used and evidence gathered"
+  ],
+  "final_report": "## Target\n**wikipedia.org** \u2013 the primary domain of the free encyclopedia project.\n\n## Key facts\n- Registered with **MarkMonitor Inc.** on 13\u202fJan\u202f2001, expiring 13\u202fJan\u202f2027. (WHOIS)  \n- Authoritative name servers: **ns0.wikimedia.org**, **ns1.wikimedia.org**, **ns2.wikimedia.org**. (WHOIS / DNS NS)  \n- Resolves to **IPv4\u202f103.102.166.224** and **IPv6\u202f2001:df2:e500:ed1a::1**. (DNS A, DNS AAAA)  \n- Mail exchangers: **mx\u2011in1001.wikimedia.org**, **mx\u2011in2001.wikimedia.org** (priority\u202f10). (DNS MX)  \n- SPF record: `v=spf1 include:_cidrs.wikimedia.org ~all`. (DNS TXT)  \n- Verification TXT records for Google and Yandex. (DNS TXT)  \n\n## Notable findings\n- Shodan reports port **443** open on the IP address, confirming HTTPS service. (Shodan)  \n- The same IP hosts a large set of Wikimedia\u2011related hostnames (e.g., **wikivoyage.org**, **wikinews.org**, **wikidata.org**, **mediawiki.org**, **wmfusercontent.org**, etc.), indicating shared infrastructure across the Wikimedia ecosystem. (Shodan)  \n- Wayback Machine shows the domain\u2019s earliest archived snapshot on **27\u202fJul\u202f2001** and a later snapshot on **30\u202fJul\u202f2005**, with a total of **\u2248200** snapshots captured between those dates. (Wayback)  \n\n## Open questions\n- The evidence does not reveal any additional IP addresses, CDN usage, or load\u2011balancing details beyond the single IPv4/IPv6 pair.  \n- No information is available on current TLS certificate details, server software versions, or recent configuration changes.  \n- Lack of recent Wayback snapshots after 2005 limits insight into the domain\u2019s evolution in the past decade.  \n\n*All statements are directly derived from the provided WHOIS, DNS, Shodan, and Wayback records.*"
+}
