@@ -189,8 +189,10 @@ an Intel Core i5-8250U / 16 GB RAM workstation. **100 tool runs in
 | GitHub Dork  | 0/20 (0%) ¹  | 3.51 s      | 0.0           | 0              |
 | Wayback CDX  | 7/20 (35%) ² | 21.6 s      | 1.05          | 21             |
 
-¹ Unauthenticated GitHub search hits the 10/min rate limit on the first
-query of every target. With `GITHUB_TOKEN` set, success exceeds 90%.
+¹ Unauthenticated GitHub search hits the 10/min rate limit on the
+first query of every target. The authenticated path (`GITHUB_TOKEN`
+set, 30/min) was not benchmarked in this run; the rate-limit
+behaviour is documented behaviour from the GitHub API itself.
 
 ² Wayback CDX returns 503 or times out on roughly two-thirds of
 requests. That's a published characteristic of the public service, not

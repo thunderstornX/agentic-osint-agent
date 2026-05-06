@@ -238,9 +238,10 @@ GitHub Dork          & 0/20 (0\%)$^{*}$ & 3.51                    & 0.0         
 Wayback CDX          & 7/20 (35\%)      & 21.57                   & 1.05                & 21             \\
 \bottomrule
 \multicolumn{5}{l}{\footnotesize $^{*}$Unauthenticated runs hit the
-GitHub search rate limit on the first}\\
-\multicolumn{5}{l}{\footnotesize query of every target. With
-\texttt{GITHUB\_TOKEN} set, success exceeds 90\%.}\\
+GitHub search rate limit (10/min) on the first}\\
+\multicolumn{5}{l}{\footnotesize query of every target. The
+authenticated path (\texttt{GITHUB\_TOKEN}, 30/min) was}\\
+\multicolumn{5}{l}{\footnotesize not benchmarked in this run.}\\
 \end{tabular}
 \end{table}
 
