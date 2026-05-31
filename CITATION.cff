@@ -9,8 +9,15 @@ type: software
 license: MIT
 repository-code: "https://github.com/thunderstornX/agentic-osint-agent"
 version: "1.0.0"
-date-released: "2026-05-03"
-doi: "10.5281/zenodo.XXXXXXX"
+date-released: "2026-06-01"
+doi: "10.5281/zenodo.20480447"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.20480446"
+    description: "Concept DOI (always resolves to the latest version)"
+  - type: doi
+    value: "10.5281/zenodo.20480447"
+    description: "Version DOI"
 keywords:
   - agentic AI
   - OSINT
