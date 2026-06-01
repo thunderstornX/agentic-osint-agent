@@ -1,6 +1,6 @@
 # agentic-osint-agent
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20480446.svg)](https://doi.org/10.5281/zenodo.20480446) <!-- DOI placeholder; replaced on first Zenodo deposit -->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20480446.svg)](https://doi.org/10.5281/zenodo.20480446)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Tests](https://img.shields.io/badge/tests-31%20passing-brightgreen)](#tests)
 [![Tools](https://img.shields.io/badge/OSINT%20tools-5-blue)](#tools)
