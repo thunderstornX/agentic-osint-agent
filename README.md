@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20480446.svg)](https://doi.org/10.5281/zenodo.20480446)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Tests](https://img.shields.io/badge/tests-31%20passing-brightgreen)](#tests)
+[![tests](https://github.com/thunderstornX/agentic-osint-agent/actions/workflows/tests.yml/badge.svg)](https://github.com/thunderstornX/agentic-osint-agent/actions/workflows/tests.yml)
 [![Tools](https://img.shields.io/badge/OSINT%20tools-5-blue)](#tools)
 [![Framework](https://img.shields.io/badge/LangGraph-ReAct-orange)](https://langchain-ai.github.io/langgraph/)
 
